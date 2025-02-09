@@ -1,0 +1,5 @@
+DataTable: https://datatables.net/extensions/fixedcolumns/examples/initialisation/size_fluid.html
+SQL :: https://help.sap.com/docs/SAP_SQL_Anywhere/93079d4ba8e44920ae63ffb4def91f5b/81fa25a76ce21014b8b8cb6fc5ad969f.html
+TreeViewPlugin : https://www.jqueryscript.net/tags.php?/tree%20view/
+UICOponent: https://demos.shieldui.com/
+BoostrapmadeBeautiful : https://bootstrapmade.com/

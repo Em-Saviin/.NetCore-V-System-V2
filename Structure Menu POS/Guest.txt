@@ -1,0 +1,9 @@
+Main Menu
+├── Dashboard
+│   ├── Overview (Module)
+
+
+Key Guest Permissions:
+Limited access to view basic dashboard information (e.g., overview of sales).
+Cannot perform any transactions, access customer data, or manage inventory.
+Cannot access or manage any user roles, settings, or reporting features

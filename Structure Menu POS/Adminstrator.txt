@@ -1,0 +1,51 @@
+Main Menu
+├── Dashboard
+│   ├── Overview (Module)
+│   ├── Recent Transactions (Module)
+│   └── Sales Performance (Module)
+├── Sales
+│   ├── New Sale (Module)
+│   ├── Sale History (Module)
+│   ├── Refund/Return (Module)
+│   └── Discounts & Coupons (Module)
+├── Inventory Management
+│   ├── Product List (Module)
+│   ├── Stock Management (Module)
+│   ├── Low Stock Alerts (Module)
+│   └── Inventory Reports (Module)
+├── Customer Management
+│   ├── Customer Profiles (Module)
+│   ├── Loyalty Programs (Module)
+│   └── Customer Communication (Module)
+├── Employee Management
+│   ├── Employee Roles (Module)
+│   ├── Timesheets (Module)
+│   └── Sales Tracking by Employee (Module)
+├── Reports & Analytics
+│   ├── Sales Reports (Module)
+│   ├── Inventory Reports (Module)
+│   ├── Financial Reports (Module)
+│   └── Audit Logs (Module)
+├── Settings
+│   ├── General Settings (Module)
+│   ├── Payment Settings (Module)
+│   ├── Receipt Settings (Module)
+│   └── Backup & Data Recovery (Module)
+├── Integration
+│   ├── Accounting Software (Module)
+│   ├── E-commerce Integration (Module)
+│   └── Third-Party Apps (Module)
+└── Security & User Management
+|    ├── User Permissions (Module)
+|    ├── Login & Authentication (Module)
+|    └── Password Management (Module)
+|__ Admin Management
+|    ├── Menu (Module)
+|    ├── Module (Module)
+|    └── Password Management (Module)
+
+
+Key Admin Permissions:
+Full access to all modules and features.
+Can manage all user roles and permissions.
+Can configure system-wide settings, including payment integrations, reports, and employee roles.

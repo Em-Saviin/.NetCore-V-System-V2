@@ -1,0 +1,18 @@
+Main Menu
+├── Dashboard
+│   ├── Overview (Module)
+├── Sales
+│   ├── New Sale (Module)
+│   ├── Sale History (Module)
+│   ├── Refund/Return (Module)
+└── Customer Management
+    ├── Customer Profiles (Module)
+
+
+
+Key Cashier Permissions:
+Can process sales, refunds, and returns.
+Can view sales history (for customer service and returns).
+Can access basic customer profiles for loyalty or reward purposes.
+Cannot access inventory, employee management, or reports.
+Cannot modify settings or roles.

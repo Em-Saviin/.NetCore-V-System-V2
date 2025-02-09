@@ -1,0 +1,42 @@
+ 
+2. Manager Role
+Managers have significant control but are generally limited to overseeing operations without being able to modify system-wide settings. They can access most features but may not be able to edit the system settings or manage security.
+
+Manager Menu and Modules:
+plaintext
+Copy
+Main Menu
+├── Dashboard
+│   ├── Overview (Module)
+│   ├── Recent Transactions (Module)
+│   └── Sales Performance (Module)
+├── Sales
+│   ├── New Sale (Module)
+│   ├── Sale History (Module)
+│   ├── Refund/Return (Module)
+│   └── Discounts & Coupons (Module)
+├── Inventory Management
+│   ├── Product List (Module)
+│   ├── Stock Management (Module)
+│   └── Low Stock Alerts (Module)
+├── Customer Management
+│   ├── Customer Profiles (Module)
+│   ├── Loyalty Programs (Module)
+├── Employee Management
+│   ├── Timesheets (Module)
+│   └── Sales Tracking by Employee (Module)
+├── Reports & Analytics
+│   ├── Sales Reports (Module)
+│   ├── Inventory Reports (Module)
+│   └── Financial Reports (Module)
+└── Security & User Management
+    ├── User Permissions (Module)
+
+
+
+Key Manager Permissions:
+Can access all sales, inventory, and reporting features.
+Can manage customer profiles and loyalty programs.
+Can view and track employee performance and timesheets.
+Cannot access system-wide settings (e.g., general settings, backup, integrations).
+Limited access to user management (e.g., can view user roles but not modify or delete users).
