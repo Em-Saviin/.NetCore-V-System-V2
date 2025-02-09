@@ -1,0 +1,171 @@
+﻿
+@{
+    Layout = "_Iframe";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title> 
+    <script src="~/js/_Module.js"></script> 
+</head>
+  @model V_System_Core.Models.tbl_Modules
+<body> 
+    <div class="container-fluid p-0 ">
+        <div class="row">
+            <section class="section">
+                <div class="row ">
+                    <div class="col-lg-12">
+                        <div class="card">
+                            <div class="card-header  d-flex justify-content-between gap-1 ">
+                                <div class="col-3 d-flex gap-2">
+                                    <label>Menu: </label>
+                                    <select class="select2 " style="width:100%" id="slsMenu" onchange="onLookUpModule();">
+                                    </select>
+                                </div>
+                                <div class="col-1  ">
+                                    <button class="float-end btn btn-outline-success btn-sm bg-aceleda" onclick="OpenModalModule()">+ Add New</button>
+                                </div>
+                            </div>
+
+                            <div class="card-body">
+                                <table class="table" id="tblModule" style="width:100%">
+                                    <thead>
+                                        <tr>
+                                            <th> No </th>
+                                            <th>MENU</th>
+                                            <th>MODULE-NAME</th>
+                                            <th>MODULE-NAME-KH </th>
+                                            <th>CONTROLLER </th>
+                                            <th>VIEWS</th>
+                                            <th>ICON-CLASS</th>
+                                            <th>LEVEL</th>
+                                            <th>PARTIALNAME</th>
+                                            <th>URL</th>
+                                            <th>ACTION</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+
+    @*Modal Module*@
+    <!-- Modal Module -->
+    <div class="modal fade" id="ModalModule" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header  fw-bolder text-light" style="background-color:#1b3351">
+                    <h5 class="modal-title" id="ModalModuleLabel">Module Title</h5>
+                    <button type="button" class="btn-close btn-close-white" onclick="CloseModalModule()"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="frmModule">
+                        <!-- Menu -->
+                        <div class="mb-3">
+                            <label for="slsMenuParent" class="form-label">Menu <strong class="text-danger">(*)</strong> </label>
+                            <select class="select2" style="width:100%" id="slsMenuParent">
+                                <!-- Options here -->
+                            </select>
+                        </div>
+                        <!-- Module Name -->
+                        <div class="mb-3">
+                            <label for="moduleName" class="form-label">Module Name <strong class="text-danger">(*)</strong> </label>
+                            <input type="text" class="form-control" id="moduleName" required>
+                            @Html.ValidationMessageFor(m => m.module_name, "", new { @class = "text-danger" })
+                        </div>
+                        <!-- Module Name Kh -->
+                        <div class="mb-3">
+                            <label for="moduleNameKh" class="form-label">Module Name Kh</label>
+                            <input type="text" class="form-control" id="moduleNameKh" required>
+                        </div>
+                        <!-- Module Controller -->
+                        <div class="mb-3">
+                            <label for="moduleController" class="form-label">Controller  <strong class="text-danger">(*)</strong></label>
+                            <input type="text" class="form-control" id="moduleController" required>
+                        </div>
+                        <!-- Module View -->
+                        <div class="mb-3">
+                            <label for="moduleViews" class="form-label">View  <strong class="text-danger">(*)</strong></label>
+                            <input type="text" class="form-control" id="moduleViews" required>
+                        </div>
+                        <!-- Icon Class -->
+                        <div class="mb-3">
+                            <label for="iconClass" class="form-label">Icon Class</label>
+                            <input type="text" class="form-control" id="iconClass">
+                        </div>
+                        <!-- Level Input -->
+                        <div class="mb-3">
+                            <label for="moduleLevel" class="form-label">Level</label>
+                            <input type="number" class="form-control" id="moduleLevel" min="1" max="10">
+                        </div>
+                        <!-- Url Input -->
+                        <div class="mb-3">
+                            <label for="moduleUrl" class="form-label">Url</label>
+                            <input type="text" class="form-control" value="#" id="moduleUrl">
+                        </div>
+                        <!-- Partial Name Input -->
+                        <div class="mb-3">
+                            <label for="partialName" class="form-label">Partial Name</label>
+                            <input type="text" value="#" class="form-control" id="partialName">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <!-- Close Button -->
+                    <button type="button" class="btn btn-secondary bg-danger" onclick="CloseModalModule()">Close</button>
+                    <!-- Save Button -->
+                    <button type="submit" class="btn btn-primary bg-aceleda" onclick="SaveModule();">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>
+
+<script>
+    LoadSelect2();
+    makeDraggable($('#ModalModule .modal-header'));
+</script>
+
+<style>
+
+    #feedback {
+        font-size: 1.4em;
+    }
+
+    #selectable .ui-selecting {
+        background: #FECA40;
+    }
+
+    #selectable .ui-selected {
+        background: #F39814;
+        color: white;
+    }
+
+    #selectable {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 60%;
+    }
+
+        #selectable li {
+            margin: 3px;
+            padding: 0.4em;
+            font-size: 1.4em;
+            height: 18px;
+        }
+
+</style>

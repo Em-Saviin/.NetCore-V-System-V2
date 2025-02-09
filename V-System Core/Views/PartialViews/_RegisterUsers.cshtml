@@ -1,0 +1,151 @@
+﻿<section class="section">
+    <div class="row p-1"> 
+        <div class="col-12">
+            <div class="card">
+                <div class="card-header d-flex justify-content-between gap-1 ">
+                    <div class="col-3 d-flex gap-2">
+                        <h5 class="text-muted"> <i class="bi bi-person-plus-fill"></i> Register User </h5>
+                    </div>
+                </div>
+                <div class="row p-2">  
+                    <div class="col-12 m-auto">
+                        <div class="mb-3">
+                            <div class="col-12 mb-2 d-flex justify-content-end"> 
+                                <button class="btn btn-primary btn-sm" onclick=" OpenModalUser()">Add New</button>
+                            </div> 
+                            <table id="tblUser" class="table" style="width:100%">
+                                <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Firstname</th>
+                                        <th>Lastname</th>
+                                        <th>Username</th>
+                                        <th>Email</th>
+                                        <th>Sex</th>
+                                        <th>Address</th>
+                                        <th>Phone</th>
+                                        <th>IsActive</th>
+                                    </tr>
+                                </thead>
+                                <tbody> 
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Modal for the Form -->
+<div class="modal fade" id="userModal" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header bg-mycolor">
+                <h5 class="modal-title text-light" id="userModalLabel">Registration Form</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="mb-4 d-grid"> 
+                    <img  src="~/lib/assets/img/userregister.png" style="width:150px;height:150px" alt="User Photo" class="rounded-circle m-auto mb-1">
+                    <h5  class="form-label text-center">Register User</h5>
+                </div>
+                <form>
+                    <div class="row mb-4">
+                        <div class="col-12 col-md-6">
+                            <label for="firstName" class="form-label">First Name</label>
+                            <input type="text" class="form-control form-control-sm" id="firstName" placeholder="Enter your first name" required>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <label for="lastName" class="form-label">Last Name</label>
+                            <input type="text" class="form-control form-control-sm" id="lastName" placeholder="Enter your last name" required>
+                        </div>
+                    </div>
+
+                    <div class="row mb-4">
+                        <div class="col-12 col-md-6">
+                            <label for="userName" class="form-label">Username</label>
+                            <input type="text" class="form-control form-control-sm" id="userName" placeholder="Enter your username" required>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <label for="email" class="form-label">Email address</label>
+                            <input type="email" class="form-control form-control-sm" id="email" placeholder="Enter your email" required>
+                        </div>
+                    </div>
+
+                    <div class="row mb-4">
+                        <div class="col-12 col-md-6">
+                            <label for="password" class="form-label">Password</label>
+                            <input type="password" class="form-control form-control-sm" id="password" placeholder="Enter your password" required>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <label for="confirmPassword" class="form-label">Confirm Password</label>
+                            <input type="password" class="form-control form-control-sm" id="confirmPassword" placeholder="Confirm your password" required>
+                        </div>
+                    </div>
+
+                    <div class="mb-4">
+                        <label for="sex" class="form-label">Gender</label>
+                        <select id="sex" class="form-control form-control-sm">
+                            <option value="0" disabled>Select Gender</option>
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                        </select>
+                    </div>
+                    <div class="mb-4">
+                        <label for="address" class="form-label">Address</label>
+                        <input type="text" class="form-control form-control-sm" id="address" placeholder="Enter your address" required>
+                    </div>
+                    <div class="mb-4">
+                        <label for="phoneNumber" class="form-label">Phone</label>
+                        <input type="text" class="form-control form-control-sm" id="phoneNumber" placeholder="Enter your phone number" required>
+                    </div>
+
+                    <div class="mb-4 d-grid">
+                        <label for="userImage" class="form-label">Profile Photo</label>
+                        <img onclick="onBrowseImage()" id="userImage" src="~/lib/assets/img/uploadphotoimage.jpg" style="width:150px;height:150px" alt="User Photo" class="rounded border border-1 rounded mb-3">
+                        <input type="file" id="inputImage" class="form-control" hidden />
+                    </div>
+
+                    <button type="submit" class="btn btn-primary w-100 btn-lg">Register</button>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+ 
+ 
+<script src="~/js/registerusers.js"></script>
+
+<script>
+    InitializeTblUser();
+    $('.modal').modal({
+        backdrop: 'static',
+        keyboard: false
+    });
+    makeDraggable($('#userModal .modal-header'));
+    $('#tblUser').DataTable();
+</script>
+<style>
+    #userModal {
+        overflow: auto;  
+        width: 100%;
+    }
+    .profile-photo {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+    .form-container {
+        display: flex;
+        align-items: flex-start;
+    }
+    .form-container .form-group {
+        margin-left: 20px;
+    }
+</style>

@@ -1,0 +1,137 @@
+is_global = true
+build_property.TargetFramework = net7.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = V_System_Core
+build_property.RootNamespace = V_System_Core
+build_property.ProjectDir = E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core
+build_property._RazorSourceGeneratorDebug = 
+
+[E:/Working With Code/GitHub Project/Core V2/.NetCore-V-System-V2/V-System Core/Views/BoostrapIcons/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQm9vc3RyYXBJY29uc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Working With Code/GitHub Project/Core V2/.NetCore-V-System-V2/V-System Core/Views/Dashboard/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFzaGJvYXJkXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Working With Code/GitHub Project/Core V2/.NetCore-V-System-V2/V-System Core/Views/Dashboard/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFzaGJvYXJkXExvZ2luLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Working With Code/GitHub Project/Core V2/.NetCore-V-System-V2/V-System Core/Views/Department/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVwYXJ0bWVudFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Working With Code/GitHub Project/Core V2/.NetCore-V-System-V2/V-System Core/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Working With Code/GitHub Project/Core V2/.NetCore-V-System-V2/V-System Core/Views/Menu/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVudVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Working With Code/GitHub Project/Core V2/.NetCore-V-System-V2/V-System Core/Views/Module/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW9kdWxlXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Working With Code/GitHub Project/Core V2/.NetCore-V-System-V2/V-System Core/Views/Overview/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3ZlcnZpZXdcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Working With Code/GitHub Project/Core V2/.NetCore-V-System-V2/V-System Core/Views/PartialViews/_Dashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFydGlhbFZpZXdzXF9EYXNoYm9hcmQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Working With Code/GitHub Project/Core V2/.NetCore-V-System-V2/V-System Core/Views/PartialViews/_Department.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFydGlhbFZpZXdzXF9EZXBhcnRtZW50LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Working With Code/GitHub Project/Core V2/.NetCore-V-System-V2/V-System Core/Views/PartialViews/_Icons.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFydGlhbFZpZXdzXF9JY29ucy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Working With Code/GitHub Project/Core V2/.NetCore-V-System-V2/V-System Core/Views/PartialViews/_Menu.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFydGlhbFZpZXdzXF9NZW51LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Working With Code/GitHub Project/Core V2/.NetCore-V-System-V2/V-System Core/Views/PartialViews/_Module.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFydGlhbFZpZXdzXF9Nb2R1bGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Working With Code/GitHub Project/Core V2/.NetCore-V-System-V2/V-System Core/Views/PartialViews/_Overview.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFydGlhbFZpZXdzXF9PdmVydmlldy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Working With Code/GitHub Project/Core V2/.NetCore-V-System-V2/V-System Core/Views/PartialViews/_ProductManagement.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFydGlhbFZpZXdzXF9Qcm9kdWN0TWFuYWdlbWVudC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Working With Code/GitHub Project/Core V2/.NetCore-V-System-V2/V-System Core/Views/PartialViews/_ProfileSetting.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFydGlhbFZpZXdzXF9Qcm9maWxlU2V0dGluZy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Working With Code/GitHub Project/Core V2/.NetCore-V-System-V2/V-System Core/Views/PartialViews/_RegisterCompany.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFydGlhbFZpZXdzXF9SZWdpc3RlckNvbXBhbnkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Working With Code/GitHub Project/Core V2/.NetCore-V-System-V2/V-System Core/Views/PartialViews/_RegisterUsers.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFydGlhbFZpZXdzXF9SZWdpc3RlclVzZXJzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Working With Code/GitHub Project/Core V2/.NetCore-V-System-V2/V-System Core/Views/PartialViews/_RoleManagement.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFydGlhbFZpZXdzXF9Sb2xlTWFuYWdlbWVudC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Working With Code/GitHub Project/Core V2/.NetCore-V-System-V2/V-System Core/Views/PartialViews/_Sale.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFydGlhbFZpZXdzXF9TYWxlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Working With Code/GitHub Project/Core V2/.NetCore-V-System-V2/V-System Core/Views/ProfileSetting/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmlsZVNldHRpbmdcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Working With Code/GitHub Project/Core V2/.NetCore-V-System-V2/V-System Core/Views/RegisterCompany/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVnaXN0ZXJDb21wYW55XEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Working With Code/GitHub Project/Core V2/.NetCore-V-System-V2/V-System Core/Views/RegisterUsers/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVnaXN0ZXJVc2Vyc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Working With Code/GitHub Project/Core V2/.NetCore-V-System-V2/V-System Core/Views/RoleManagement/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZU1hbmFnZW1lbnRcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Working With Code/GitHub Project/Core V2/.NetCore-V-System-V2/V-System Core/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Working With Code/GitHub Project/Core V2/.NetCore-V-System-V2/V-System Core/Views/Shared/_Iframe.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9JZnJhbWUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Working With Code/GitHub Project/Core V2/.NetCore-V-System-V2/V-System Core/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Working With Code/GitHub Project/Core V2/.NetCore-V-System-V2/V-System Core/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Working With Code/GitHub Project/Core V2/.NetCore-V-System-V2/V-System Core/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Working With Code/GitHub Project/Core V2/.NetCore-V-System-V2/V-System Core/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-80uil5ms8t

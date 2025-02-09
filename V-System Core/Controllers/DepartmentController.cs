@@ -1,0 +1,90 @@
+﻿using Microsoft.AspNetCore.Mvc;
+using V_System_Core.Data;
+
+namespace V_System_Core.Controllers
+{
+    public class DepartmentController : Controller
+    {
+        private readonly V_System_Core.Data.AppDbContext db;
+        public DepartmentController(AppDbContext _dbContext)
+        {
+            this.db = _dbContext;
+        }
+
+        //View Index
+        public IActionResult Index()
+        {
+            return View();
+        }
+
+        //Block Action
+        [HttpGet]
+        public IActionResult GetCompanies()
+        {
+            var companies = db.tbl_Company
+                           .Select(c => new
+                           {
+                               id = c.ID.ToString(),
+                               text = c.company_name,
+                               parent = "#"
+                           }).ToList();
+            return Json(new { code = 0, data = companies });
+        }
+        [HttpGet]
+        public IActionResult GetDepartments(int companyId)
+        {
+            if (companyId != 0)
+            {
+                var departments = db.tbl_Department
+                                   .Where(d => d.company_id == companyId)
+                                   .Select(d => new
+                                   {
+                                       id = d.ID.ToString(),
+                                       text = d.name,
+                                       parent = companyId.ToString()
+                                   }).ToList();
+                return Json(new { code = 0, data = departments });
+            }
+            else
+            {
+                var departments = db.tbl_Department
+                                        .Select(d => new
+                                        {
+                                            id = d.ID.ToString(),
+                                            text = d.name,
+                                            parent = companyId.ToString()
+                                        }).ToList();
+                return Json(new { code = 0, data = departments });
+            }
+
+        }
+
+        public IActionResult GetAllDepartments()
+        {
+            try
+            {
+                var departments = db.tbl_Department
+                                                  .Where(d => d.is_active == true)
+                                                  .Join(db.tbl_Company,
+                                                      d => d.company_id,
+                                                      c => c.ID,
+                                                      (d, c) => new
+                                                      {
+                                                          id = d.ID,
+                                                          name = d.name,
+                                                          company_name = c.company_name,
+                                                          is_active = d.is_active,
+                                                          create_date = d.create_date
+                                                      })
+                                                  .ToList();
+                return Json(new { code = 0, data = departments });
+
+            }
+            catch (Exception e)
+            {
+                return Json(new { code = 11, message = e.Message });
+
+            }
+        }
+    }
+}

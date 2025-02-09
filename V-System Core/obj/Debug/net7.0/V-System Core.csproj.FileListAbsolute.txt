@@ -1,0 +1,1055 @@
+E:\Working With Code\GitHub Project\.NetCore-V-System\V-System Core\bin\Debug\net7.0\appsettings.Development.json
+E:\Working With Code\GitHub Project\.NetCore-V-System\V-System Core\bin\Debug\net7.0\appsettings.json
+E:\Working With Code\GitHub Project\.NetCore-V-System\V-System Core\bin\Debug\net7.0\V-System Core.staticwebassets.runtime.json
+E:\Working With Code\GitHub Project\.NetCore-V-System\V-System Core\bin\Debug\net7.0\V-System Core.exe
+E:\Working With Code\GitHub Project\.NetCore-V-System\V-System Core\bin\Debug\net7.0\Azure.Core.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System\V-System Core\bin\Debug\net7.0\Azure.Identity.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System\V-System Core\bin\Debug\net7.0\Humanizer.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System\V-System Core\bin\Debug\net7.0\System.Web.Mvc.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System\V-System Core\bin\Debug\net7.0\System.Web.Razor.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System\V-System Core\bin\Debug\net7.0\System.Web.Helpers.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System\V-System Core\bin\Debug\net7.0\System.Web.WebPages.Deployment.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System\V-System Core\bin\Debug\net7.0\System.Web.WebPages.Razor.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System\V-System Core\bin\Debug\net7.0\System.Web.WebPages.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System\V-System Core\bin\Debug\net7.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System\V-System Core\bin\Debug\net7.0\Microsoft.AspNetCore.JsonPatch.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System\V-System Core\bin\Debug\net7.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System\V-System Core\bin\Debug\net7.0\Microsoft.Bcl.AsyncInterfaces.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System\V-System Core\bin\Debug\net7.0\Microsoft.Data.SqlClient.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System\V-System Core\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System\V-System Core\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System\V-System Core\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Design.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System\V-System Core\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Relational.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System\V-System Core\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System\V-System Core\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System\V-System Core\bin\Debug\net7.0\Microsoft.Identity.Client.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System\V-System Core\bin\Debug\net7.0\Microsoft.Identity.Client.Extensions.Msal.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System\V-System Core\bin\Debug\net7.0\Microsoft.IdentityModel.Abstractions.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System\V-System Core\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System\V-System Core\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System\V-System Core\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System\V-System Core\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System\V-System Core\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System\V-System Core\bin\Debug\net7.0\Microsoft.SqlServer.Server.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System\V-System Core\bin\Debug\net7.0\Microsoft.Web.Infrastructure.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System\V-System Core\bin\Debug\net7.0\Microsoft.Win32.SystemEvents.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System\V-System Core\bin\Debug\net7.0\Mono.TextTemplating.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System\V-System Core\bin\Debug\net7.0\Newtonsoft.Json.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System\V-System Core\bin\Debug\net7.0\Newtonsoft.Json.Bson.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System\V-System Core\bin\Debug\net7.0\System.CodeDom.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System\V-System Core\bin\Debug\net7.0\System.Configuration.ConfigurationManager.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System\V-System Core\bin\Debug\net7.0\System.Drawing.Common.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System\V-System Core\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System\V-System Core\bin\Debug\net7.0\System.Memory.Data.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System\V-System Core\bin\Debug\net7.0\System.Runtime.Caching.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System\V-System Core\bin\Debug\net7.0\System.Security.Cryptography.ProtectedData.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System\V-System Core\bin\Debug\net7.0\System.Security.Permissions.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System\V-System Core\bin\Debug\net7.0\System.Windows.Extensions.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System\V-System Core\bin\Debug\net7.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System\V-System Core\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System\V-System Core\bin\Debug\net7.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System\V-System Core\bin\Debug\net7.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System\V-System Core\bin\Debug\net7.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System\V-System Core\bin\Debug\net7.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System\V-System Core\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System\V-System Core\bin\Debug\net7.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System\V-System Core\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System\V-System Core\bin\Debug\net7.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System\V-System Core\bin\Debug\net7.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System\V-System Core\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System\V-System Core\obj\Debug\net7.0\V-System Core.csproj.AssemblyReference.cache
+E:\Working With Code\GitHub Project\.NetCore-V-System\V-System Core\obj\Debug\net7.0\V-System Core.GeneratedMSBuildEditorConfig.editorconfig
+E:\Working With Code\GitHub Project\.NetCore-V-System\V-System Core\obj\Debug\net7.0\V-System Core.AssemblyInfoInputs.cache
+E:\Working With Code\GitHub Project\.NetCore-V-System\V-System Core\obj\Debug\net7.0\V-System Core.AssemblyInfo.cs
+E:\Working With Code\GitHub Project\.NetCore-V-System\V-System Core\obj\Debug\net7.0\V-System Core.csproj.CoreCompileInputs.cache
+E:\Working With Code\GitHub Project\.NetCore-V-System\V-System Core\obj\Debug\net7.0\V-System Core.MvcApplicationPartsAssemblyInfo.cache
+E:\Working With Code\GitHub Project\.NetCore-V-System\V-System Core\obj\Debug\net7.0\V-System Core.RazorAssemblyInfo.cache
+E:\Working With Code\GitHub Project\.NetCore-V-System\V-System Core\obj\Debug\net7.0\V-System Core.RazorAssemblyInfo.cs
+E:\Working With Code\GitHub Project\.NetCore-V-System\V-System Core\obj\Debug\net7.0\staticwebassets.build.json
+E:\Working With Code\GitHub Project\.NetCore-V-System\V-System Core\obj\Debug\net7.0\staticwebassets.development.json
+E:\Working With Code\GitHub Project\.NetCore-V-System\V-System Core\obj\Debug\net7.0\staticwebassets\msbuild.V-System Core.Microsoft.AspNetCore.StaticWebAssets.props
+E:\Working With Code\GitHub Project\.NetCore-V-System\V-System Core\obj\Debug\net7.0\staticwebassets\msbuild.build.V-System Core.props
+E:\Working With Code\GitHub Project\.NetCore-V-System\V-System Core\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.V-System Core.props
+E:\Working With Code\GitHub Project\.NetCore-V-System\V-System Core\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.V-System Core.props
+E:\Working With Code\GitHub Project\.NetCore-V-System\V-System Core\obj\Debug\net7.0\staticwebassets.pack.json
+E:\Working With Code\GitHub Project\.NetCore-V-System\V-System Core\obj\Debug\net7.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+E:\Working With Code\GitHub Project\.NetCore-V-System\V-System Core\obj\Debug\net7.0\scopedcss\bundle\V-System Core.styles.css
+E:\Working With Code\GitHub Project\.NetCore-V-System\V-System Core\obj\Debug\net7.0\scopedcss\projectbundle\V-System Core.bundle.scp.css
+E:\Working With Code\GitHub Project\.NetCore-V-System\V-System Core\obj\Debug\net7.0\V-System Core.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System\V-System Core\obj\Debug\net7.0\refint\V-System Core.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System\V-System Core\obj\Debug\net7.0\V-System Core.pdb
+E:\Working With Code\GitHub Project\.NetCore-V-System\V-System Core\obj\Debug\net7.0\V-System Core.csproj.CopyComplete
+E:\Working With Code\GitHub Project\.NetCore-V-System\V-System Core\bin\Debug\net7.0\V-System Core.deps.json
+E:\Working With Code\GitHub Project\.NetCore-V-System\V-System Core\bin\Debug\net7.0\V-System Core.runtimeconfig.json
+E:\Working With Code\GitHub Project\.NetCore-V-System\V-System Core\bin\Debug\net7.0\V-System Core.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System\V-System Core\bin\Debug\net7.0\V-System Core.pdb
+E:\Working With Code\GitHub Project\.NetCore-V-System\V-System Core\obj\Debug\net7.0\V-System Core.genruntimeconfig.cache
+E:\Working With Code\GitHub Project\.NetCore-V-System\V-System Core\obj\Debug\net7.0\ref\V-System Core.dll
+D:\GitHub\My Project\.NetCore-V-System\V-System Core\bin\Debug\net7.0\appsettings.Development.json
+D:\GitHub\My Project\.NetCore-V-System\V-System Core\bin\Debug\net7.0\appsettings.json
+D:\GitHub\My Project\.NetCore-V-System\V-System Core\bin\Debug\net7.0\V-System Core.staticwebassets.runtime.json
+D:\GitHub\My Project\.NetCore-V-System\V-System Core\bin\Debug\net7.0\V-System Core.exe
+D:\GitHub\My Project\.NetCore-V-System\V-System Core\bin\Debug\net7.0\V-System Core.deps.json
+D:\GitHub\My Project\.NetCore-V-System\V-System Core\bin\Debug\net7.0\V-System Core.runtimeconfig.json
+D:\GitHub\My Project\.NetCore-V-System\V-System Core\bin\Debug\net7.0\V-System Core.dll
+D:\GitHub\My Project\.NetCore-V-System\V-System Core\bin\Debug\net7.0\V-System Core.pdb
+D:\GitHub\My Project\.NetCore-V-System\V-System Core\bin\Debug\net7.0\Azure.Core.dll
+D:\GitHub\My Project\.NetCore-V-System\V-System Core\bin\Debug\net7.0\Azure.Identity.dll
+D:\GitHub\My Project\.NetCore-V-System\V-System Core\bin\Debug\net7.0\Humanizer.dll
+D:\GitHub\My Project\.NetCore-V-System\V-System Core\bin\Debug\net7.0\System.Web.Mvc.dll
+D:\GitHub\My Project\.NetCore-V-System\V-System Core\bin\Debug\net7.0\System.Web.Razor.dll
+D:\GitHub\My Project\.NetCore-V-System\V-System Core\bin\Debug\net7.0\System.Web.Helpers.dll
+D:\GitHub\My Project\.NetCore-V-System\V-System Core\bin\Debug\net7.0\System.Web.WebPages.Deployment.dll
+D:\GitHub\My Project\.NetCore-V-System\V-System Core\bin\Debug\net7.0\System.Web.WebPages.Razor.dll
+D:\GitHub\My Project\.NetCore-V-System\V-System Core\bin\Debug\net7.0\System.Web.WebPages.dll
+D:\GitHub\My Project\.NetCore-V-System\V-System Core\bin\Debug\net7.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+D:\GitHub\My Project\.NetCore-V-System\V-System Core\bin\Debug\net7.0\Microsoft.AspNetCore.JsonPatch.dll
+D:\GitHub\My Project\.NetCore-V-System\V-System Core\bin\Debug\net7.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+D:\GitHub\My Project\.NetCore-V-System\V-System Core\bin\Debug\net7.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\GitHub\My Project\.NetCore-V-System\V-System Core\bin\Debug\net7.0\Microsoft.Data.SqlClient.dll
+D:\GitHub\My Project\.NetCore-V-System\V-System Core\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.dll
+D:\GitHub\My Project\.NetCore-V-System\V-System Core\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\GitHub\My Project\.NetCore-V-System\V-System Core\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\GitHub\My Project\.NetCore-V-System\V-System Core\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\GitHub\My Project\.NetCore-V-System\V-System Core\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\GitHub\My Project\.NetCore-V-System\V-System Core\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
+D:\GitHub\My Project\.NetCore-V-System\V-System Core\bin\Debug\net7.0\Microsoft.Identity.Client.dll
+D:\GitHub\My Project\.NetCore-V-System\V-System Core\bin\Debug\net7.0\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\GitHub\My Project\.NetCore-V-System\V-System Core\bin\Debug\net7.0\Microsoft.IdentityModel.Abstractions.dll
+D:\GitHub\My Project\.NetCore-V-System\V-System Core\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\GitHub\My Project\.NetCore-V-System\V-System Core\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
+D:\GitHub\My Project\.NetCore-V-System\V-System Core\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
+D:\GitHub\My Project\.NetCore-V-System\V-System Core\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\GitHub\My Project\.NetCore-V-System\V-System Core\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
+D:\GitHub\My Project\.NetCore-V-System\V-System Core\bin\Debug\net7.0\Microsoft.SqlServer.Server.dll
+D:\GitHub\My Project\.NetCore-V-System\V-System Core\bin\Debug\net7.0\Microsoft.Web.Infrastructure.dll
+D:\GitHub\My Project\.NetCore-V-System\V-System Core\bin\Debug\net7.0\Microsoft.Win32.SystemEvents.dll
+D:\GitHub\My Project\.NetCore-V-System\V-System Core\bin\Debug\net7.0\Mono.TextTemplating.dll
+D:\GitHub\My Project\.NetCore-V-System\V-System Core\bin\Debug\net7.0\Newtonsoft.Json.dll
+D:\GitHub\My Project\.NetCore-V-System\V-System Core\bin\Debug\net7.0\Newtonsoft.Json.Bson.dll
+D:\GitHub\My Project\.NetCore-V-System\V-System Core\bin\Debug\net7.0\System.CodeDom.dll
+D:\GitHub\My Project\.NetCore-V-System\V-System Core\bin\Debug\net7.0\System.Configuration.ConfigurationManager.dll
+D:\GitHub\My Project\.NetCore-V-System\V-System Core\bin\Debug\net7.0\System.Drawing.Common.dll
+D:\GitHub\My Project\.NetCore-V-System\V-System Core\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
+D:\GitHub\My Project\.NetCore-V-System\V-System Core\bin\Debug\net7.0\System.Memory.Data.dll
+D:\GitHub\My Project\.NetCore-V-System\V-System Core\bin\Debug\net7.0\System.Runtime.Caching.dll
+D:\GitHub\My Project\.NetCore-V-System\V-System Core\bin\Debug\net7.0\System.Security.Cryptography.ProtectedData.dll
+D:\GitHub\My Project\.NetCore-V-System\V-System Core\bin\Debug\net7.0\System.Security.Permissions.dll
+D:\GitHub\My Project\.NetCore-V-System\V-System Core\bin\Debug\net7.0\System.Windows.Extensions.dll
+D:\GitHub\My Project\.NetCore-V-System\V-System Core\bin\Debug\net7.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\GitHub\My Project\.NetCore-V-System\V-System Core\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\GitHub\My Project\.NetCore-V-System\V-System Core\bin\Debug\net7.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\GitHub\My Project\.NetCore-V-System\V-System Core\bin\Debug\net7.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\GitHub\My Project\.NetCore-V-System\V-System Core\bin\Debug\net7.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\GitHub\My Project\.NetCore-V-System\V-System Core\bin\Debug\net7.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\GitHub\My Project\.NetCore-V-System\V-System Core\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+D:\GitHub\My Project\.NetCore-V-System\V-System Core\bin\Debug\net7.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\GitHub\My Project\.NetCore-V-System\V-System Core\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\GitHub\My Project\.NetCore-V-System\V-System Core\bin\Debug\net7.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+D:\GitHub\My Project\.NetCore-V-System\V-System Core\bin\Debug\net7.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+D:\GitHub\My Project\.NetCore-V-System\V-System Core\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+D:\GitHub\My Project\.NetCore-V-System\V-System Core\obj\Debug\net7.0\V-System Core.csproj.AssemblyReference.cache
+D:\GitHub\My Project\.NetCore-V-System\V-System Core\obj\Debug\net7.0\V-System Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\GitHub\My Project\.NetCore-V-System\V-System Core\obj\Debug\net7.0\V-System Core.AssemblyInfoInputs.cache
+D:\GitHub\My Project\.NetCore-V-System\V-System Core\obj\Debug\net7.0\V-System Core.AssemblyInfo.cs
+D:\GitHub\My Project\.NetCore-V-System\V-System Core\obj\Debug\net7.0\V-System Core.csproj.CoreCompileInputs.cache
+D:\GitHub\My Project\.NetCore-V-System\V-System Core\obj\Debug\net7.0\V-System Core.MvcApplicationPartsAssemblyInfo.cache
+D:\GitHub\My Project\.NetCore-V-System\V-System Core\obj\Debug\net7.0\V-System Core.RazorAssemblyInfo.cache
+D:\GitHub\My Project\.NetCore-V-System\V-System Core\obj\Debug\net7.0\V-System Core.RazorAssemblyInfo.cs
+D:\GitHub\My Project\.NetCore-V-System\V-System Core\obj\Debug\net7.0\V-System Core.sourcelink.json
+D:\GitHub\My Project\.NetCore-V-System\V-System Core\obj\Debug\net7.0\staticwebassets.build.json
+D:\GitHub\My Project\.NetCore-V-System\V-System Core\obj\Debug\net7.0\staticwebassets.development.json
+D:\GitHub\My Project\.NetCore-V-System\V-System Core\obj\Debug\net7.0\staticwebassets\msbuild.V-System Core.Microsoft.AspNetCore.StaticWebAssets.props
+D:\GitHub\My Project\.NetCore-V-System\V-System Core\obj\Debug\net7.0\staticwebassets\msbuild.build.V-System Core.props
+D:\GitHub\My Project\.NetCore-V-System\V-System Core\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.V-System Core.props
+D:\GitHub\My Project\.NetCore-V-System\V-System Core\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.V-System Core.props
+D:\GitHub\My Project\.NetCore-V-System\V-System Core\obj\Debug\net7.0\staticwebassets.pack.json
+D:\GitHub\My Project\.NetCore-V-System\V-System Core\obj\Debug\net7.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+D:\GitHub\My Project\.NetCore-V-System\V-System Core\obj\Debug\net7.0\scopedcss\bundle\V-System Core.styles.css
+D:\GitHub\My Project\.NetCore-V-System\V-System Core\obj\Debug\net7.0\scopedcss\projectbundle\V-System Core.bundle.scp.css
+D:\GitHub\My Project\.NetCore-V-System\V-System Core\obj\Debug\net7.0\V-System.03D5E2D1.Up2Date
+D:\GitHub\My Project\.NetCore-V-System\V-System Core\obj\Debug\net7.0\V-System Core.dll
+D:\GitHub\My Project\.NetCore-V-System\V-System Core\obj\Debug\net7.0\refint\V-System Core.dll
+D:\GitHub\My Project\.NetCore-V-System\V-System Core\obj\Debug\net7.0\V-System Core.pdb
+D:\GitHub\My Project\.NetCore-V-System\V-System Core\obj\Debug\net7.0\V-System Core.genruntimeconfig.cache
+D:\GitHub\My Project\.NetCore-V-System\V-System Core\obj\Debug\net7.0\ref\V-System Core.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-main\V-System Core\bin\Debug\net7.0\appsettings.Development.json
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-main\V-System Core\bin\Debug\net7.0\appsettings.json
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-main\V-System Core\bin\Debug\net7.0\V-System Core.staticwebassets.runtime.json
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-main\V-System Core\bin\Debug\net7.0\V-System Core.exe
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-main\V-System Core\bin\Debug\net7.0\V-System Core.deps.json
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-main\V-System Core\bin\Debug\net7.0\V-System Core.runtimeconfig.json
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-main\V-System Core\bin\Debug\net7.0\V-System Core.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-main\V-System Core\bin\Debug\net7.0\V-System Core.pdb
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-main\V-System Core\bin\Debug\net7.0\Azure.Core.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-main\V-System Core\bin\Debug\net7.0\Azure.Identity.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-main\V-System Core\bin\Debug\net7.0\Humanizer.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-main\V-System Core\bin\Debug\net7.0\System.Web.Mvc.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-main\V-System Core\bin\Debug\net7.0\System.Web.Razor.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-main\V-System Core\bin\Debug\net7.0\System.Web.Helpers.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-main\V-System Core\bin\Debug\net7.0\System.Web.WebPages.Deployment.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-main\V-System Core\bin\Debug\net7.0\System.Web.WebPages.Razor.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-main\V-System Core\bin\Debug\net7.0\System.Web.WebPages.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-main\V-System Core\bin\Debug\net7.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-main\V-System Core\bin\Debug\net7.0\Microsoft.AspNetCore.JsonPatch.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-main\V-System Core\bin\Debug\net7.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-main\V-System Core\bin\Debug\net7.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-main\V-System Core\bin\Debug\net7.0\Microsoft.Data.SqlClient.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-main\V-System Core\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-main\V-System Core\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-main\V-System Core\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-main\V-System Core\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-main\V-System Core\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-main\V-System Core\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-main\V-System Core\bin\Debug\net7.0\Microsoft.Identity.Client.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-main\V-System Core\bin\Debug\net7.0\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-main\V-System Core\bin\Debug\net7.0\Microsoft.IdentityModel.Abstractions.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-main\V-System Core\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-main\V-System Core\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-main\V-System Core\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-main\V-System Core\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-main\V-System Core\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-main\V-System Core\bin\Debug\net7.0\Microsoft.SqlServer.Server.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-main\V-System Core\bin\Debug\net7.0\Microsoft.Web.Infrastructure.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-main\V-System Core\bin\Debug\net7.0\Microsoft.Win32.SystemEvents.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-main\V-System Core\bin\Debug\net7.0\Mono.TextTemplating.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-main\V-System Core\bin\Debug\net7.0\Newtonsoft.Json.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-main\V-System Core\bin\Debug\net7.0\Newtonsoft.Json.Bson.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-main\V-System Core\bin\Debug\net7.0\System.CodeDom.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-main\V-System Core\bin\Debug\net7.0\System.Configuration.ConfigurationManager.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-main\V-System Core\bin\Debug\net7.0\System.Drawing.Common.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-main\V-System Core\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-main\V-System Core\bin\Debug\net7.0\System.Memory.Data.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-main\V-System Core\bin\Debug\net7.0\System.Runtime.Caching.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-main\V-System Core\bin\Debug\net7.0\System.Security.Cryptography.ProtectedData.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-main\V-System Core\bin\Debug\net7.0\System.Security.Permissions.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-main\V-System Core\bin\Debug\net7.0\System.Windows.Extensions.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-main\V-System Core\bin\Debug\net7.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-main\V-System Core\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-main\V-System Core\bin\Debug\net7.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-main\V-System Core\bin\Debug\net7.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-main\V-System Core\bin\Debug\net7.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-main\V-System Core\bin\Debug\net7.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-main\V-System Core\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-main\V-System Core\bin\Debug\net7.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-main\V-System Core\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-main\V-System Core\bin\Debug\net7.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-main\V-System Core\bin\Debug\net7.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-main\V-System Core\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-main\V-System Core\obj\Debug\net7.0\V-System Core.csproj.AssemblyReference.cache
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-main\V-System Core\obj\Debug\net7.0\V-System Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-main\V-System Core\obj\Debug\net7.0\V-System Core.AssemblyInfoInputs.cache
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-main\V-System Core\obj\Debug\net7.0\V-System Core.AssemblyInfo.cs
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-main\V-System Core\obj\Debug\net7.0\V-System Core.csproj.CoreCompileInputs.cache
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-main\V-System Core\obj\Debug\net7.0\V-System Core.MvcApplicationPartsAssemblyInfo.cache
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-main\V-System Core\obj\Debug\net7.0\V-System Core.RazorAssemblyInfo.cache
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-main\V-System Core\obj\Debug\net7.0\V-System Core.RazorAssemblyInfo.cs
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-main\V-System Core\obj\Debug\net7.0\staticwebassets.build.json
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-main\V-System Core\obj\Debug\net7.0\staticwebassets.development.json
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-main\V-System Core\obj\Debug\net7.0\staticwebassets\msbuild.V-System Core.Microsoft.AspNetCore.StaticWebAssets.props
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-main\V-System Core\obj\Debug\net7.0\staticwebassets\msbuild.build.V-System Core.props
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-main\V-System Core\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.V-System Core.props
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-main\V-System Core\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.V-System Core.props
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-main\V-System Core\obj\Debug\net7.0\staticwebassets.pack.json
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-main\V-System Core\obj\Debug\net7.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-main\V-System Core\obj\Debug\net7.0\scopedcss\bundle\V-System Core.styles.css
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-main\V-System Core\obj\Debug\net7.0\scopedcss\projectbundle\V-System Core.bundle.scp.css
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-main\V-System Core\obj\Debug\net7.0\V-System.03D5E2D1.Up2Date
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-main\V-System Core\obj\Debug\net7.0\V-System Core.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-main\V-System Core\obj\Debug\net7.0\refint\V-System Core.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-main\V-System Core\obj\Debug\net7.0\V-System Core.pdb
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-main\V-System Core\obj\Debug\net7.0\V-System Core.genruntimeconfig.cache
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-main\V-System Core\obj\Debug\net7.0\ref\V-System Core.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\appsettings.Development.json
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\appsettings.json
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\V-System Core.staticwebassets.runtime.json
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\V-System Core.exe
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\V-System Core.deps.json
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\V-System Core.runtimeconfig.json
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\V-System Core.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\V-System Core.pdb
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\Azure.Core.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\Azure.Identity.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\Humanizer.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\System.Web.Mvc.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\System.Web.Razor.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\System.Web.Helpers.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\System.Web.WebPages.Deployment.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\System.Web.WebPages.Razor.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\System.Web.WebPages.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\Microsoft.AspNetCore.JsonPatch.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\Microsoft.AspNetCore.Razor.Language.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\Microsoft.Build.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\Microsoft.Build.Framework.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\Microsoft.CodeAnalysis.AnalyzerUtilities.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\Microsoft.CodeAnalysis.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\Microsoft.CodeAnalysis.CSharp.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\Microsoft.CodeAnalysis.CSharp.Features.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\Microsoft.CodeAnalysis.Elfie.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\Microsoft.CodeAnalysis.Features.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\Microsoft.CodeAnalysis.Razor.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\Microsoft.CodeAnalysis.Scripting.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\Microsoft.CodeAnalysis.Workspaces.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\Microsoft.Data.SqlClient.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\Microsoft.DiaSymReader.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\Microsoft.DotNet.Scaffolding.Shared.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\Microsoft.Identity.Client.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\Microsoft.IdentityModel.Abstractions.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\Microsoft.NET.StringTools.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\Microsoft.SqlServer.Server.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\Microsoft.VisualStudio.Web.CodeGeneration.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\dotnet-aspnet-codegenerator-design.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\Microsoft.Web.Infrastructure.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\Microsoft.Win32.SystemEvents.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\Mono.TextTemplating.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\Newtonsoft.Json.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\Newtonsoft.Json.Bson.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\NuGet.Common.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\NuGet.Configuration.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\NuGet.DependencyResolver.Core.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\NuGet.Frameworks.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\NuGet.LibraryModel.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\NuGet.Packaging.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\NuGet.ProjectModel.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\NuGet.Protocol.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\NuGet.Versioning.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\System.CodeDom.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\System.Composition.AttributedModel.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\System.Composition.Convention.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\System.Composition.Hosting.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\System.Composition.Runtime.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\System.Composition.TypedParts.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\System.Configuration.ConfigurationManager.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\System.Drawing.Common.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\System.Memory.Data.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\System.Reflection.MetadataLoadContext.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\System.Runtime.Caching.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\System.Security.Cryptography.ProtectedData.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\System.Security.Permissions.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\System.Windows.Extensions.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\af\Humanizer.resources.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\ar\Humanizer.resources.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\az\Humanizer.resources.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\bg\Humanizer.resources.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\bn-BD\Humanizer.resources.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\cs\Humanizer.resources.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\da\Humanizer.resources.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\de\Humanizer.resources.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\el\Humanizer.resources.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\es\Humanizer.resources.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\fa\Humanizer.resources.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\fi-FI\Humanizer.resources.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\fr\Humanizer.resources.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\fr-BE\Humanizer.resources.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\he\Humanizer.resources.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\hr\Humanizer.resources.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\hu\Humanizer.resources.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\hy\Humanizer.resources.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\id\Humanizer.resources.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\is\Humanizer.resources.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\it\Humanizer.resources.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\ja\Humanizer.resources.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\ko-KR\Humanizer.resources.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\ku\Humanizer.resources.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\lv\Humanizer.resources.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\ms-MY\Humanizer.resources.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\mt\Humanizer.resources.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\nb\Humanizer.resources.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\nb-NO\Humanizer.resources.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\nl\Humanizer.resources.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\pl\Humanizer.resources.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\pt\Humanizer.resources.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\ro\Humanizer.resources.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\ru\Humanizer.resources.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\sk\Humanizer.resources.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\sl\Humanizer.resources.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\sr\Humanizer.resources.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\sr-Latn\Humanizer.resources.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\sv\Humanizer.resources.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\th-TH\Humanizer.resources.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\tr\Humanizer.resources.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\uk\Humanizer.resources.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\uz-Cyrl-UZ\Humanizer.resources.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\uz-Latn-UZ\Humanizer.resources.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\vi\Humanizer.resources.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\zh-CN\Humanizer.resources.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\zh-Hans\Humanizer.resources.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\zh-Hant\Humanizer.resources.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.resources.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.resources.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.resources.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.resources.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.resources.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.resources.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.resources.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.resources.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.resources.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.resources.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.Features.resources.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.Features.resources.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.Features.resources.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.Features.resources.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.Features.resources.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.Features.resources.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.Features.resources.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.Features.resources.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.Features.resources.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.Features.resources.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.Features.resources.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.Features.resources.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.Features.resources.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\obj\Debug\net7.0\V-System Core.csproj.AssemblyReference.cache
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\obj\Debug\net7.0\V-System Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\obj\Debug\net7.0\V-System Core.AssemblyInfoInputs.cache
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\obj\Debug\net7.0\V-System Core.AssemblyInfo.cs
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\obj\Debug\net7.0\V-System Core.csproj.CoreCompileInputs.cache
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\obj\Debug\net7.0\V-System Core.MvcApplicationPartsAssemblyInfo.cache
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\obj\Debug\net7.0\V-System Core.RazorAssemblyInfo.cache
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\obj\Debug\net7.0\V-System Core.RazorAssemblyInfo.cs
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\obj\Debug\net7.0\V-System Core.sourcelink.json
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\obj\Debug\net7.0\staticwebassets.build.json
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\obj\Debug\net7.0\staticwebassets.development.json
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\obj\Debug\net7.0\staticwebassets\msbuild.V-System Core.Microsoft.AspNetCore.StaticWebAssets.props
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\obj\Debug\net7.0\staticwebassets\msbuild.build.V-System Core.props
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.V-System Core.props
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.V-System Core.props
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\obj\Debug\net7.0\staticwebassets.pack.json
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\obj\Debug\net7.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\obj\Debug\net7.0\scopedcss\bundle\V-System Core.styles.css
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\obj\Debug\net7.0\scopedcss\projectbundle\V-System Core.bundle.scp.css
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\obj\Debug\net7.0\V-System.03D5E2D1.Up2Date
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\obj\Debug\net7.0\V-System Core.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\obj\Debug\net7.0\refint\V-System Core.dll
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\obj\Debug\net7.0\V-System Core.pdb
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\obj\Debug\net7.0\V-System Core.genruntimeconfig.cache
+D:\GitHub\My Project\.NetCore-V-System V2\.NetCore-V-System-V2\V-System Core\obj\Debug\net7.0\ref\V-System Core.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\appsettings.Development.json
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\appsettings.json
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\V-System Core.staticwebassets.runtime.json
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\V-System Core.exe
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\V-System Core.deps.json
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\V-System Core.runtimeconfig.json
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\V-System Core.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\V-System Core.pdb
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\Azure.Core.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\Azure.Identity.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\Humanizer.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\System.Web.Mvc.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\System.Web.Razor.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\System.Web.Helpers.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\System.Web.WebPages.Deployment.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\System.Web.WebPages.Razor.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\System.Web.WebPages.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\Microsoft.AspNetCore.JsonPatch.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\Microsoft.AspNetCore.Razor.Language.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\Microsoft.Bcl.AsyncInterfaces.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\Microsoft.Build.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\Microsoft.Build.Framework.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\Microsoft.CodeAnalysis.AnalyzerUtilities.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\Microsoft.CodeAnalysis.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\Microsoft.CodeAnalysis.CSharp.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\Microsoft.CodeAnalysis.CSharp.Features.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\Microsoft.CodeAnalysis.Elfie.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\Microsoft.CodeAnalysis.Features.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\Microsoft.CodeAnalysis.Razor.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\Microsoft.CodeAnalysis.Scripting.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\Microsoft.CodeAnalysis.Workspaces.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\Microsoft.Data.SqlClient.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\Microsoft.DiaSymReader.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\Microsoft.DotNet.Scaffolding.Shared.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Design.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Relational.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\Microsoft.Identity.Client.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\Microsoft.Identity.Client.Extensions.Msal.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\Microsoft.IdentityModel.Abstractions.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\Microsoft.NET.StringTools.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\Microsoft.SqlServer.Server.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\Microsoft.VisualStudio.Web.CodeGeneration.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\dotnet-aspnet-codegenerator-design.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\Microsoft.Web.Infrastructure.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\Microsoft.Win32.SystemEvents.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\Mono.TextTemplating.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\Newtonsoft.Json.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\Newtonsoft.Json.Bson.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\NuGet.Common.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\NuGet.Configuration.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\NuGet.DependencyResolver.Core.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\NuGet.Frameworks.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\NuGet.LibraryModel.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\NuGet.Packaging.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\NuGet.ProjectModel.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\NuGet.Protocol.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\NuGet.Versioning.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\System.CodeDom.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\System.Composition.AttributedModel.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\System.Composition.Convention.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\System.Composition.Hosting.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\System.Composition.Runtime.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\System.Composition.TypedParts.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\System.Configuration.ConfigurationManager.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\System.Drawing.Common.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\System.Memory.Data.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\System.Reflection.MetadataLoadContext.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\System.Runtime.Caching.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\System.Security.Cryptography.ProtectedData.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\System.Security.Permissions.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\System.Windows.Extensions.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\af\Humanizer.resources.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\ar\Humanizer.resources.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\az\Humanizer.resources.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\bg\Humanizer.resources.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\bn-BD\Humanizer.resources.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\cs\Humanizer.resources.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\da\Humanizer.resources.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\de\Humanizer.resources.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\el\Humanizer.resources.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\es\Humanizer.resources.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\fa\Humanizer.resources.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\fi-FI\Humanizer.resources.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\fr\Humanizer.resources.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\fr-BE\Humanizer.resources.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\he\Humanizer.resources.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\hr\Humanizer.resources.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\hu\Humanizer.resources.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\hy\Humanizer.resources.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\id\Humanizer.resources.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\is\Humanizer.resources.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\it\Humanizer.resources.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\ja\Humanizer.resources.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\ko-KR\Humanizer.resources.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\ku\Humanizer.resources.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\lv\Humanizer.resources.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\ms-MY\Humanizer.resources.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\mt\Humanizer.resources.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\nb\Humanizer.resources.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\nb-NO\Humanizer.resources.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\nl\Humanizer.resources.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\pl\Humanizer.resources.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\pt\Humanizer.resources.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\ro\Humanizer.resources.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\ru\Humanizer.resources.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\sk\Humanizer.resources.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\sl\Humanizer.resources.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\sr\Humanizer.resources.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\sr-Latn\Humanizer.resources.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\sv\Humanizer.resources.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\th-TH\Humanizer.resources.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\tr\Humanizer.resources.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\uk\Humanizer.resources.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\uz-Cyrl-UZ\Humanizer.resources.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\uz-Latn-UZ\Humanizer.resources.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\vi\Humanizer.resources.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\zh-CN\Humanizer.resources.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\zh-Hans\Humanizer.resources.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\zh-Hant\Humanizer.resources.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.resources.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.resources.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.resources.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.resources.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.resources.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.resources.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.resources.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.resources.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.resources.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.resources.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.Features.resources.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.Features.resources.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.Features.resources.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.Features.resources.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.Features.resources.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.Features.resources.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.Features.resources.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.Features.resources.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.Features.resources.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.Features.resources.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.Features.resources.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.Features.resources.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.Features.resources.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\obj\Debug\net7.0\V-System Core.csproj.AssemblyReference.cache
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\obj\Debug\net7.0\V-System Core.GeneratedMSBuildEditorConfig.editorconfig
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\obj\Debug\net7.0\V-System Core.AssemblyInfoInputs.cache
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\obj\Debug\net7.0\V-System Core.AssemblyInfo.cs
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\obj\Debug\net7.0\V-System Core.csproj.CoreCompileInputs.cache
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\obj\Debug\net7.0\V-System Core.MvcApplicationPartsAssemblyInfo.cache
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\obj\Debug\net7.0\V-System Core.RazorAssemblyInfo.cache
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\obj\Debug\net7.0\V-System Core.RazorAssemblyInfo.cs
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\obj\Debug\net7.0\staticwebassets\msbuild.V-System Core.Microsoft.AspNetCore.StaticWebAssets.props
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\obj\Debug\net7.0\staticwebassets\msbuild.build.V-System Core.props
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.V-System Core.props
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.V-System Core.props
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\obj\Debug\net7.0\staticwebassets.pack.json
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\obj\Debug\net7.0\staticwebassets.build.json
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\obj\Debug\net7.0\staticwebassets.development.json
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\obj\Debug\net7.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\obj\Debug\net7.0\scopedcss\bundle\V-System Core.styles.css
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\obj\Debug\net7.0\scopedcss\projectbundle\V-System Core.bundle.scp.css
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\obj\Debug\net7.0\V-System Core.csproj.CopyComplete
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\obj\Debug\net7.0\V-System Core.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\obj\Debug\net7.0\refint\V-System Core.dll
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\obj\Debug\net7.0\V-System Core.pdb
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\obj\Debug\net7.0\V-System Core.genruntimeconfig.cache
+E:\Working With Code\GitHub Project\.NetCore-V-System-V2\.NetCore-V-System-V2\V-System Core\obj\Debug\net7.0\ref\V-System Core.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\appsettings.Development.json
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\appsettings.json
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\V-System Core.staticwebassets.runtime.json
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\V-System Core.exe
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\V-System Core.deps.json
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\V-System Core.runtimeconfig.json
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\V-System Core.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\V-System Core.pdb
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\Azure.Core.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\Azure.Identity.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\Humanizer.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\System.Web.Mvc.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\System.Web.Razor.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\System.Web.Helpers.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\System.Web.WebPages.Deployment.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\System.Web.WebPages.Razor.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\System.Web.WebPages.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\Microsoft.AspNetCore.JsonPatch.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\Microsoft.AspNetCore.Razor.Language.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\Microsoft.Bcl.AsyncInterfaces.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\Microsoft.Build.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\Microsoft.Build.Framework.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\Microsoft.CodeAnalysis.AnalyzerUtilities.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\Microsoft.CodeAnalysis.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\Microsoft.CodeAnalysis.CSharp.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\Microsoft.CodeAnalysis.CSharp.Features.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\Microsoft.CodeAnalysis.Elfie.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\Microsoft.CodeAnalysis.Features.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\Microsoft.CodeAnalysis.Razor.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\Microsoft.CodeAnalysis.Scripting.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\Microsoft.CodeAnalysis.Workspaces.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\Microsoft.Data.SqlClient.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\Microsoft.DiaSymReader.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\Microsoft.DotNet.Scaffolding.Shared.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Design.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Relational.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\Microsoft.Identity.Client.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\Microsoft.Identity.Client.Extensions.Msal.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\Microsoft.IdentityModel.Abstractions.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\Microsoft.NET.StringTools.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\Microsoft.SqlServer.Server.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\Microsoft.VisualStudio.Web.CodeGeneration.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\dotnet-aspnet-codegenerator-design.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\Microsoft.Web.Infrastructure.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\Microsoft.Win32.SystemEvents.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\Mono.TextTemplating.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\Newtonsoft.Json.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\Newtonsoft.Json.Bson.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\NuGet.Common.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\NuGet.Configuration.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\NuGet.DependencyResolver.Core.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\NuGet.Frameworks.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\NuGet.LibraryModel.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\NuGet.Packaging.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\NuGet.ProjectModel.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\NuGet.Protocol.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\NuGet.Versioning.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\System.CodeDom.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\System.Composition.AttributedModel.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\System.Composition.Convention.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\System.Composition.Hosting.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\System.Composition.Runtime.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\System.Composition.TypedParts.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\System.Configuration.ConfigurationManager.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\System.Drawing.Common.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\System.Memory.Data.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\System.Reflection.MetadataLoadContext.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\System.Runtime.Caching.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\System.Security.Cryptography.ProtectedData.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\System.Security.Permissions.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\System.Windows.Extensions.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\af\Humanizer.resources.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\ar\Humanizer.resources.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\az\Humanizer.resources.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\bg\Humanizer.resources.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\bn-BD\Humanizer.resources.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\cs\Humanizer.resources.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\da\Humanizer.resources.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\de\Humanizer.resources.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\el\Humanizer.resources.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\es\Humanizer.resources.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\fa\Humanizer.resources.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\fi-FI\Humanizer.resources.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\fr\Humanizer.resources.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\fr-BE\Humanizer.resources.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\he\Humanizer.resources.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\hr\Humanizer.resources.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\hu\Humanizer.resources.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\hy\Humanizer.resources.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\id\Humanizer.resources.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\is\Humanizer.resources.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\it\Humanizer.resources.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\ja\Humanizer.resources.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\ko-KR\Humanizer.resources.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\ku\Humanizer.resources.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\lv\Humanizer.resources.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\ms-MY\Humanizer.resources.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\mt\Humanizer.resources.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\nb\Humanizer.resources.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\nb-NO\Humanizer.resources.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\nl\Humanizer.resources.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\pl\Humanizer.resources.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\pt\Humanizer.resources.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\ro\Humanizer.resources.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\ru\Humanizer.resources.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\sk\Humanizer.resources.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\sl\Humanizer.resources.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\sr\Humanizer.resources.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\sr-Latn\Humanizer.resources.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\sv\Humanizer.resources.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\th-TH\Humanizer.resources.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\tr\Humanizer.resources.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\uk\Humanizer.resources.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\uz-Cyrl-UZ\Humanizer.resources.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\uz-Latn-UZ\Humanizer.resources.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\vi\Humanizer.resources.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\zh-CN\Humanizer.resources.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\zh-Hans\Humanizer.resources.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\zh-Hant\Humanizer.resources.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.resources.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.resources.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.resources.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.resources.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.resources.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.resources.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.resources.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.resources.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.resources.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.resources.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.Features.resources.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.Features.resources.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.Features.resources.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.Features.resources.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.Features.resources.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.Features.resources.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.Features.resources.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.Features.resources.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.Features.resources.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.Features.resources.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.Features.resources.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.Features.resources.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.Features.resources.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\obj\Debug\net7.0\V-System Core.csproj.AssemblyReference.cache
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\obj\Debug\net7.0\V-System Core.GeneratedMSBuildEditorConfig.editorconfig
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\obj\Debug\net7.0\V-System Core.AssemblyInfoInputs.cache
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\obj\Debug\net7.0\V-System Core.AssemblyInfo.cs
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\obj\Debug\net7.0\V-System Core.csproj.CoreCompileInputs.cache
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\obj\Debug\net7.0\V-System Core.MvcApplicationPartsAssemblyInfo.cache
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\obj\Debug\net7.0\V-System Core.RazorAssemblyInfo.cache
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\obj\Debug\net7.0\V-System Core.RazorAssemblyInfo.cs
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\obj\Debug\net7.0\staticwebassets\msbuild.V-System Core.Microsoft.AspNetCore.StaticWebAssets.props
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\obj\Debug\net7.0\staticwebassets\msbuild.build.V-System Core.props
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.V-System Core.props
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.V-System Core.props
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\obj\Debug\net7.0\staticwebassets.pack.json
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\obj\Debug\net7.0\staticwebassets.build.json
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\obj\Debug\net7.0\staticwebassets.development.json
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\obj\Debug\net7.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\obj\Debug\net7.0\scopedcss\bundle\V-System Core.styles.css
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\obj\Debug\net7.0\scopedcss\projectbundle\V-System Core.bundle.scp.css
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\obj\Debug\net7.0\V-System Core.csproj.CopyComplete
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\obj\Debug\net7.0\V-System Core.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\obj\Debug\net7.0\refint\V-System Core.dll
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\obj\Debug\net7.0\V-System Core.pdb
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\obj\Debug\net7.0\V-System Core.genruntimeconfig.cache
+E:\Working With Code\GitHub Project\Core V2\.NetCore-V-System-V2\V-System Core\obj\Debug\net7.0\ref\V-System Core.dll

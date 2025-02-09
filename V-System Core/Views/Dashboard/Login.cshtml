@@ -1,0 +1,184 @@
+﻿
+@{
+    Layout = null;
+} 
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Login</title>
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">  
+    <!-- Google Fonts -->
+    <link href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/lib/assets/css/style.css" rel="stylesheet" />
+    <link href="~/css/toast-plugin.css" rel="stylesheet" />
+    <link href="~/css/msgbox.css" rel="stylesheet" />
+    <link href="~/css/login.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="~/lib/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+    <link href="~/lib/assets/vendor/bootstrap-icons/bootstrap-icons.min.css" rel="stylesheet" /> 
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/jquery/dist/jquery.js"></script>
+    <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="~/lib/jquery-validation/dist/jquery.validate.js"></script>
+    <link href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    <!-- Toastr CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script> 
+    <script src="~/js/msgbox.js"></script>
+    <script src="~/js/toast-plugin-min.js"></script>
+</head>
+<body class="bg-dark">
+@*     <main>
+        <div class="container"> 
+            <section class="section register min-vh-100 d-flex flex-column align-items-center justify-content-center py-4">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-4 col-md-6 d-flex flex-column align-items-center justify-content-center" >  
+                            <div class="card mb-3"> 
+                                <div class="card-body">
+                                    <div class="pt-3 d-flex justify-content-center align-items-center">
+                                         <img src="~/lib/assets/img/userprofile2.jpg" class="rounded-circle img-thumbnail" style="width: 130px; height:130px" />
+                                    </div>  
+                                    <div class="pb-2">
+                                        <h5 class="card-title text-center pb-0 fs-4">Login to Your Account</h5>
+                                        <p class="text-center small">Enter your username & password to login</p>
+                                    </div>
+
+                                    <form class="row g-3 needs-validation" novalidate>
+                                        <div class="col-12">
+                                            <label for="txtUserName" class="form-label">Username</label>
+                                            <div class="input-group has-validation">
+                                                <span class="input-group-text" id="inputGroupPrepend">@@</span>
+                                                <input type="text" name="username" class="form-control" value="Savin.Em" id="txtUserName" required>
+                                                <div class="invalid-feedback">Please enter your username.</div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12">
+                                            <label for="txtPassword" class="form-label">Password</label>
+                                            <input type="password" name="password" class="form-control" value="123" id="txtPassword" required>
+                                            <div class="invalid-feedback">Please enter your password!</div>
+                                        </div>
+
+                                        <div class="col-12">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" name="remember" value="true" id="rememberMe">
+                                                <label class="form-check-label" for="rememberMe">Remember me</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <button class="btn btn-primary w-100" type="button" onclick="OnCheckLogin()">Login</button> 
+                                        </div>
+                                        <div class="col-12">
+                                            <p class="small mb-0">Don't have account? <a href="pages-register.html">Create an account</a></p>
+                                        </div>
+                                    </form>
+
+                                </div>
+                            </div>
+                               
+                        </div>
+                    </div>
+                </div> 
+            </section>
+
+        </div>
+    </main>  *@ 
+    <div id="myModal" class="">
+        <div class="modal-dialog modal-login modal-dialog-centered ">
+            <div class="modal-content shadow">
+			<div class="modal-header">
+                    <img class="avatar" src="~/lib/assets/img/userregister.png" class="img-fluid rounded-circle" alt="Avatar">
+                    <h4 class="modal-title">Member Login</h4>	 
+			</div>
+			<div class="modal-body">
+				<form>
+					<div class="form-group"> 
+                        <label for="txtUserName">Username:</label>
+                        <input type ="text" name="username" class="form-control" value="Savin.Em" id="txtUserName" required>
+                     </div>
+					<div class="form-group">
+                            <label for="txtPassword">Password:</label> 
+                            <input type="password" name="password" class="form-control" value="123" id="txtPassword" required>
+                        </div>        
+					<div class="form-group">
+                            <button type="button" style="background-color:#343a40" class="btn" onclick="OnCheckLogin()">Login</button>
+					</div>
+				</form>
+			</div>
+			<div class="modal-footer">
+				<a href="#">Forgot Password?</a>
+			</div>
+		</div>
+	</div>
+</div>     
+</body>
+</html> 
+
+<script>
+    $(document).ready(function () {
+
+    })
+    function OnCheckLogin() {  
+        var obj = {};
+        obj.username = $("#txtUserName").val();
+        obj.password = $("#txtPassword").val();
+        $.ajax({
+            url: '/Dashboard/CheckLogin',
+            type: 'POST',
+            dataType: 'json',
+            data: { objs: obj },
+            success: function (response) { 
+                if (response.success == 0) {
+                    $.toast({
+                        title: "Message",
+                        message: "Login Success.",
+                        type: "success",
+                        duration: 5000,
+                    });
+                    window.location.href = response.redirectUrl;
+                } else {
+                    $.toast({
+                        title: "Message",
+                        message: response.message,
+                        type: "danger",
+                        duration: 5000,
+                    });
+                }
+            }, error: function (err) {
+                $.toast({
+                    title: "Message",
+                    message: "Error internal service.",
+                    type: "warning",
+                    duration: 5000,
+                });
+            }
+        })
+    }
+</script>
+<style>
+    body {
+        position: relative;
+        margin: 0;
+        height: 100vh; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #myModal {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); 
+    }
+</style>

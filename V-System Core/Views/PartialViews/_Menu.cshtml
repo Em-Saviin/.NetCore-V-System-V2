@@ -1,0 +1,92 @@
+﻿ 
+
+
+<div class="container-fluid p-1 ">
+    <div class="row">
+        <section class="section">
+            <div class="row "> 
+                <div class="col-lg-12">
+                    <div class="card">
+                        <div class="card-header'd-flex justify-content-end p-2">
+                            <button class=" float-end btn btn-outline-success btn-sm bg-aceleda" onclick="OpenModalMenu()">+ Add New</button>
+                        </div>
+                        <div class="card-body"> 
+                            <table class="table" id="tblMenu" style="width:100%">
+                                <thead>
+                                    <tr>
+                                        <th> No </th>
+                                        <th>MENU_EN</th>
+                                        <th>MENU_KH</th>
+                                        <th>ICON </th>
+                                        <th>LEVEL</th>
+                                        <th>PARTIALNAME</th>
+                                        <th>ACTION</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div> 
+                </div> 
+            </div>
+        </section>
+    </div>
+</div>
+
+ 
+
+ 
+@*Modal Menu*@
+<div class="modal fade" id="ModalMenu" data-bs-backdrop="false">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header text-light" style="background-color:#1b3351">
+                <h5 class="modal-title"> </h5>
+                <button type="button" class="btn-close btn-close-white  " onclick="CloseModalMenu()" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form id="frmMenu">
+                    <!-- Menu Name Input -->
+                    <div class="mb-3">
+                        <label for="menuName" class="form-label">Menu Name <strong class="text-danger">(*)</strong> </label>
+                        <input type="text" class="form-control" id="menuName">
+                    </div>
+                    <!-- Menu Name Input -->
+                    <div class="mb-3">
+                        <label for="menuNameKh" class="form-label">Menu Name Kh</label>
+                        <input type="text" class="form-control" id="menuNameKh">
+                    </div>
+                    <!-- Menu Icon Input -->
+                    <div class="mb-3">
+                        <label for="menuIcon" class="form-label">Menu Icon</label>
+                        <input type="text" class="form-control" id="menuIcon">
+                    </div>
+                    <!-- Level Input -->
+                    <div class="mb-3">
+                        <label for="level" class="form-label">Level</label>
+                        <input type="number" class="form-control" id="level" min="1" max="10">
+                    </div>
+                    <!-- Partial Name Input -->
+                    <div class="mb-3">
+                        <label for="partialName" class="form-label">Partial Name</label>
+                        <input type="text" class="form-control" id="partialName">
+                    </div>
+                </form>
+              
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary bg-danger" onclick="CloseModalMenu()">Close</button>
+                <button type="button" class="btn btn-primary bg-aceleda" onclick="SaveMenu();">Save</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="~/js/toast-plugin-min.js"></script>
+<script src="~/js/_menu.js"></script>  
+<script  type="text/javascript"> 
+    InitializeTableMenu();
+    makeDraggable($('#ModalMenu .modal-header'));
+</script>
+ 

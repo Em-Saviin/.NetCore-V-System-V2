@@ -1,0 +1,24 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Iframe.cshtml";
+}
+
+<div class="container-fluid">
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item" role="presentation">
+            <a class="nav-link active" id="icon-tab-0" data-bs-toggle="tab" href="#icon-tabpanel-0" role="tab" aria-controls="icon-tabpanel-0" aria-selected="true"><i class="bi-bag-plus-fill"></i> Flights</a>
+        </li>
+        <li class="nav-item" role="presentation">
+            <a class="nav-link" id="icon-tab-1" data-bs-toggle="tab" href="#icon-tabpanel-1" role="tab" aria-controls="icon-tabpanel-1" aria-selected="false"><i class="bi-cart-plus"></i> Trips</a>
+        </li>
+        <li class="nav-item" role="presentation">
+            <a class="nav-link" id="icon-tab-2" data-bs-toggle="tab" href="#icon-tabpanel-2" role="tab" aria-controls="icon-tabpanel-2" aria-selected="false"><i class="bi-collection-play-fill"></i> Favorites</a>
+        </li>
+    </ul>
+    <div class="tab-content pt-5" id="tab-content">
+        <div class="tab-pane active" id="icon-tabpanel-0" role="tabpanel" aria-labelledby="icon-tab-0">Content of Tab 1</div>
+        <div class="tab-pane" id="icon-tabpanel-1" role="tabpanel" aria-labelledby="icon-tab-1">Content of Tab 2</div>
+        <div class="tab-pane" id="icon-tabpanel-2" role="tabpanel" aria-labelledby="icon-tab-2">Content of Tab 3</div>
+    </div>
+</div>

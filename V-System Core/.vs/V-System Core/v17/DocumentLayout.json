@@ -1,0 +1,191 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\GitHub\\My Project\\.NetCore-V-System V2\\.NetCore-V-System-V2\\V-System Core\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{61A5F752-F820-425D-A840-6A41C0FC6FDF}|V-System Core.csproj|d:\\github\\my project\\.netcore-v-system v2\\.netcore-v-system-v2\\v-system core\\wwwroot\\js\\layout.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{61A5F752-F820-425D-A840-6A41C0FC6FDF}|V-System Core.csproj|solutionrelative:wwwroot\\js\\layout.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{61A5F752-F820-425D-A840-6A41C0FC6FDF}|V-System Core.csproj|d:\\github\\my project\\.netcore-v-system v2\\.netcore-v-system-v2\\v-system core\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{61A5F752-F820-425D-A840-6A41C0FC6FDF}|V-System Core.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{61A5F752-F820-425D-A840-6A41C0FC6FDF}|V-System Core.csproj|d:\\github\\my project\\.netcore-v-system v2\\.netcore-v-system-v2\\v-system core\\wwwroot\\css\\layout.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{61A5F752-F820-425D-A840-6A41C0FC6FDF}|V-System Core.csproj|solutionrelative:wwwroot\\css\\layout.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{61A5F752-F820-425D-A840-6A41C0FC6FDF}|V-System Core.csproj|d:\\github\\my project\\.netcore-v-system v2\\.netcore-v-system-v2\\v-system core\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{61A5F752-F820-425D-A840-6A41C0FC6FDF}|V-System Core.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{61A5F752-F820-425D-A840-6A41C0FC6FDF}|V-System Core.csproj|d:\\github\\my project\\.netcore-v-system v2\\.netcore-v-system-v2\\v-system core\\wwwroot\\js\\_module.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{61A5F752-F820-425D-A840-6A41C0FC6FDF}|V-System Core.csproj|solutionrelative:wwwroot\\js\\_module.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{61A5F752-F820-425D-A840-6A41C0FC6FDF}|V-System Core.csproj|d:\\github\\my project\\.netcore-v-system v2\\.netcore-v-system-v2\\v-system core\\controllers\\overviewcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{61A5F752-F820-425D-A840-6A41C0FC6FDF}|V-System Core.csproj|solutionrelative:controllers\\overviewcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{61A5F752-F820-425D-A840-6A41C0FC6FDF}|V-System Core.csproj|d:\\github\\my project\\.netcore-v-system v2\\.netcore-v-system-v2\\v-system core\\views\\overview\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{61A5F752-F820-425D-A840-6A41C0FC6FDF}|V-System Core.csproj|solutionrelative:views\\overview\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{61A5F752-F820-425D-A840-6A41C0FC6FDF}|V-System Core.csproj|d:\\github\\my project\\.netcore-v-system v2\\.netcore-v-system-v2\\v-system core\\views\\shared\\_iframe.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{61A5F752-F820-425D-A840-6A41C0FC6FDF}|V-System Core.csproj|solutionrelative:views\\shared\\_iframe.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{61A5F752-F820-425D-A840-6A41C0FC6FDF}|V-System Core.csproj|d:\\github\\my project\\.netcore-v-system v2\\.netcore-v-system-v2\\v-system core\\views\\module\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{61A5F752-F820-425D-A840-6A41C0FC6FDF}|V-System Core.csproj|solutionrelative:views\\module\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{61A5F752-F820-425D-A840-6A41C0FC6FDF}|V-System Core.csproj|d:\\github\\my project\\.netcore-v-system v2\\.netcore-v-system-v2\\v-system core\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{61A5F752-F820-425D-A840-6A41C0FC6FDF}|V-System Core.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Layout.css",
+              "DocumentMoniker": "D:\\GitHub\\My Project\\.NetCore-V-System V2\\.NetCore-V-System-V2\\V-System Core\\wwwroot\\css\\Layout.css",
+              "RelativeDocumentMoniker": "wwwroot\\css\\Layout.css",
+              "ToolTip": "D:\\GitHub\\My Project\\.NetCore-V-System V2\\.NetCore-V-System-V2\\V-System Core\\wwwroot\\css\\Layout.css",
+              "RelativeToolTip": "wwwroot\\css\\Layout.css",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAwwEIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-02-06T06:35:45.266Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "_Module.js",
+              "DocumentMoniker": "D:\\GitHub\\My Project\\.NetCore-V-System V2\\.NetCore-V-System-V2\\V-System Core\\wwwroot\\js\\_Module.js",
+              "RelativeDocumentMoniker": "wwwroot\\js\\_Module.js",
+              "ToolTip": "D:\\GitHub\\My Project\\.NetCore-V-System V2\\.NetCore-V-System-V2\\V-System Core\\wwwroot\\js\\_Module.js",
+              "RelativeToolTip": "wwwroot\\js\\_Module.js",
+              "ViewState": "AgIAACAAAAAAAAAAAAAzwDMAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-02-06T06:08:23.608Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\GitHub\\My Project\\.NetCore-V-System V2\\.NetCore-V-System-V2\\V-System Core\\Views\\Overview\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Overview\\Index.cshtml",
+              "ToolTip": "D:\\GitHub\\My Project\\.NetCore-V-System V2\\.NetCore-V-System-V2\\V-System Core\\Views\\Overview\\Index.cshtml",
+              "RelativeToolTip": "Views\\Overview\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-06T05:02:04.419Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "OverviewController.cs",
+              "DocumentMoniker": "D:\\GitHub\\My Project\\.NetCore-V-System V2\\.NetCore-V-System-V2\\V-System Core\\Controllers\\OverviewController.cs",
+              "RelativeDocumentMoniker": "Controllers\\OverviewController.cs",
+              "ToolTip": "D:\\GitHub\\My Project\\.NetCore-V-System V2\\.NetCore-V-System-V2\\V-System Core\\Controllers\\OverviewController.cs",
+              "RelativeToolTip": "Controllers\\OverviewController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-06T05:01:26.491Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\GitHub\\My Project\\.NetCore-V-System V2\\.NetCore-V-System-V2\\V-System Core\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\GitHub\\My Project\\.NetCore-V-System V2\\.NetCore-V-System-V2\\V-System Core\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAABUBAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-06T03:42:07.477Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\GitHub\\My Project\\.NetCore-V-System V2\\.NetCore-V-System-V2\\V-System Core\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\GitHub\\My Project\\.NetCore-V-System V2\\.NetCore-V-System-V2\\V-System Core\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-06T03:23:43.226Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Layout.js",
+              "DocumentMoniker": "D:\\GitHub\\My Project\\.NetCore-V-System V2\\.NetCore-V-System-V2\\V-System Core\\wwwroot\\js\\Layout.js",
+              "RelativeDocumentMoniker": "wwwroot\\js\\Layout.js",
+              "ToolTip": "D:\\GitHub\\My Project\\.NetCore-V-System V2\\.NetCore-V-System-V2\\V-System Core\\wwwroot\\js\\Layout.js",
+              "RelativeToolTip": "wwwroot\\js\\Layout.js",
+              "ViewState": "AgIAAEAAAAAAAAAAAAAQwE0AAABOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-02-06T02:49:31.982Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\GitHub\\My Project\\.NetCore-V-System V2\\.NetCore-V-System-V2\\V-System Core\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "D:\\GitHub\\My Project\\.NetCore-V-System V2\\.NetCore-V-System-V2\\V-System Core\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-06T02:50:49.264Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "_Iframe.cshtml",
+              "DocumentMoniker": "D:\\GitHub\\My Project\\.NetCore-V-System V2\\.NetCore-V-System-V2\\V-System Core\\Views\\Shared\\_Iframe.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Iframe.cshtml",
+              "ToolTip": "D:\\GitHub\\My Project\\.NetCore-V-System V2\\.NetCore-V-System-V2\\V-System Core\\Views\\Shared\\_Iframe.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Iframe.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-06T03:21:07.176Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\GitHub\\My Project\\.NetCore-V-System V2\\.NetCore-V-System-V2\\V-System Core\\Views\\Module\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Module\\Index.cshtml",
+              "ToolTip": "D:\\GitHub\\My Project\\.NetCore-V-System V2\\.NetCore-V-System-V2\\V-System Core\\Views\\Module\\Index.cshtml",
+              "RelativeToolTip": "Views\\Module\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-06T02:37:26.93Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

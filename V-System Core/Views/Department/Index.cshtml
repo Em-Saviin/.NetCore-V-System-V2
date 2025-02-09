@@ -1,0 +1,59 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Iframe.cshtml";
+}
+
+<div class="card text-center">
+    <div class="card-header text-start">
+        <h5>Register Department</h5>
+    </div>
+    <div class="card-body ">
+        <div class="row d-flex justify-content-between  ">
+            @* Block According Company *@
+            <div class="col-3">
+                <div class="accordion" id="accordingTree">
+                </div>
+            </div>
+            @* BlockTable *@
+            <div class="   border-start col-9 p-2">
+                <div class="row pb-3">
+                    <div class="col-12float-end d-flex justify-content-end">
+                        <button class="btn-sm btn-outline-primary">Add Department</button>
+                    </div>
+                </div>
+
+                <table class="table table-striped" style="width:100%" id="tblDepartment">
+                    <thead>
+                        <tr class="text-center">
+                            <th>#</th>
+                            <th>Company</th>
+                            <th>Department</th>
+                            <th>Create_Date</th>
+                            <th>Is_Active</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+
+<script src="~/js/department.js"></script>
+<script>
+    loadTree();
+    InitializeTableDepartment();
+    $("#tblDepartment").dataTable();
+</script>
+
+<style>
+    #tblDepartment th {
+        text-align: center;
+    }
+</style>
