@@ -100,7 +100,7 @@ function loadTabIframeContent(partialViewName, tabContentId, moduleId) {
                                <span class="col-3 d-flex justify-content-start align-items-center">
                                      <ol class="breadcrumb mt-2">
                                         <li class="breadcrumb-item"><a href="#"> <i class=" ${_data.menuIcon}"> </i>  ${_data.menuName} </a> </li>
-                                        <li class="breadcrumb-item active text-decoration-underline" aria-current="page"> <i class="${_data.moduleIcon}"> </i>${_data.moduleName}</li>
+                                        <li class="breadcrumb-item active text-decoration-underline" aria-current="page"> </i>${_data.moduleName}</li>
                                     </ol>   
                                </span>
                                 <span class="col-1 d-flex justify-content-end align-items-end">

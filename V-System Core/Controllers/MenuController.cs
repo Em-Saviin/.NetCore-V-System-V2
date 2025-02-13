@@ -1,4 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.Data.SqlClient;
+using System.Drawing;
+using System.Reflection.Metadata;
+using V_System_Core.Component;
 using V_System_Core.Data;
 using V_System_Core.Models;
 
@@ -74,12 +78,21 @@ namespace V_System_Core.Controllers
 
                     if (thisMenu != null)
                     {
-                        thisMenu.menu_name = objs.menu_name;
-                        thisMenu.menu_name_kh = objs.menu_name_kh;
-                        thisMenu.level = objs.level;
-                        thisMenu.icon = objs.icon;
-                        thisMenu.partial_name = objs.partial_name;
-                        db.SaveChanges();
+                        string sql = "[dbo].[SP_UPDATE_MENU] @MenuName , @MenuName_Kh , @Icon , @PartialName , @Level , @MenuId";
+                        var param = new[]
+                        {
+                            new SqlParameter("@MenuName", objs.menu_name ?? (object)DBNull.Value),
+                            new SqlParameter("@MenuName_Kh", objs.menu_name_kh ?? (object)DBNull.Value),
+                            new SqlParameter("@Icon", objs.icon ?? (object)DBNull.Value),
+                            new SqlParameter("@PartialName", objs.partial_name ?? (object)DBNull.Value),
+                            new SqlParameter("@Level", objs.level),
+                            new SqlParameter("@MenuId", objs.ID)
+                        };
+
+                        // Execute the stored procedure
+                        StaticClass.ExecSPWithoutReturn(db, sql, param);
+
+
                         return Json(new { code = 0, message = "Menu " + objs.menu_name + " updated successfully!" });
                     }
                     else
