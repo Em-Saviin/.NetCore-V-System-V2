@@ -51,15 +51,7 @@ namespace V_System_Core.Controllers
                   ModuleResult = db.tbl_Modules.Where(md => md.is_active == true).ToList();
             }
             else
-            {
-                //MenuResult = (from m in db.tbl_Menus
-                //                  join rpm in db.tbl_Role_Menu_Permissions on m.ID equals rpm.Menu_Id
-                //                  join c in db.tbl_Company on rpm.Company_Id equals c.ID
-                //                  join u in db.tbl_Users on c.ID equals u.Company_Id
-                //                  join ur in db.tbl_UserRoles on rpm.Role_Id equals ur.Role_Id
-                //                  where rpm.User_Id == UserID && rpm.Is_Active == true
-                //                  orderby m.Level ascending
-                //                  select m).Distinct().ToList();
+            { 
                 MenuResult = (from m in db.tbl_Menus
                               join mpd in db.tbl_Role_Menu_Permissions on m.ID equals mpd.Menu_Id 
                               join r in db.tbl_UserRoles on mpd.Role_Id equals r.Role_Id
@@ -73,16 +65,8 @@ namespace V_System_Core.Controllers
                                 where rmp.User_Id == UserID
                                 && rmp.Is_Active == true
                                 orderby md.level ascending
-                                select md).ToList();
-                //ModuleResult = (from m in db.tbl_Modules
-                //                join mpd in db.tbl_Module_Permission_Detail on m.ID equals mpd.Module_Id
-                //                join u in db.tbl_Users on mpd.User_Id equals u.ID
-                //                where mpd.User_Id == UserID && mpd.Is_Active == true && m.Is_Active == true
-                //                orderby m.Level ascending
-                //                select m).Distinct().ToList(); 
-            }
-
-
+                                select md).ToList(); 
+            } 
             ViewData["MenuData"] = MenuResult;
             ViewData["ModuleData"] = ModuleResult;
             ViewBag.Username = InfoUser?.username ?? "Unknow User";

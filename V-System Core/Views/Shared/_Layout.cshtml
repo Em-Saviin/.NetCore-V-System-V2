@@ -11,7 +11,7 @@
     <link href="https://fonts.gstatic.com" rel="preconnect">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
     <link href="~/css/Layout.css" rel="stylesheet" />
-    <script src="~/js/layout.js"></script>
+    <script src="~/js/Layout.js"></script>
 </head>
 @{
     var tbl_Menus = ViewData["MenuData"] as List<tbl_Menus> ?? new List<tbl_Menus>();
@@ -277,9 +277,7 @@
     <main id="main" class="main " style="padding:5px"> 
        
         @RenderBody()
-    </main>
-
-    <link href="~/css/Layout.css" rel="stylesheet" />
+    </main> 
     <link href="~/lib/assets/css/style.css" rel="stylesheet" />
     <link href="~/css/msgbox.css" rel="stylesheet" /> 
     <link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />

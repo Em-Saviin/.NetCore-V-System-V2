@@ -71,7 +71,7 @@ function loadCompanyListDataTable() {
     _tblListCompany = $('#tblListCompany').DataTable({
         processing: true,
         "ajax": {
-            url: `${MyController}/GetCompanyList`   ,
+            url: `${MyController}/GetCompanyList`,
             dataSrc: 'data',
             error: function (xhr, error, thrown) {
                 console.log('Error occurred while loading data: ', error);
@@ -81,6 +81,17 @@ function loadCompanyListDataTable() {
             {
                 render: function (data, type, row, meta) {
                     return meta.row + meta.settings._iDisplayStart + 1;
+                }
+            },
+            {
+                data: null,
+                render: function (data) {
+                    if (data.path_logo == null) {
+                        return 'No Logo';
+                    } else {
+                        return `<img title="${data.company_name}" alt="image" src="${data.path_logo}" style="width:50px;height:50px" class="rounded" />`;
+                    } 
+                   
                 }
             },
             { data: 'company_name' },

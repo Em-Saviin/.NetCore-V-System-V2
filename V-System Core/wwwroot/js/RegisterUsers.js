@@ -1,5 +1,5 @@
 ﻿var MyController = "/RegisterUsers"
-
+  
 function onBrowseImage() {
     $("#userImage").attr('src', '/lib/assets/img/uploadphotoimage.jpg'); 
     $("#inputImage").click(); 
@@ -9,9 +9,12 @@ function onBrowseImage() {
     });
 
 }
-$("#userModal").modal('hide');
+
 function OpenModalUser() {
     $("#userModal").modal('show');
+}
+function OnCLoseModal() {
+    $("#userModal").modal('hide');
 }
 var _tblUser = '';
 function InitializeTblUser() {
@@ -47,6 +50,23 @@ function InitializeTblUser() {
                     } 
                 }
             }, 
+            {
+                data: null,
+                render: function (data) {
+                    return `
+                      <div class="dropdown">
+                          <a class=" dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                            
+                          </a>
+                          <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                          </div>
+                        </div>
+                    `
+                }
+            }
         ],
         "paging": true,
         "info": true,

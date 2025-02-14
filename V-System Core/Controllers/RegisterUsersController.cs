@@ -1,10 +1,12 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+ 
 using System.Web.Razor.Tokenizer.Symbols;
 using V_System_Core.Data;
 
 namespace V_System_Core.Controllers
-{
+{ 
     public class RegisterUsersController : Controller
     {
         private readonly V_System_Core.Data.AppDbContext db;
