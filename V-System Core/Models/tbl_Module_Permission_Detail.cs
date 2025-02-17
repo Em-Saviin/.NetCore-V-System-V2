@@ -16,4 +16,11 @@
         public DateTime? assign_date { get; set; }
         public string? company_code { get; set; }
     }
+    public class CoreGetPermissionRoleOnModule : tbl_Module_Permission_Detail
+    {
+        public int parent_id { get; set; }
+        public string? menu_name { get; set; }
+        public string? module_name { get; set; }
+        public string? remark { get; set; }
+    }
 }
