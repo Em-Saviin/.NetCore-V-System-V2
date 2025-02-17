@@ -1,12 +1,11 @@
 ﻿ 
 
-function InitializeLayout() { 
-   
+function InitializeLayout() {  
     $('.modal').modal({
         backdrop: 'static',
         keyboard: false
     });
-    addNewTab('Overview', 27, 'Overview', 'bi bi-fan' );
+    addNewTab('Permission', 65, 'Permission', 'bi-universal-access' );
     var firstLink = $(".sidebar-nav li a[data-bs-target='#components-nav-1']").first();
     firstLink.removeClass('collapsed');
     $('.toggle-sidebar-btn').on('click', function () {

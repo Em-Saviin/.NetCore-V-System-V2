@@ -4,6 +4,7 @@
 var MyController = "/Menu"
 var _tblMenu = '';
 var _menuId = 0; 
+ 
 function InitializeTableMenu() {
     _tblMenu = $('#tblMenu').DataTable({
         processing: true, 
@@ -51,8 +52,8 @@ function InitializeTableMenu() {
     });
 }
  
-  
-function onEditMenu(menuId) { 
+ 
+function onEditMenu(menuId) {  
     $('.modal-title').html('<i class="bi bi-pencil"></i> Edit') 
          _menuId = 0
         objMenu = { };
