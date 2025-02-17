@@ -21,6 +21,7 @@ namespace V_System_Core.Data
         public DbSet<tbl_Module_Permission_Detail> tbl_Module_Permission_Detail { get; set; } 
         public DbSet<tbl_Department>    tbl_Department { get; set; }   
         public DbSet<tbl_Icons> tbl_Icons { get; set; } 
+        public DbSet<CoreSelect2Item> CoreSelect2Item { get; set; }
 
     }
 }
