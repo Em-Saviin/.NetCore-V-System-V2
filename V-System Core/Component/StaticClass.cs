@@ -1,5 +1,7 @@
 ﻿using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
+using V_System_Core.Models;
+
 
 namespace V_System_Core.Component
 {
@@ -80,10 +82,18 @@ namespace V_System_Core.Component
 
                     result.Add(rowDictionary);
                 }
-            }
-
+            } 
             return result;
         }
+
+        public static List<CoreSelect2Item> GetSelect2Item(DbContext db, string mapKey, int keyId = 0)
+        {
+            string sql = "EXEC SP_SELECT2_DATA @MapKey, @KeyId";
+            return db.Set<CoreSelect2Item>().FromSqlRaw(sql,
+                new SqlParameter("@MapKey", mapKey),
+                new SqlParameter("@KeyId", keyId))
+                .ToList();
+        } 
 
         public static void ExecSPWithoutReturn(DbContext dbContext, string storedProcedureName, params SqlParameter[] parameters)
         {
@@ -114,8 +124,7 @@ namespace V_System_Core.Component
                 command.ExecuteNonQuery();  
             }
         }
-
-
+         
     }
 
 
