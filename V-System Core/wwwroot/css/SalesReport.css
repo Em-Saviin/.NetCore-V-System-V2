@@ -1,0 +1,48 @@
+﻿/* Base page layout */
+#content {
+    margin: 20px;
+    font-family: Arial, sans-serif;
+}
+
+#pageFooter {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    margin-top: 20px;
+    page-break-before: always;  
+}
+
+@media print { 
+    body  { 
+        padding: 10px;
+        margin: 0;
+    }
+  
+    #btnPrint {
+        display: none;
+        margin: 0;
+        padding: 10px;
+    }
+    .card{
+        border: none;
+    }
+    #content {
+        page-break-after: always;
+    }
+
+    #pageFooter{ 
+        position: fixed;
+        bottom: 10px;
+        left: 0;
+        right: 0;
+        text-align: end;
+        font-size: 12px;
+        background: #f8f8f8;
+        padding: 10px 0;
+        border-top: 1px solid #ccc;
+    }
+
+    #pageFooter:after { 
+        font-size: 14px;
+    }
+}

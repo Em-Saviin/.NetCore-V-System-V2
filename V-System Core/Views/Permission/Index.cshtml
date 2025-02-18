@@ -20,36 +20,34 @@
             <li class="nav-item" role="presentation">
                 <a class="nav-link" id="icon-tab-2" data-bs-toggle="tab" href="#icon-tabpanel-2" role="tab" aria-controls="icon-tabpanel-2" aria-selected="false"><i class="bi-collection-play-fill"></i> ... </a>
             </li>
-        </ul>
-
-
-        <div class="tab-content pt-5" id="tab-content">
+        </ul> 
+        <div class="tab-content pt-1" id="tab-content">
+            <!--Block Permission On Role-->
             <div class="tab-pane active" id="icon-tabpanel-0" role="tabpanel" aria-labelledby="icon-tab-0"> 
                 <div class="card m-0">
                     <div class="card-header">
-                       <div class="row">
-                             <div class="row d-flex justify-content-start align-items-center "> 
-                                    <div class="form-group d-flex col-2 gap-1">
-                                        <label class="label">Role:</label>
-                                        <select class="form-select select2" id="slsRoles">
-                                            <option value="0">---Select Option---</option>
+                       <div class="row d-flex justify-content-start">
+                            
+                                    <div class="form-group d-grid col-2 ">
+                                        <label class="label">Role </label>
+                                       <select class="form-select select2" id="slsRoles" style="width:100%">
+                                            <option value="0">---Select Role---</option>
                                         </select>
                                     </div>
-                                    <div class="form-group d-flex justify-content-start align-items-center col-2 gap-1">
-                                        <label class="label">Menu:</label>
-                                        <select class="form-select select2" id="slsMenus">
-                                            <option value="0">---Select Option---</option>
+                                   <div class="form-group d-grid  col-2  " onchange="InitializeTablePermission()">
+                                        <label class="label">Menu </label>
+                                        <select class="form-select select2" id="slsMenus" style="width:100%">
+                                            <option value="0">--- Select Menu ---</option>
                                         </select>
                                     </div> 
                                  
-                                  <div class="col-8 float-end d-flex justify-content-end align-items-center"> 
-                                      <button class="btn-sm btn-outline-success"> <i class="bi-bookmark-check-fill"> </i>  Save </button>
-                                  </div>
-                             </div>    
+                                  <div class="col-8 float-end d-flex justify-content-end align-items-center">
+                            <button class="btn-sm btn-outline-success" onclick="OnSavePermissionOnRole()"> <i class="bi-bookmark-check-fill"> </i>  Save </button>
+                                  </div> 
                        </div>
                     </div>
                     <div class="card-body">
-                    <table id="tblPermissionModule" class="table table-sm" style="width:100%">
+                    <table id="tblPermissionRoleOnModule" class="table table-sm" style="width:100%">
                               <thead >
                                   <tr>
                                         <th colspan="3">Module Info</th>
@@ -69,69 +67,174 @@
                                
                               </thead>
                               <tbody>
-                              @*     <tr class="border">
-                                <td colspan="9" class="text-start fw-bold"> <p style="margin-left:36px;"> <i class="bi-file-earmark-bar-graph"></i> Report & Sale </p> </td>
-                                  </tr>
-                                  <tr class="border"> 
-                                        <td> 1 </td>
-                                        <td> Inventory Report </td>
-                                <td> No remark </td>
-                                <td style="width:150px;" class="m-0 p-0">
-                                    <div class="form-switch"> <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked> </div>
-
-                                </td>
-                                   <td style="width:150px;" class="m-0 p-0">
-                                    <div class="form-switch"> <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked> </div>
-
-                                </td>
-                                   <td style="width:150px;" class="m-0 p-0">
-                                    <div class="form-switch"> <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked> </div>
-
-                                </td>
-                                   <td style="width:150px;" class="m-0 p-0">
-                                    <div class="form-switch"> <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked> </div>
-
-                                </td>
-                                   <td style="width:150px;" class="m-0 p-0">
-                                    <div class="form-switch"> <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked> </div>
-
-                                </td>
-                                   <td style="width:150px;" class="m-0 p-0">
-                                    <div class="form-switch"> <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked> </div>
-
-                                </td> 
-                            </tr> *@
+                                        <!--Dynamic-->    
                             </tbody>
                          </table>                   
-                   </div>
-                    
+                   </div> 
                 </div>
-
-
-
+                 
             </div>
+          
             <div class="tab-pane" id="icon-tabpanel-1" role="tabpanel" aria-labelledby="icon-tab-1">Content of module base on user on role </div>
             <div class="tab-pane" id="icon-tabpanel-2" role="tabpanel" aria-labelledby="icon-tab-2">  Content of ,,</div>
-            <div class="tab-pane" id="icon-tabpanel-4" role="tabpanel" aria-labelledby="icon-tab-4"> This is system Role </div>
+             <!--Block System Role-->
+            <div class="tab-pane" id="icon-tabpanel-4" role="tabpanel" aria-labelledby="icon-tab-4">    
+                 <div class="card-body m-0 px-0 py-0">
+                            <div class="row">
+                                <!--Role Table-->
+                    <div class="col-5 col-sm-12 col-md-12">
+                                    <div class="card">
+                                        <div class="card-header">
+                                                <div class="row d-flex justify-content-start"> 
+                                                    <div class="form-group d-grid col-5 ">
+                                                            <h4> <i class="bi-rocket-takeoff"></i> Role List</h4>
+                                                    </div> 
+                                                    <div class="col-7 float-end d-flex justify-content-end align-items-center">
+                                        <button class="btn-sm btn-outline-primary" onclick="onOpenModalNewRole()">   New Role </button>
+                                                    </div>
+                                                </div> 
+                                        </div>
+                                        <div class="card-body">
+                                                <table style="width:100%" class="display" id="tblRole">
+                                                <thead>
+                                                    <tr>
+                                                        <th>#</th>
+                                                        <th style="width:auto">Role Name</th>
+                                                        <th>Remark</th> 
+                                                        <th style="width:20px" >A/C</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <!--Dynamic-->
+                                                </tbody>
+                                            </table> 
+                                        </div>
+                                    </div>
+                                </div>
+
+                    <div class="col-7 col-sm-12 col-md-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <div class="row d-flex justify-content-start">
+                                    <div class="form-group d-grid col-2 ">
+                                        <h4> <i class="bi-rocket-takeoff"></i> Role Information</h4>
+                                    </div> 
+                                </div>
+                            </div>
+                            <div class="card-body">
+                               <div class="row">
+                                    <div class="row d-flex justify-content-start"> 
+                                        <div class="form-group d-grid col-3">
+                                            <label class="label">Role Name: </label>
+                                            <input  type="text" class="form-control-sm" id="txtRoleName" disabled />
+                                        </div>
+                                        <div class="form-group d-grid  col-5  " onchange="InitializeTablePermission()">
+                                            <label class="label">Remark: </label>
+                                            <input type="text" class="form-control-sm" id="txtRoleDescription" disabled />
+                                        </div> 
+                                        <div class="col-4 float-end d-flex justify-content-end align-items-center">
+                                            <button class="btn-sm btn-outline-success"> <i class="bi-bookmark-plus-fill"> </i>  Assign User </button>
+                                        </div>
+                                    </div>
+                               </div>
+                               <div class="row mt-1">
+                                    <table class="display " style="width:100%" id="tblAssignRoleUser">
+                                         <thead>
+                                             <tr>
+                                                 <th>#</th>
+                                                 <th>Name</th>
+                                                 <th>Username</th>
+                                                 <th>Sex</th>
+                                                 <th>Role</th>
+                                                 <th>Action</th>
+                                             </tr>
+                                        </thead>
+                                        <tbody>
+
+                                        </tbody>
+                                    </table>
+                               </div>
+                            </div>
+                        </div>
+                    </div>
+                            </div>
+                        </div> 
+            </div>
         </div>
-
-
+         
     </div>
 
-<script src="~/js/permission.js"></script>
-<script>
-    // Swal.fire({
-    //     title: 'មានបញ្ហា',
-    //     type: 'error',
-    //     html:  "a;lsdkfjlksajdf"
-    // });
+<!--Modall newRole-->
+<div class="modal fade" id="modalNewRole" tabindex="-1" aria-labelledby="roleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="roleModalLabel">Add New Role</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form id="frmAddnewRole">
+            <!-- Role Name Input -->
+            <div class="mb-3">
+              <label for="roleName" class="form-label">Role Name <span class="text-danger">*</span> </label>
+              <input type="text" class="form-control" id="newRoleName" placeholder="Enter Role Name" required>
+            </div>
+            <!-- Description Input -->
+            <div class="mb-3">
+              <label for="description" class="form-label">Description <span class="text-danger">*</span> </label>
+              <textarea class="form-control" id="newRoleDescription" rows="3" placeholder="Enter Role Description" required></textarea>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn-sm btn-outline-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn-sm btn-outline-primary" onclick="OnSaveNewRole()">Save Role</button>
+            </div>
+      </div>
+    </div>
+  </div>
 
-     LoadDataSelect2();
-    InitializeTablePermission()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="~/js/permission.js"></script>
+<script>  
+    LoadDataRoleSelect2();
+    InitializeTablePermission();
+    InitializeTableRole(); 
+     $("#tblAssignRoleUser").dataTable();
+    $('.modalNewRole').modal({
+        backdrop: 'static',
+        keyboard: false
+    });
 </script>
 
 <style>
-    #tblPermissionModule th{
+    #tblPermissionRoleOnModule th {
         background-color: #323c50;
         align-items : center;
         text-align: center;
@@ -141,7 +244,7 @@
         color: white;
     }
 
-    #tblPermissionModule td { 
+    #tblPermissionRoleOnModule td {
         align-items: center;
         text-align: center;
         border: 1px double;
@@ -149,6 +252,18 @@
         color: black;
     }
 
-     
+    #tblRole  th {
+        background-color: #323c50;
+        text-align: center;
+        color: white;
+        font-weight: bolder;
+    }
+ 
+    #tblAssignRoleUser th {
+        background-color: #317a81;
+        text-align: center;
+        color: white;
+        font-weight: bolder;
+    } 
       
 </style>

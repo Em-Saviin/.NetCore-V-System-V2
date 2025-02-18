@@ -6,8 +6,7 @@
 
  
 
-
-<div class="container-fluid p-0 ">
+<div class="container-fluid p-0"  >
     <div class="row">
         <section class="section">
             <div class="row ">
@@ -15,9 +14,9 @@
                     <div class="card">
                         <div class="card-header  d-flex justify-content-end   ">
                             <div class="col-1  ">
-                                <button class="float-end btn btn-outline-success btn-sm bg-aceleda">+ New Icon </button>
+                                <button class="float-end btn-sm btn-outline-danger"  id="btnPrint"> Print </button>
                             </div>
-                        </div>
+                        </div> 
                         <div class="card-body">
                             <table class="table" id="tblIcon" style="width:100%">
                                 <thead>
@@ -29,7 +28,11 @@
                                     </tr>
                                 </thead>
                                 <tbody>
+                                    <!--Dynamic List-->
                                 </tbody>
+                                <tfoot id="pageFooter">
+                                    
+                                </tfoot>
                             </table>
                         </div>
                     </div>
@@ -42,6 +45,8 @@
 
 
 
+<link href="~/css/salesreport.css" rel="stylesheet" />
+<script src="~/js/salesreport.js"></script>
 <script src="~/js/icon.js"></script>
 
 <script>
