@@ -77,7 +77,7 @@ function loadTabIframeContent(partialViewName, tabContentId, moduleId) {
         data: { moduleId: moduleId }, 
         type: 'POST',
         success: function (response) { 
-           
+           console.log(response)
             var _data = response.data;
             var _UrlFrame = '/' + _data.moduleController + '/' + _data.moduleViews;   
             $("#" + tabContentId).empty();
