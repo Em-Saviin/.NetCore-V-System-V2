@@ -4,7 +4,7 @@ function InitializeTablePermission() {
    $.ajax({
        url: "/Permission/GetMenu",
        type: "GET",
-       data: { menuId: $("#slsMenus").val() , roleId: 0 },
+       data: { menuId: $("#slsRoleMenus").val() , roleId: 0 },
        success: function (rs) { 
            $("#tblPermissionRoleOnModule tbody").empty();
             const _dataMenu = rs.data;
@@ -118,31 +118,28 @@ function onCheckPermission(checkbox, moduleId, moduleName, permissionType) {
         }
     } 
 }
-function LoadDataRoleSelect2()  {
-    $('.select2').select2();
-    $('.select2').select2({
-        placeholder: "--Select Option--",
-        width: '100%'
-    });
+function LoadDataRoleSelect2() {
+    $('#slsRoleMenus').select2('destroy');
+    $('#slsRoles').select2('destroy'); 
     $.ajax({
         url: '/Permission/GetDataSelect2',
         type: 'Get',
-        success: function (rs) {
-            
+        success: function (rs) {   
             const menuResult = rs.menuData;
             const roleResult = rs.roleData;
-            var optionsMenu = menuResult.map(function (item) {
+            var optionsMenus = menuResult.map(function (item) {
                 return { id: item.id,  text: item.text  };
-            });
-            $('#slsMenus').select2({
-                data: optionsMenu
-            });
+            });  
             var optionsRole = roleResult.map(function (item) {
                 return { id: item.id, text: item.text };
-            })
+            }) 
             $('#slsRoles').select2({ 
-                data: optionsRole
+                data: optionsRole, 
             });
+            $('#slsRoleMenus').select2({
+                data: optionsMenus,
+                placeholder: "--- Select Menu ---"
+            }); 
         },
         error: function (err) {
             console.log(err)
@@ -194,11 +191,16 @@ function InitializeTableRole() {
     }); 
 }
 
-  
-function OnMappingRole(_roleId,_roleName,_roleDescription) {
+var _RoleId = "";
+var _RoleName = "";
+function OnMappingRole(_roleId, _roleName, _roleDescription) {
+    _RoleId = _roleId;
+    _RoleName = _roleName;
     $("#txtRoleName").val(_roleName);
     $("#txtRoleDescription").val(_roleDescription);
+    $("#txtRoleName2").val(_roleName);
     $("#tblAssignRoleUser tbody").empty();
+    GetSelect2UserNotInRole(_RoleId);
     $.ajax({
         url: MyControllerPermmission + '/GetUserOfRole',
         type: "GET",
@@ -211,9 +213,9 @@ function OnMappingRole(_roleId,_roleName,_roleDescription) {
                             <td colspan='6' class="text-center text-danger"> No data </td> 
                         </tr> 
                 `)
-            }
-            _dataUserWithRole.map(function (item, index) {
-                $("#tblAssignRoleUser tbody").append(`
+            } else {
+                _dataUserWithRole.map(function (item, index) {
+                    $("#tblAssignRoleUser tbody").append(`
                          <tr>
                             <td>#</th>
                             <td>${item.fullname}</td>
@@ -225,16 +227,41 @@ function OnMappingRole(_roleId,_roleName,_roleDescription) {
                             </td>
                         </tr>
                 `)
-            })
+                });
+            }
+          
         }
     })
     
 }
-
 function onOpenModalNewRole() {
     $("#modalNewRole").modal('show')
 }
+function onOpenModalAssignRole(){
+    $("#modalAssignRoleToUser").modal('show');
+}
 
+function GetSelect2UserNotInRole(dataRoleId) {
+    $.ajax({
+        url: "/Permission/GetSelect2UserNotInRole",
+        type: "GET",
+        data: { roleId : dataRoleId },
+        success: function (rs) { 
+            const userResult = rs.userNotInRoleData;
+            var optionUserNotInRole = userResult.map(function (item,index) {
+                return { id: item.id, text: item.text };
+            });
+            $('#slsRoleUser').select2({
+                data: optionUserNotInRole,
+                dropdownParent: $('#modalAssignRoleToUser'),
+                width: '100%',
+                multiple: true,
+                placeholder: "--- Select User ---",
+            });
+        }
+    })
+}
+ 
 function OnSaveNewRole() {
     const roleName = $("#newRoleName").val();
     const roleDescription = $("#newRoleDescription").val()
@@ -281,4 +308,14 @@ function OnSaveNewRole() {
         }
     })
   
+}
+function OnSaveAssignRole() { 
+    const valueSelect2 = $("#slsRoleUser").val(); 
+    var testobj = []; 
+
+    testobj.push({
+        userId: valueSelect2
+    }); 
+    console.log(testobj); 
+
 }

@@ -1,6 +1,6 @@
 ﻿var MyController = "/BoostrapIcons"  
 var _tblIcon = '';
-function InitializeTblIcons() { 
+function InitializeTblIcons() {  
     _tblIcon = $("#tblIcon").DataTable({
             "pageLength": 100  ,
             "ajax": {

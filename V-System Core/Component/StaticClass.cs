@@ -78,8 +78,7 @@ namespace V_System_Core.Component
                         var columnName = reader.GetName(i);
                         var columnValue = reader.IsDBNull(i) ? null : reader.GetValue(i);
                         rowDictionary[columnName] = columnValue;
-                    }
-
+                    } 
                     result.Add(rowDictionary);
                 }
             } 

@@ -15,5 +15,11 @@ namespace V_System_Core.Models
 
         [JsonProperty("assigned_date")]
         public DateTime? Assigned_Date { get; set; }
+        [JsonProperty("delete_date")]
+        public DateTime? Delete_Date { get; set; }
+        [JsonProperty("asssign_by")]
+        public int? Assign_By { get; set; }
+        [JsonProperty("remark")]
+        public string? Remark { get; set; }
     }
 }

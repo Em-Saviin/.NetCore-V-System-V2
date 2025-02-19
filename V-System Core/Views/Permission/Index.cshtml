@@ -27,22 +27,23 @@
                 <div class="card m-0">
                     <div class="card-header">
                        <div class="row d-flex justify-content-start">
-                            
-                                    <div class="form-group d-grid col-2 ">
-                                        <label class="label">Role </label>
-                                       <select class="form-select select2" id="slsRoles" style="width:100%">
-                                            <option value="0">---Select Role---</option>
-                                        </select>
-                                    </div>
-                                   <div class="form-group d-grid  col-2  " onchange="InitializeTablePermission()">
-                                        <label class="label">Menu </label>
-                                        <select class="form-select select2" id="slsMenus" style="width:100%">
-                                            <option value="0">--- Select Menu ---</option>
-                                        </select>
-                                    </div> 
+                                <div class="form-group d-grid col-2 ">
+                                    <label class="label">Role </label>
+                                    <select class="form-select select2" id="slsRoles" style="width:100%">
+                                        <option value="0">---Select Role---</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group d-grid  col-2  " onchange="InitializeTablePermission()">
+                                    <label class="label">Menu </label>
+                                    <select class="form-select select2" id="slsRoleMenus" style="width:100%">
+                                        <option value="0" disabled>--- Select Menu ---</option>
+                                    </select>
+                                </div>
+                              
                                  
                                   <div class="col-8 float-end d-flex justify-content-end align-items-center">
-                            <button class="btn-sm btn-outline-success" onclick="OnSavePermissionOnRole()"> <i class="bi-bookmark-check-fill"> </i>  Save </button>
+                                       <button class="btn-sm btn-outline-success" onclick="OnSavePermissionOnRole()"> <i class="bi-bookmark-check-fill"> </i>  Save </button>
                                   </div> 
                        </div>
                     </div>
@@ -82,7 +83,7 @@
                  <div class="card-body m-0 px-0 py-0">
                             <div class="row">
                                 <!--Role Table-->
-                    <div class="col-5 col-sm-12 col-md-12">
+                            <div class="col-xl-5 col-sm-12 col-md-12">
                                     <div class="card">
                                         <div class="card-header">
                                                 <div class="row d-flex justify-content-start"> 
@@ -112,7 +113,7 @@
                                     </div>
                                 </div>
 
-                    <div class="col-7 col-sm-12 col-md-12">
+                    <div class="col-xl-7 col-sm-12 col-md-12">
                         <div class="card">
                             <div class="card-header">
                                 <div class="row d-flex justify-content-start">
@@ -128,12 +129,12 @@
                                             <label class="label">Role Name: </label>
                                             <input  type="text" class="form-control-sm" id="txtRoleName" disabled />
                                         </div>
-                                        <div class="form-group d-grid  col-5  " onchange="InitializeTablePermission()">
+                                        <div class="form-group d-grid  col-5">
                                             <label class="label">Remark: </label>
                                             <input type="text" class="form-control-sm" id="txtRoleDescription" disabled />
                                         </div> 
-                                        <div class="col-4 float-end d-flex justify-content-end align-items-center">
-                                            <button class="btn-sm btn-outline-success"> <i class="bi-bookmark-plus-fill"> </i>  Assign User </button>
+                                        <div class="col-4 float-end d-flex justify-content-end align-items-center"> 
+                                            <button class="btn-sm btn-outline-success" onclick="onOpenModalAssignRole()"> <i class="bi-bookmark-plus-fill"> </i> Assign New User </button>
                                         </div>
                                     </div>
                                </div>
@@ -189,12 +190,47 @@
         <div class="modal-footer">
           <button type="button" class="btn-sm btn-outline-secondary" data-bs-dismiss="modal">Close</button>
                 <button type="button" class="btn-sm btn-outline-primary" onclick="OnSaveNewRole()">Save Role</button>
-            </div>
+          </div>
       </div>
     </div>
   </div>
 
 
+<!--Modal AssignRole to User-->
+<div class="modal fade" id="modalAssignRoleToUser" tabindex="-1" aria-labelledby="roleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-md">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="roleModalLabel">Assign Role</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form id="frmAssignRoleToUser">
+                    <div class="mb-3 d-grid">
+                        <label class="form-label">Role Name: </label>
+                        <input type="text" class="form-control-sm" id="txtRoleName2" disabled />
+                    </div>
+                    <!-- Role Name Input -->
+                    <div class="mb-3">
+                        <label for="roleName" class="form-label">Select User: <span class="text-danger">*</span> </label>
+                        <select class="select2" id="slsRoleUser" >
+                             <option value="0" disabled>---Select User---</option> 
+                          </select>
+                    </div>
+                    <!-- Description Input -->
+                    <div class="mb-3">
+                        <label for="description" class="form-label">Description <span class="text-danger">*</span> </label>
+                        <textarea class="form-control" id="newRoleDescription" rows="3" placeholder="Enter Role Description" required></textarea>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn-sm btn-outline-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn-sm btn-outline-primary" onclick="OnSaveAssignRole()">Save Role</button>
+            </div>
+        </div>
+    </div>
+</div>
 
 
 
@@ -202,35 +238,22 @@
 
 
 
+ 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<script src="~/js/permission.js"></script>
-<script>  
+<script src="~/js/Permission.js"></script>
+<script>
+    $('.select2').select2();
+    $('.select2').select2({
+        placeholder: "--Select Option--",
+        width: '100%'
+    });
     LoadDataRoleSelect2();
     InitializeTablePermission();
     InitializeTableRole(); 
-     $("#tblAssignRoleUser").dataTable();
-    $('.modalNewRole').modal({
-        backdrop: 'static',
-        keyboard: false
-    });
+    $("#tblAssignRoleUser").dataTable(); 
 </script>
 
 <style>

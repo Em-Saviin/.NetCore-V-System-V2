@@ -1,48 +1,57 @@
-﻿/* Base page layout */
+﻿﻿ /* Base page layout */
 #content {
     margin: 20px;
     font-family: Arial, sans-serif;
-}
+} 
 
-#pageFooter {
-    text-align: center;
-    font-family: Arial, sans-serif;
-    font-size: 14px;
-    margin-top: 20px;
-    page-break-before: always;  
-}
-
-@media print { 
-    body  { 
-        padding: 10px;
+@media print {
+    body {
+        padding: 5px;
         margin: 0;
     }
-  
+
     #btnPrint {
         display: none;
         margin: 0;
         padding: 10px;
     }
-    .card{
+
+    .card {
         border: none;
+    }
+    .dataTables_length,
+    .dataTables_filter,
+    .dataTables_info,
+    .dataTables_paginate {
+        display: none !important;
+    }
+    #tblIcon th{
+        text-align:center !important;
     }
     #content {
         page-break-after: always;
     }
 
-    #pageFooter{ 
+    #pageFooter {
+        text-align: center;
+        font-family: Arial, sans-serif;
+        font-size: 14px;
+        margin-top: 20px;
+        page-break-before: always;
+    }
+
+    #pageFooter {
+        margin-top: 15px;
         position: fixed;
         bottom: 10px;
         left: 0;
         right: 0;
         text-align: end;
-        font-size: 12px;
-        background: #f8f8f8;
-        padding: 10px 0;
-        border-top: 1px solid #ccc;
+        font-size: 12px; 
+        padding: 10px  ; 
     }
 
-    #pageFooter:after { 
-        font-size: 14px;
-    }
+        #pageFooter:after {
+            font-size: 14px;
+        }
 }
