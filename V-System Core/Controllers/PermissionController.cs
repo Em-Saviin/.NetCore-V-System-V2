@@ -46,15 +46,16 @@ namespace V_System_Core.Controllers
             }
 
         }
-        public IActionResult GetListPermissionOnRole(int menuId = 0)
+        public IActionResult GetListPermissionOnRole(int menuId   , int roleId  )
         {
             string sql = "SP_GET_MODULE_ON_ROLE_PERMISSION";
             var param = new[]
             {
-                new SqlParameter("@MenuId", menuId)
+                new SqlParameter("@MenuId", menuId),
+                new SqlParameter("@RoleId", roleId)
             };
             var rows = StaticClass.ExecSPWithParam(db, sql, param);
-            return Json(new { data = rows });
+                        return Json(new { data = rows });
         }
 
         public IActionResult AddNewRole(string Role_Name, string Description)

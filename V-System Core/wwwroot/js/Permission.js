@@ -4,7 +4,7 @@ function InitializeTablePermission() {
    $.ajax({
        url: "/Permission/GetMenu",
        type: "GET",
-       data: { menuId: $("#slsRoleMenus").val() , roleId: 0 },
+       data: { menuId: $("#slsRoleMenus").val() },
        success: function (rs) { 
            $("#tblPermissionRoleOnModule tbody").empty();
             const _dataMenu = rs.data;
@@ -21,7 +21,7 @@ function InitializeTablePermission() {
                 $.ajax({
                     url: "/Permission/GetListPermissionOnRole",
                     type: "Get",
-                    data: { menuId: _menuId },
+                    data: { menuId: _menuId, roleId : $("#slsRoles").val()},
                     success: function (rs) { 
                         const _dataModule = rs.data; 
                         _dataModule.map(function (item1, index1) {
@@ -30,10 +30,7 @@ function InitializeTablePermission() {
                             var _IsAddCheck = "";
                             var _IsEditCheck = "";
                             var _IsDeleteCheck = "";
-                            var _IsPrintCheck = "";
-                            if (item1.full == true) {
-                                _IsFullCheck = "checked"
-                            }
+                            var _IsPrintCheck = ""; 
                             if (item1.list == true) {
                                 _IsListCheck = "checked"
                             }
@@ -49,7 +46,14 @@ function InitializeTablePermission() {
                             if (item1.print == true) {
                                 _IsPrintCheck = "checked"
                             }
-
+                            if (item1.full == true) {
+                                _IsFullCheck = "checked"
+                                _IsListCheck = "checked"
+                                _IsAddCheck = "checked"
+                                _IsEditCheck = "checked"
+                                _IsDeleteCheck = "checked"
+                                _IsPrintCheck = "checked"
+                            }
                             $(`#menu_${item.id}`).after(`
                                 <tr class="border">
                                     <td class="text-end"> <i class="bi-arrow-right-circle"></i> </td>

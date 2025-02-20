@@ -27,7 +27,8 @@ namespace V_System_Core.Controllers
             {
                 return RedirectToAction("Login", "Dashboard");
             }
-            var InfoUser = db.tbl_Users.Where(u => u.ID == UserID).FirstOrDefault();
+            var InfoUser = db.tbl_Users.Where(u => u.ID == UserID).FirstOrDefault(); 
+            
             if (InfoUser == null)
             { 
                 return RedirectToAction("Login", "Dashboard");
@@ -45,27 +46,42 @@ namespace V_System_Core.Controllers
                              r.ID,
                              r.Role_Name
                          }).ToList();
+            
             bool isAdmin = userRoles.Any(role => role.Role_Name == "Admin");
+            var userRoleId = userRoles 
+                                    .Select(role => role.ID)
+                                    .FirstOrDefault();
+
             if (isAdmin) { 
                   MenuResult = db.tbl_Menus.Where(m => m.is_active == true).ToList();
                   ModuleResult = db.tbl_Modules.Where(md => md.is_active == true).ToList();
             }
             else
             { 
+                  
                 MenuResult = (from m in db.tbl_Menus
-                              join mpd in db.tbl_Role_Menu_Permissions on m.ID equals mpd.Menu_Id 
-                              join r in db.tbl_UserRoles on mpd.Role_Id equals r.Role_Id
-                              where r.User_Id == UserID && mpd.Is_Active == true 
-                              orderby m.level ascending
+                              join md in db.tbl_Modules on m.ID equals md.menu_id
+                              join pmu in db.tbl_Permission_Module_On_User on md.ID equals pmu.module_id
+                              join u in db.tbl_Users on pmu.user_id equals u.ID
+                              join ur in db.tbl_UserRoles on u.ID equals ur.User_Id
+                              join pmr in db.tbl_Permission_Module_On_Role on pmu.module_id equals pmr.module_id into pmrJoin
+                              from pmr in pmrJoin.DefaultIfEmpty()  
+                              where ur.User_Id == UserID
+                                    && pmr.is_active == true
+                                    && m.is_active == true
+                                    && ur.Role_Id == userRoleId
+                                    && pmu.list == true
+                              orderby m.level descending
                               select m).Distinct().ToList();
 
                 ModuleResult = (from md in db.tbl_Modules
-                                join rmp in db.tbl_Role_Module_Permissions on md.ID equals rmp.Module_Id
-                                join u in db.tbl_UserRoles on rmp.Role_Id equals u.Role_Id
-                                where rmp.User_Id == UserID
-                                && rmp.Is_Active == true
+                                join rmp in db.tbl_Permission_Module_On_User on md.ID equals rmp.module_id 
+                                where rmp.user_id == UserID 
+                                && rmp.list == true
+                                && rmp.is_active == true
                                 orderby md.level ascending
                                 select md).ToList(); 
+                
             } 
             ViewData["MenuData"] = MenuResult;
             ViewData["ModuleData"] = ModuleResult;

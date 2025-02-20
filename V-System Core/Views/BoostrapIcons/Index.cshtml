@@ -15,11 +15,10 @@
                     <div class="card">
                         <div class="card-header d-flex justify-content-end">
                             <div class="col-1">
-                                <button class="float-end btn-sm btn-outline-danger" id="btnPrint">Print</button>
+                                <button class="float-end btn-sm btn-outline-danger" onclick="window.print();" id="btnPrint">Print</button>
                             </div>
                         </div>
-                        <div class="card-body">
-                            <div id="headerPage"></div> <br />
+                        <div class="card-body"> 
                             <table class="display text-center" id="tblIcon" style="width:100%"> 
                                 <thead>
                                     <tr>
@@ -31,13 +30,8 @@
                                 </thead> 
                                 <tbody>
                                      
-                                    <!-- Dynamic List -->
-                                </tbody>
-                                <tfoot>
-                                    <tr> 
-                                        <td colspan="4"> <br /> <br /> <div id="pageFooter"></div> </td>
-                                    </tr>
-                                </tfoot>
+                                    <!-- Dynamic List --> 
+                                </tbody> 
                             </table>
                           
                         </div>
@@ -50,12 +44,12 @@
 
 
 
+ 
 
-
-<link href="~/css/SalesReport.css" rel="stylesheet" />
-<script src="~/js/SalesReport.js"></script>
+<link href="~/css/SalesReport.css" rel="stylesheet" /> 
 <script src="~/js/Icon.js"></script>
 
 <script>    
-      InitializeTblIcons(); 
+      InitializeTblIcons();
+     
 </script>
