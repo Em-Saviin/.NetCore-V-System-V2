@@ -75,6 +75,28 @@ namespace V_System_Core.Controllers
                 return Json(new { code = 500, message = $"An error occurred: {ex.Message}" });
             }
         }
+        //---------------------------------------------------------------------------------
+        public IActionResult GetListPermissionOnUserRole(int menuId, int roleId , int userId)
+        {
+            string sql = "SP_GET_MODULE_ON_USER_ROLE_PERMISSION";
+            var param = new[]
+            {
+                new SqlParameter("@MenuId", menuId),
+                new SqlParameter("@RoleId", roleId),
+                new SqlParameter("@UserId", userId)
+            };
+            var rows = StaticClass.ExecSPWithParam(db, sql, param);
+            return Json(new { data = rows });
+        }
+
+        public IActionResult GetUserSelect2(int roleId = 0)
+        {
+            var UserData = StaticClass.GetSelect2Item(db, "DATA_USER_ROLE", roleId);
+            return Json(new { userData = UserData });
+
+        }
+
+
 
         //---------------------------------------------------------------------------------
 

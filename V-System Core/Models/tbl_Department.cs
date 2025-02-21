@@ -16,10 +16,7 @@ namespace V_System_Core.Models
         public DateTime? create_date { get; set; }
 
         [Newtonsoft.Json.JsonProperty("is_active")] 
-        public bool? is_active { get; set; }
-
-        [Newtonsoft.Json.JsonProperty("company_id")]
-        public int? company_id { get; set; }    
+        public bool? is_active { get; set; } 
 
     }
 }

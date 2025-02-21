@@ -2,54 +2,52 @@
 @{
     ViewData["Title"] = "Index";
     Layout = "~/Views/Shared/_Iframe.cshtml";
-}
- 
- 
+} 
     <div class="container-fluid">
-        <ul class="nav nav-tabs gap-1" role="tablist">
+        <ul class="nav nav-tabs gap-1 mt-1" role="tablist">
         <li class="nav-item " role="presentation">
-            <a class="p-2 nav-link text-light badge bg-primary" id="icon-tab-2" data-bs-toggle="tab" href="#icon-tabpanel-4" role="tab" aria-controls="icon-tabpanel-4" aria-selected="false"><i class="rounded-pill bi-collection-play-fill"></i> System Role  </a>
+            <a class="p-2 nav-link  text-muted badge " id="icon-tab-2" data-bs-toggle="tab" href="#icon-tabpanel-4" role="tab" aria-controls="icon-tabpanel-4" aria-selected="false"><i class="rounded-pill bi-collection-play-fill"></i> System Role  </a>
         </li>
             <li class="nav-item " role="presentation">
-                <a class="p-2 nav-link active text-light badge bg-success" id="icon-tab-0" data-bs-toggle="tab" href="#icon-tabpanel-0" role="tab" aria-controls="icon-tabpanel-0" aria-selected="true">  <i class="bi-aspect-ratio-fill"></i> Permission on Role </a> 
+                <a class="p-2 nav-link text-muted active  badge  " id="icon-tab-0" data-bs-toggle="tab" href="#icon-tabpanel-0" role="tab" aria-controls="icon-tabpanel-0" aria-selected="true">  <i class="bi-aspect-ratio-fill"></i> Permission on Role </a> 
 
             <li class="nav-item " role="presentation">
-            <a class="p-2 nav-link text-light badge bg-danger" id="icon-tab-1" data-bs-toggle="tab" href="#icon-tabpanel-1" role="tab" aria-controls="icon-tabpanel-1" aria-selected="false"><i class="bi-person-vcard-fill"></i> Permission on User </a>
+            <a class="p-2 nav-link  text-muted badge " id="icon-tab-1" data-bs-toggle="tab" href="#icon-tabpanel-1" role="tab" aria-controls="icon-tabpanel-1" aria-selected="false"><i class="bi-person-vcard-fill"></i> Permission on User </a>
             </li>
 
             <li class="nav-item " role="presentation">
-            <a class=" p-2 nav-link text-light badge bg-warning" id="icon-tab-2" data-bs-toggle="tab" href="#icon-tabpanel-2" role="tab" aria-controls="icon-tabpanel-2" aria-selected="false"><i class="bi-collection-play-fill"></i> ... </a>
+            <a class=" p-2 nav-link text-muted  badge  " id="icon-tab-2" data-bs-toggle="tab" href="#icon-tabpanel-2" role="tab" aria-controls="icon-tabpanel-2" aria-selected="false"><i class="bi-collection-play-fill"></i> ... </a>
             </li>
-        </ul> 
-        <div class="tab-content pt-1" id="tab-content"> 
-            <!--Block Permission On Role-->
+        </ul>
+
+        <div class="tab-content pt-1" id="tab-content">
+        <!--Block Permission On Role-->
             <div class="tab-pane active" id="icon-tabpanel-0" role="tabpanel" aria-labelledby="icon-tab-0">
                 <div class="row"> 
                <h4 style="font-weight:bolder; font-size:20px" class=" text-success text-start p-3 m-0">Permission On Role</h4>
-                <div class="card m-0">
+                <div class="card m-0 p-0">
                     <div class="card-header">
                        <div class="row d-flex justify-content-start">
+                            <div class="form-group d-grid  col-2  ">
+                                <label class="label">Menu </label>
+                                <select class="form-select select2" id="slsRoleMenus" onchange="InitializeTablePermissionRole()" style="width:100%">
+                                    <option value="0">--- Select Menu ---</option>
+                                </select>
+                             </div>
+
                                 <div class="form-group d-grid col-2 ">
                                     <label class="label">Role </label>
-                            <select class="form-select select2" id="slsRoles" style="width:100%" onchange="InitializeTablePermission()">
-                                        <option value="0">---Select Role---</option>
-                                    </select>
+                                    <select class="form-select select2" id="slsRoles" style="width:100%" onchange="InitializeTablePermissionRole()">
+                                                <option value="0">---Select Role---</option>
+                                     </select>
                                 </div>
-
-                                <div class="form-group d-grid  col-2  ">
-                                    <label class="label">Menu </label>
-                            <select class="form-select select2" id="slsRoleMenus" onchange="InitializeTablePermission()" style="width:100%">
-                                        <option value="0" >--- Select Menu ---</option>
-                                    </select>
-                                </div>
-                              
-                                 
+                                  
                                   <div class="col-8 float-end d-flex justify-content-end align-items-center">
                                        <button class="btn-sm btn-outline-success" onclick="OnSavePermissionOnRole()"> <i class="bi-bookmark-check-fill"> </i>  Save </button>
                                   </div> 
                        </div>
                     </div>
-                    <div class="card-body">
+                    <div class="card-body p-0">
                     <table id="tblPermissionRoleOnModule" class="table table-sm" style="width:100%">
                               <thead >
                                   <tr>
@@ -77,8 +75,78 @@
                 </div> 
             </div>
             </div>
-          
-            <div class="tab-pane" id="icon-tabpanel-1" role="tabpanel" aria-labelledby="icon-tab-1">Content of module base on user on role </div>
+
+              <!--Permission On User-->
+            <div class="tab-pane" id="icon-tabpanel-1" role="tabpanel" aria-labelledby="icon-tab-1"> 
+                <div class="card-body px-0 py-0">
+                    <div class="row">
+                        <h4 style="font-weight:bolder; font-size:20px" class="text-start text-danger p-3 m-0">Permission On user</h4> 
+                    <div class="card m-0 p-0">
+                        <div class="card-header">
+                            <div class="row d-flex justify-content-between "> 
+                              <div class="col-7">
+                                  <div class="row">
+                                        <div class="form-group d-grid  col-3  ">
+                                            <label class="label">Menu ​ </label>
+                                            <select class="form-select select2" id="slsRoleMenusOnUser" style="width:100%" onchange="OnChangeMenuSelectRoleUser();">
+                                                <option value="0">--- Select Menu ---</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="form-group d-grid col-3 ">
+                                            <label class="label">Role <span class="text-danger fw-bolder">*</span> </label>
+                                            <select class="form-select select2" id="slsRolesOnUser" style="width:100%" onchange="OnSelectMenuUserRole();">
+                                                <option value="0">---Select Role---</option>
+                                            </select>
+                                        </div>
+
+
+                                        <div class="form-group d-grid  col-3 d-none " id="eleUserSelect">
+                                            <label class="label">User <span class="text-danger fw-bolder">*</span> </label>
+                                            <select class="form-select select2" id="slsUsers" style="width:100%">
+                                                <option value="0">--- Select User ---</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group d-grid  col-3 ">
+                                            <label class="label text-secondary "> Find</label>
+                                            <button class="btn-sm btn-outline-dark " id="btnSearchUserRole" onclick="InitializeTablePermissionUserRole();" style="width:40px"> <i class="bi bi-search"></i> </button>
+                                        </div>
+                                  </div> 
+                              </div>
+                                <div class="col-5 d-flex justify-content-end align-items-center">
+                                    <button class="btn-sm btn-outline-success float-end" onclick="OnSavePermissionOnRole()"> <i class="bi-bookmark-check-fill"> </i>  Save </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body p-0">
+                            <table id="tblPermissionUserRoleOnModule" class="table table-sm" style="width:100%">
+                                <thead>
+                                    <tr>
+                                        <th colspan="3">Module Info</th>
+                                        <th colspan="6">Permission</th>
+                                    </tr>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Menu Name</th>
+                                        <th>Remark</th>
+                                        <th>Full</th>
+                                        <th>List</th>
+                                        <th>Add</th>
+                                        <th>Edit</th>
+                                        <th>Delete</th>
+                                        <th>Print</th>
+                                    </tr>
+
+                                </thead>
+                                <tbody>
+                                    <!--Dynamic-->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                </div>
+        </div>
             <div class="tab-pane" id="icon-tabpanel-2" role="tabpanel" aria-labelledby="icon-tab-2">  Content of ,,</div>
              <!--Block System Role-->
             <div class="tab-pane" id="icon-tabpanel-4" role="tabpanel" aria-labelledby="icon-tab-4">    
@@ -164,8 +232,8 @@
                             </div>
                         </div>
                     </div>
-                            </div>
-                        </div> 
+                    </div>
+                </div> 
             </div>
         </div>
          
@@ -200,8 +268,7 @@
       </div>
     </div>
   </div>
-
-
+   
 <!--Modal AssignRole to User-->
 <div class="modal fade" id="modalAssignRoleToUser" tabindex="-1" aria-labelledby="roleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-md">
@@ -238,16 +305,7 @@
     </div>
 </div>
 
-
-
-
-
-
-
  
-
-
-
 
 <script src="~/js/Permission.js"></script>
 <script>
@@ -256,16 +314,17 @@
         placeholder: "--Select Option--",
         width: '100%'
     });
-    LoadDataRoleSelect2();
-    InitializeTablePermission();
+
+    LoadDataRoleSelect2(); 
     InitializeTableRole(); 
-    $("#tblAssignRoleUser").dataTable(); 
+    InitializeTablePermissionUserRole();
+    $("#tblAssignRoleUser").dataTable();  
 </script>
 
 <style>
-    #tblPermissionRoleOnModule th {
+    #tblPermissionRoleOnModule th, #tblPermissionUserRoleOnModule th {
         background-color: #323c50;
-        align-items : center;
+         align-items : center;
         text-align: center;
         border: 1px double;
         border-color: white;
@@ -273,13 +332,17 @@
         color: white;
     }
 
-    #tblPermissionRoleOnModule td {
+    
+
+    #tblPermissionRoleOnModule td ,   #tblPermissionUserRoleOnModule td{
         align-items: center;
         text-align: center;
         border: 1px double;
         border-color: darkgray; 
         color: black;
     }
+
+
 
     #tblRole  th {
         background-color: #323c50;

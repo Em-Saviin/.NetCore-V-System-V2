@@ -23,10 +23,10 @@
 <body >
     <header id="header" class="header fixed-top d-flex align-items-center "  >
         <div class="d-flex align-items-center justify-content-between">
-            <a href="#" class="logo d-flex align-items-center" onclick="window.location.reload();">
-                <img src="~/lib/assets/img/userregister.png" class="rounded-circle img-fluid" style="height:auto;width:30px"> 
-            </a>
-            <i class="bi bi-list toggle-sidebar-btn"></i>
+            <div class="logo d-flex align-items-center justify-content-start" onclick="window.location.reload();"  >
+                <img src="~/lib/assets/img/v-systemlogo.png" class="img-fluid" style="height:100%" onclick="window.location.reload();" >  
+            </div>
+            <i class="bi bi-text-left toggle-sidebar-btn"></i>
         </div> 
         <div class="search-bar d-none">
             <form   class="search-form d-flex align-items-center"   method="POST" action="#">
@@ -43,8 +43,7 @@
                     </a>
                 </li><!-- End Search Icon-->
 
-                <li class="nav-item dropdown">
-
+                <li class="nav-item dropdown"> 
                     <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
                         <i class="bi bi-bell"></i>
                         <span class="badge bg-primary badge-number">4</span>

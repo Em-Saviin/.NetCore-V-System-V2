@@ -30,53 +30,48 @@ namespace V_System_Core.Controllers
                            }).ToList();
             return Json(new { code = 0, data = companies });
         }
-        [HttpGet]
-        public IActionResult GetDepartments(int companyId)
-        {
-            if (companyId != 0)
-            {
-                var departments = db.tbl_Department
-                                   .Where(d => d.company_id == companyId)
-                                   .Select(d => new
-                                   {
-                                       id = d.ID.ToString(),
-                                       text = d.name,
-                                       parent = companyId.ToString()
-                                   }).ToList();
-                return Json(new { code = 0, data = departments });
-            }
-            else
-            {
-                var departments = db.tbl_Department
-                                        .Select(d => new
-                                        {
-                                            id = d.ID.ToString(),
-                                            text = d.name,
-                                            parent = companyId.ToString()
-                                        }).ToList();
-                return Json(new { code = 0, data = departments });
-            }
+        //[HttpGet]
+        //public IActionResult GetDepartments(int companyId)
+        //{
+        //    if (companyId != 0)
+        //    {
+        //        var departments = db.tbl_Department
+        //                           .Where(d => d.company_id == companyId)
+        //                           .Select(d => new
+        //                           {
+        //                               id = d.ID.ToString(),
+        //                               text = d.name,
+        //                               parent = companyId.ToString()
+        //                           }).ToList();
+        //        return Json(new { code = 0, data = departments });
+        //    }
+        //    else
+        //    {
+        //        var departments = db.tbl_Department
+        //                                .Select(d => new
+        //                                {
+        //                                    id = d.ID.ToString(),
+        //                                    text = d.name,
+        //                                    parent = companyId.ToString()
+        //                                }).ToList();
+        //        return Json(new { code = 0, data = departments });
+        //    }
 
-        }
+        //}
 
         public IActionResult GetAllDepartments()
         {
             try
             {
                 var departments = db.tbl_Department
-                                                  .Where(d => d.is_active == true)
-                                                  .Join(db.tbl_Company,
-                                                      d => d.company_id,
-                                                      c => c.ID,
-                                                      (d, c) => new
-                                                      {
-                                                          id = d.ID,
-                                                          name = d.name,
-                                                          company_name = c.company_name,
-                                                          is_active = d.is_active,
-                                                          create_date = d.create_date
-                                                      })
-                                                  .ToList();
+                                                  .Where(d => d.is_active == true).Select(mm => new
+                                                  {
+                                                      id = mm.ID,
+                                                      name = mm.name,
+                                                      company_name = "",
+                                                      is_active = mm.is_active,
+                                                      create_date = mm.create_date
+                                                  }).ToList();
                 return Json(new { code = 0, data = departments });
 
             }

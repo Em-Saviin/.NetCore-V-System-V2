@@ -36,6 +36,7 @@
                                     </tr>
                                 </thead>
                                 <tbody>
+                                   
                                 </tbody>
                             </table>
                         </div>
@@ -111,10 +112,24 @@
                     </div>
 
                     <div class="mb-4 d-grid">
+                        <label for="slsCompany" class="form-label">Company</label>
+                        <select id="slsCompany" class="select2 form-control-sm">
+                            <option value="0"  >--- Select Company ---</option> 
+                        </select>
+                    </div> 
+                    <div class="mb-4 d-grid">
+                        <label for="slsDepartment" class="form-label">Department</label>
+                        <select id="slsDepartment" class="select2 form-control-sm">
+                            <option value="0">--- Select Department ---</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-4 d-grid">
                         <label for="userImage" class="form-label">Profile Photo</label>
                         <img onclick="onBrowseImage()" id="userImage" src="~/lib/assets/img/uploadphotoimage.jpg" style="width:150px;height:150px" alt="User Photo" class="rounded border border-1 rounded mb-3">
                         <input type="file" id="inputImage" class="form-control" hidden />
                     </div>
+
 
                     <button type="submit" class="btn btn-primary w-100 btn-lg">Register</button>
                 </form>
@@ -124,11 +139,11 @@
     </div>
 </div>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js"></script>
-<script src="~/js/registerusers.js"></script>
+
+<script src="~/js/RegisterUsers.js"></script>
 <script>
     InitializeTblUser(); 
-    makeDraggable($('#userModal .modal-header')); 
+    makeDraggable($('#userModal .modal-header'));  
     $('#tblUser').DataTable();
 </script>
 <style>
@@ -150,5 +165,12 @@
 
     .form-container .form-group {
         margin-left: 20px;
+    }
+
+    input[type=text] ,input[type=password] , input[type=email] {
+        border-color: black;
+    }
+    select{
+        border-color: black;
     }
 </style>

@@ -42,12 +42,12 @@ function addNewTab(moduleName, moduleId, partialViewName, moduleIcon ) {
     var tabContentId = "content-" + moduleId;
     if ($("#" + tabId).length === 0) { 
         var newTab = `
-               <li class="nav-item p-0 custom-tab" id="tab-header-${moduleId}">
-                <a class="nav-link custom-nav-link" id="${tabId}" data-bs-toggle="tab" href="#${tabContentId}" role="tab">
-                    <i class="${moduleIcon}"></i> ${moduleName}
-                    <i class="text-danger bi bi-x ms-2 close-tab" onclick="closeTab('${moduleId}')"></i>
-                </a>
-            </li>`;
+               <li class="nav-item p-0 badge custom-tab" id="tab-header-${moduleId}">
+                    <a class="nav-link   custom-nav-link" id="${tabId}" data-bs-toggle="tab" href="#${tabContentId}" role="tab">
+                       &nbsp; <i class="${moduleIcon}"></i> ${moduleName}
+                        <i class="text-danger bi bi-x ms-2 close-tab" onclick="closeTab('${moduleId}')"></i>
+                    </a>
+              </li>`;
         $("#tabs-container").append(newTab); 
         var newTabContent = `
             <div class="tab-pane fade" id="${tabContentId}" role="tabpanel">

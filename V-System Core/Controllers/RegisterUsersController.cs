@@ -27,7 +27,7 @@ namespace V_System_Core.Controllers
             try
             {
                 var userList = db.tbl_Users.ToList();
-                return Json(new { data = userList });
+                return Json(new {code = 0, data = userList });
             }
             catch (Exception ex)
             {

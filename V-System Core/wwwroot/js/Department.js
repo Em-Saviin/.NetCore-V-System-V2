@@ -77,50 +77,43 @@ function loadCompanyData(companyId, collapseId) {
 
 var _tblDepartment = '';
 function InitializeTableDepartment() {
-    _tblDepartment = $('#tblDepartment').DataTable({
-        processing: true,
-        "ajax": {
-            url: `${MyController}/GetAllDepartments` ,
-            dataSrc: 'data',   
-            error: function (xhr, error, thrown) {
-                console.log('Error occurred while loading data: ', error);
-            }
-        },
-        columns: [
-            {
-                render: function (data, type, row, meta) {
-                    return meta.row + meta.settings._iDisplayStart + 1;
-                }
-            },
-            { data: 'company_name' }, 
-            { data: 'name' },
-            { data: 'create_date' },
-            {
-                data: null,
-                render: function (data) {
-                    if (data.is_active == false) {
-                        return ` <div class="text-danger"> InActive </div> `
-                    } else {
-                        return ` <div class="text-success"> Active </div> `
+    $('#tblDepartment tbody').empty();
+    $.ajax({
+        url: `${MyController}/GetAllDepartments`,
+        type: "GET",
+        success: function (rs) {
+            console.log(rs)
+            const _dataDep = rs.data;
+            if (_dataDep.length > 0) {
+                _dataDep.map(function (item, index) {
+                    const _IsActive = item.is_active;
+                    const valueActive = `<div class="text-success"> Active </div>`;
+                    if (_IsActive == false) {
+                        valueActive = ` <div class="text-danger"> InActive </div> `
                     }
-                }
-            },
-            {
-                data: null,
-                render: function (data) {
-                    return `
-                        <div class="d-flex gap-1 ">
-                                <i onclick="onEditMenu(${data.id})" class="cursor-pointer text-primary bi bi-pencil"> </i>
-                                |
-                                <i onclick="onDeleteMenu(${data.id})" class=" cursor-pointer bi bi-trash text-danger"> </i>
-                            </div>`
-                }
+                    $('#tblDepartment tbody').append(`
+                    <tr class="text-center">
+                            <td>${index + 1}</td>
+                            <td>${item.name}</td>
+                            <td>${item.create_date}</td>
+                            <td>${valueActive}</td>
+                            <td>
+                                <div class="d-flex gap-1 ">
+                                    <i onclick="onEditMenu(${item.id})" class="cursor-pointer text-primary bi bi-pencil"> </i>
+                                    |
+                                    <i onclick="onDeleteMenu(${item.id})" class=" cursor-pointer bi bi-trash text-danger"> </i>
+                                </div>
+                            </td>
+                     </tr>`)
+                });
+            } else {
+                $('#tblDepartment tbody').append(`
+                    <tr class="text-center">
+                            <td colspan="6" class="text-center text-danger fw-bolder">  No Data </td> 
+                     </tr>`);
             }
-        ],
-        "paging": true,
-        "info": true,
-        "language": {
-            "emptyTable": "No data available"
+
+
         }
     });
 }

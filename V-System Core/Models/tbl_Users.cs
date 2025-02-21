@@ -38,10 +38,7 @@ namespace V_System_Core.Models
         public string? image { get; set; }
 
         [JsonProperty("image_path")] 
-        public string? image_path { get; set; }
-
-        [JsonProperty("project_id")]
-        public int? project_id { get; set; }
+        public string? image_path { get; set; } 
 
         [JsonProperty("department_id")]
         public int? department_id { get; set; }
