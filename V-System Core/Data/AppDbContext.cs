@@ -27,19 +27,17 @@ namespace V_System_Core.Data
         public DbSet<tbl_Permission_Module_On_User> tbl_Permission_Module_On_User { get; set; }
         
       
-        public IQueryable<tbl_Menus> GetMenuByRole(int userId = 0, int roleId = 0)
+        public IQueryable<tbl_Menus> GetMenuByRole(int userId = 0)
         {
-             var userIdParam = new SqlParameter("@UserId", userId);
-            var roleIdParam = new SqlParameter("@RoleId", roleId);
+             var userIdParam = new SqlParameter("@UserId", userId); 
              
-            return this.tbl_Menus.FromSqlRaw("EXECUTE  SP_GET_MENU_PERMISSION_ON_SCREEN @UserId, @RoleId", userIdParam, roleIdParam);
+            return this.tbl_Menus.FromSqlRaw("EXECUTE  SP_GET_MENU_PERMISSION_ON_SCREEN @UserId", userIdParam);
         }
-        public IQueryable<tbl_Modules> GetModuleByRole(int userId = 0, int roleId = 0)
+        public IQueryable<tbl_Modules> GetModuleByRole(int userId = 0)
         {
-            var userIdParam = new SqlParameter("@UserId", userId);
-            var roleIdParam = new SqlParameter("@RoleId", roleId);
+            var userIdParam = new SqlParameter("@UserId", userId); 
 
-            return this.tbl_Modules.FromSqlRaw("EXECUTE  SP_GET_MODULE_PERMISSION_ON_SCREEN @UserId, @RoleId", userIdParam, roleIdParam);
+            return this.tbl_Modules.FromSqlRaw("EXECUTE  SP_GET_MODULE_PERMISSION_ON_SCREEN @UserId", userIdParam);
         }
 
     }
