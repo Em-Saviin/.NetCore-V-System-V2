@@ -3,8 +3,10 @@ using V_System_Core.Data;
 using V_System_Core.Models;
  using V_System_Core.Component;
 using Azure.Core;
+using Microsoft.AspNetCore.Authorization;
 namespace V_System_Core.Controllers
 {
+    
     public class DashboardController : Controller
     {
         private readonly AppDbContext _db;
@@ -23,12 +25,7 @@ namespace V_System_Core.Controllers
         {
             return View();
         }
-
-
-      
-
-
-
+     
         [HttpPost] 
         public IActionResult CheckLogin(tbl_Users objs)
         {
@@ -43,14 +40,7 @@ namespace V_System_Core.Controllers
             {
                 string userId = user.ID.Value.ToString();     
                 SpecialMethod.SetUserCookie(HttpContext, "UserID", userId);
-                SpecialMethod.SetUserCookie(HttpContext, "UserName",  user.username ); 
-                //Response.Cookies.Append("UserName", user.UserName, new CookieOptions
-                //{
-                //    Expires = DateTimeOffset.UtcNow.AddMinutes(10),
-                //    HttpOnly = true,
-                //    Secure = false,
-                //    SameSite = SameSiteMode.Lax
-                //});
+                SpecialMethod.SetUserCookie(HttpContext, "UserName",  user.username );  
                 return Json(new { success = 0, redirectUrl = Url.Action("Index", "Home") });
             }
             else

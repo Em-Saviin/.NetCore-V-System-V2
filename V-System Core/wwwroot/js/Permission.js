@@ -138,12 +138,16 @@ function LoadDataRoleSelect2() {
         success: function (rs) {   
             const menuResult = rs.menuData;
             const roleResult = rs.roleData;
+            const userResult = rs.userData;
             var optionsMenus = menuResult.map(function (item) {
                 return { id: item.id,  text: item.text  };
             });  
             var optionsRole = roleResult.map(function (item) {
                 return { id: item.id, text: item.text };
-            }) 
+            })
+            var optionsUser = userResult.map(function (item) {
+                return { id: item.id, text: item.text };
+            });
             $('#slsRoles').select2({ 
                 data: optionsRole, 
             });
@@ -151,48 +155,18 @@ function LoadDataRoleSelect2() {
                 data: optionsMenus,
                 placeholder: "--- Select Menu ---"
             }); 
-            $('#slsRolesOnUser').select2({
-                data: optionsRole,
-            });
             $('#slsRoleMenusOnUser').select2({
                 data: optionsMenus,
-                placeholder: "--- Select Menu ---"
             }); 
+            $('#slsUsers').select2({
+                data: optionsUser,
+                placeholder: "--- Select User ---"
+            });  
         },
         error: function (err) {
             console.log(err)
         }
     })
-}
-function OnSaveAssignRole(){
-     //Swal.fire({
-     //    title: 'Warning',
-     //    type: 'warning',
-     //    html:  "មិនទាន់អាចរក្សារទុកទិន្ន័បានទេ!!"
-    //});
-    var dataJson = [];
-    dataJson.push({
-        request_id: $("#slsRoleUser").val() 
-    });
-    var userIdData = $("#slsRoleUser").val();
-     
-    console.log(userIdData);
-    console.log(dataJson);
-    return;
-    $.ajax({
-        url: '/ControllerName/ExecuteStoredProc', // Your Controller Action URL
-        type: 'POST',
-        contentType: 'application/json', // To tell the server you're sending JSON data
-        data: JSON.stringify(jsonData), // Convert JS object to JSON string
-        success: function (response) {
-            console.log('Data sent successfully');
-            console.log(response);
-        },
-        error: function (error) {
-            console.log('Error:', error);
-        }
-    });
-
 }
 
 
@@ -358,55 +332,52 @@ function OnSaveAssignRole() {
         userId: valueSelect2
     });   
 }
+function OnSaveAssignRole() {   
+    var _userId = $("#slsRoleUser").val();
+    if (_userId.length === 0) {
+        $.toast({
+            title: "Warning",
+            message: "សូមជ្រើសរើសឈ្មោះអ្នកប្រើប្រាស់!",
+            type: "warning",
+            duration: 3000,
+        });
+        return;
+    }
 
-//Block permission on user role
- 
-function OnSelectMenuUserRole() {
-    const roleIdFindUser = $("#slsRolesOnUser").val();
-    $("#eleUserSelect").addClass('d-none');
-    if (roleIdFindUser !== '0') {
-        $("#eleUserSelect").removeClass('d-none');
-    } 
-    $('#slsUsers').html('<option value="0">--- Select User ---</option>').val("0").trigger('change');
-
-    $.post({
-        url: "/Permission/GetUserSelect2",
-        type: "POST",
-        data: { roleId: roleIdFindUser },
-        success: function (rs) {
-            const resultUser = rs.userData; 
-            var optionUsers = resultUser.map(function (item) {
-                return `<option value="${item.id}">${item.text}</option>`;
-            }).join('');
-
-            // Append new options
-            $('#slsUsers').append(optionUsers).trigger('change');
+    var dataJson = [];
+    dataJson.push({
+        userDataId: parseInt($("#slsRoleUser").val())
+    });
+    var _remark = $("#newRoleDescription2").val(); 
+    var dataObj = {
+        roleId: _RoleId,
+        remark: _remark,
+        jsonData: JSON.stringify(dataJson)
+    }
+    $.post('/Permission/AssignRoleToUser', dataObj, function (rs) {
+        if (rs.code == 0) {
+            Swal.fire({
+                title: 'Success',
+                type: 'success',
+                html: rs.message
+            });
+            _remark.val(""); 
+            _RoleId = 0;
+            $("#slsRoleUser").empty().trigger('change') 
+        } else {
+            Swal.fire({
+                title: 'Error',
+                type: 'error',
+                html: rs.message
+            });
         }
     });
-}
-
+} 
+//Block permission on user role 
  
-function OnChangeMenuSelectRoleUser() {
-    const bc = $("#slsRoleMenusOnUser").val();
-    if (bc === '0') {
-        $("#slsRolesOnUser").val('0').trigger('change');
-        InitializeTablePermissionUserRole();
-    } else {
-        InitializeTablePermissionUserRole();
-    }
-}
 function InitializeTablePermissionUserRole() {
-    const bc = $("#slsRoleMenusOnUser").val();  
-    const ab = $("#slsRolesOnUser").val();
-    const de = $("#slsUsers").val();
-    if (ab !== '0' && de === '0') {
-        Swal.fire({
-            title: 'Warning',
-            type: 'warning',
-            html: "សូមជ្រើសរើសឈ្មោះអ្នកប្រើប្រាស់!!"
-        }); 
-        return;
-    }  
+    const bc = $("#slsRoleMenusOnUser").val();   
+    const de = $("#slsUsers").val(); 
     $.ajax({
         url: "/Permission/GetMenu",
         type: "GET",
@@ -427,7 +398,7 @@ function InitializeTablePermissionUserRole() {
                 $.ajax({
                     url: "/Permission/GetListPermissionOnUserRole",
                     type: "Get",
-                    data: { menuId: _menuId, roleId: $("#slsRolesOnUser").val() , userId : $("#slsUsers").val()},
+                    data: { menuId: _menuId,  userId : $("#slsUsers").val()},
                     success: function (rs) {
                         const _dataModule = rs.data;
                         _dataModule.map(function (item1, index1) {

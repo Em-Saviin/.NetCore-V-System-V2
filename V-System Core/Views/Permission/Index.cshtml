@@ -91,17 +91,9 @@
                                             <select class="form-select select2" id="slsRoleMenusOnUser" style="width:100%" onchange="OnChangeMenuSelectRoleUser();">
                                                 <option value="0">--- Select Menu ---</option>
                                             </select>
-                                        </div>
+                                        </div> 
 
-                                        <div class="form-group d-grid col-3 ">
-                                            <label class="label">Role <span class="text-danger fw-bolder">*</span> </label>
-                                            <select class="form-select select2" id="slsRolesOnUser" style="width:100%" onchange="OnSelectMenuUserRole();">
-                                                <option value="0">---Select Role---</option>
-                                            </select>
-                                        </div>
-
-
-                                        <div class="form-group d-grid  col-3 d-none " id="eleUserSelect">
+                                        <div class="form-group d-grid  col-3 " id="eleUserSelect">
                                             <label class="label">User <span class="text-danger fw-bolder">*</span> </label>
                                             <select class="form-select select2" id="slsUsers" style="width:100%">
                                                 <option value="0">--- Select User ---</option>
@@ -286,15 +278,15 @@
                     <!-- Role Name Input -->
                     <div class="mb-3">
                         <label for="roleName" class="form-label">Select User: <span class="text-danger">*</span> </label>
-                        <select class="select2" id="slsRoleUser" >
-                             <option value="0" disabled>---Select User---</option> 
+                        <select class="select2"  id="slsRoleUser" >
+                             <option value="0" disabled  >---Select User---</option> 
                           </select>
                     </div>
                    
                     <!-- Description Input -->
                     <div class="mb-3">
                         <label for="description" class="form-label">Description <span class="text-danger">*</span> </label>
-                        <textarea class="form-control" id="newRoleDescription" rows="3" placeholder="Enter Role Description" required></textarea>
+                        <textarea class="form-control" id="newRoleDescription2" rows="3" placeholder="Enter Role Description" required></textarea>
                     </div>
                 </form>
             </div>
@@ -314,43 +306,11 @@
     $('.select2').select2({
         placeholder: "--Select Option--",
         width: '100%'
-    });
-
+    }); 
     LoadDataRoleSelect2(); 
     InitializeTableRole(); 
     InitializeTablePermissionUserRole();
-    $("#tblAssignRoleUser").dataTable();  
-
-    function OnSaveAssignRole() {
-        //Swal.fire({
-        //    title: 'Warning',
-        //    type: 'warning',
-        //    html:  "មិនទាន់អាចរក្សារទុកទិន្ន័បានទេ!!"
-        //});
-        var dataJson = [];
-        dataJson.push({
-            request_id: $("#slsRoleUser").val()
-        });
-        var userIdData = $("#slsRoleUser").val();  
-        const _remark = $("#description").val();
-        const _roleId = parseInt($("#txtRoleName2").val();
-        $.ajax({
-            url: '/Permission/AssignRoleToUser', 
-            type: 'POST',
-            contentType: 'application/json',  
-            data: { 
-                roleId: _roleId, 
-                userDataId: JSON.stringify(dataJson), 
-                remark: _remark },
-            success: function (response) {
-              
-            },
-            error: function (error) {
-                console.log('Error:', error);
-            }
-        });
-
-    }
+    $("#tblAssignRoleUser").dataTable();   
 </script>
 
 <style>

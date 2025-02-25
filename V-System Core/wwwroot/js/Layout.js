@@ -107,16 +107,17 @@ function loadTabIframeContent(partialViewName, tabContentId, moduleId) {
                 `); 
             } 
         },
-        error: function () {
-            $("#" + tabContentId).html(`
-                <div class="container" > 
-                        <section class="section error-404 min-vh-100 d-flex flex-column align-items-center justify-content-center">
-                            <h1 class="text-danger">404</h1>
-                            <h2 class="text-danger">Page Not Found</h2>
-                            <h2 class="text-danger">The page you are looking for doesn't exist.</h2> 
-                        </section>
-                 </div>
+        error: function () { 
+            $("#" + tabContentId).html(` 
+                      <iframe src="/NoPermission/ErrorStatus400" style="width:100%;height:100vh ;overflow: hidden" > </iframe >
             `);
+                //<div class="container" > 
+                //        <section class="section error-404 min-vh-100 d-flex flex-column align-items-center justify-content-center">
+                //            <h1 class="text-danger">404</h1>
+                //            <h2 class="text-danger">Page Not Found</h2>
+                //            <h2 class="text-danger">The page you are looking for doesn't exist.</h2> 
+                //        </section>
+                // </div>
         }
     });
 }

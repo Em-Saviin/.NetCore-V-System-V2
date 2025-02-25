@@ -7,7 +7,7 @@ namespace V_System_Core.Component
 {
     public static class StaticClass
     {
-        public static   object defaultSelect2 = new
+       public static   object defaultSelect2 = new
         {
             id = 0,
             text = "Select an option"
@@ -123,8 +123,47 @@ namespace V_System_Core.Component
                 command.ExecuteNonQuery();  
             }
         }
-         
-    }
+
+        public static string Exec_SP_CUD_WithReturnMessage(DbContext dbContext, string storedProcedureName, params SqlParameter[] parameters)
+        {
+            string outputMessage = "";
+
+            using (var command = dbContext.Database.GetDbConnection().CreateCommand())
+            {
+                command.CommandText = storedProcedureName;
+                command.CommandType = System.Data.CommandType.StoredProcedure; // Use StoredProcedure type
+
+                if (parameters != null && parameters.Length > 0)
+                {
+                    foreach (var param in parameters)
+                    {
+                        param.Direction = System.Data.ParameterDirection.Input;
+                        command.Parameters.Add(param);
+                    }
+                } 
+                var messageParam = new SqlParameter("@Message", System.Data.SqlDbType.NVarChar, 255)
+                {
+                    Direction = System.Data.ParameterDirection.Output
+                };
+                command.Parameters.Add(messageParam);
+
+                if (command.Connection.State != System.Data.ConnectionState.Open)
+                {
+                    command.Connection.Open();
+                }
+
+                command.ExecuteNonQuery();
+
+                // Retrieve the output value
+                outputMessage = messageParam.Value.ToString();
+            }
+
+            return outputMessage;
+        }
+
+    
+
+}
 
 
 }

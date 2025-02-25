@@ -1,7 +1,10 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.CodeAnalysis;
+using Microsoft.CodeAnalysis.CSharp.Syntax;
 using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
 using V_System_Core.Component;
 using V_System_Core.Data;
 using V_System_Core.Models;
@@ -9,13 +12,18 @@ using V_System_Core.Models;
 
 namespace V_System_Core.Controllers
 {
+   
     public class PermissionController : Controller
     {
+       private readonly UserManagerInfo _ManagerUserID;  
         private readonly V_System_Core.Data.AppDbContext db;
-        public PermissionController(AppDbContext _dbContext)
+        public PermissionController(AppDbContext _dbContext , UserManagerInfo userMangerInfo  )
         {
             this.db = _dbContext;
+            this._ManagerUserID = userMangerInfo;
         }
+
+
         public IActionResult Index()
         {
             return View();
@@ -28,7 +36,8 @@ namespace V_System_Core.Controllers
         {
             var RoleData = StaticClass.GetSelect2Item(db, "ROLE", 0); 
             var MenuData = db.tbl_Menus.Where(m => m.is_active == true).Select(mm => new { Id = mm.ID, Text = mm.menu_name }).ToArray();
-            return Json(new { RoleData = RoleData, MenuData = MenuData });
+            var UserData = db.tbl_Users.Where(u => u.is_active == true).Select(uu => new { Id = uu.ID, Text = uu.lastname + " " + uu.firstname }).ToArray();
+            return Json(new { RoleData = RoleData, MenuData = MenuData ,UserData = UserData });
         }
         public IActionResult GetMenu(int menuId = 0, int roleId = 0)
         {
@@ -73,37 +82,38 @@ namespace V_System_Core.Controllers
             {
                 return Json(new { code = 500, message = $"An error occurred: {ex.Message}" });
             }
-        }
-
-        public IActionResult AssignRoleToUser(int roleId, string userDataId, string remark  )
+        } 
+        public IActionResult AssignRoleToUser(int roleId, string remark, string JsonData)
         {
             try
             {
-                string sql = "SP_GET_MODULE_ON_USER_ROLE_PERMISSION";
+                if (JsonData.IsNullOrEmpty())
+                {
+                    return Json(new { code = 300, message = "User can not to null!!" });
+                } 
+                string sql = "SP_ASSIGN_ROLE_TO_USER";
                 var param = new[]
                 { 
                 new SqlParameter("@RoleId", roleId),
-                new SqlParameter("@UserDataId", userDataId),
+                new SqlParameter("@AssignBy",  _ManagerUserID._UserId ),
+                new SqlParameter("@JsonData", JsonData),
                 new SqlParameter("@Remark", remark)
-              };
-                var rows = StaticClass.ExecSPWithParam(db, sql, param);
-                return Json(new { data = rows });
+                };
+              var _FromMessage =   StaticClass.Exec_SP_CUD_WithReturnMessage(db, sql, param);
+                return Json(new {code = 0 , message = _FromMessage });
             }
             catch (Exception ex) { 
                 return Json(new { code = 500 , message = ex.Message });
-            }
-         
-        
+            }  
         }
 
         //---------------------------------------------------------------------------------
-        public IActionResult GetListPermissionOnUserRole(int menuId, int roleId , int userId)
+        public IActionResult GetListPermissionOnUserRole(int menuId , int userId)
         {
             string sql = "SP_GET_MODULE_ON_USER_ROLE_PERMISSION";
             var param = new[]
             {
-                new SqlParameter("@MenuId", menuId),
-                new SqlParameter("@RoleId", roleId),
+                new SqlParameter("@MenuId", menuId), 
                 new SqlParameter("@UserId", userId)
             };
             var rows = StaticClass.ExecSPWithParam(db, sql, param);
@@ -120,10 +130,7 @@ namespace V_System_Core.Controllers
 
 
         //---------------------------------------------------------------------------------
-
-
-
-
+         
         //Block System Role
         public IActionResult GetRoleData()
         {
@@ -138,7 +145,7 @@ namespace V_System_Core.Controllers
         }
         public IActionResult GetUserOfRole(int roleId)
         {
-            var userRoleData = from u in db.tbl_Users
+            var userRoleData = (from u in db.tbl_Users
                                join ur in db.tbl_UserRoles on u.ID equals ur.User_Id into urGroup
                                from ur in urGroup.DefaultIfEmpty()
                                join r in db.tbl_Roles on ur.Role_Id equals r.ID into rGroup
@@ -152,7 +159,7 @@ namespace V_System_Core.Controllers
                                    user_name = u.username,
                                    sex = u.sex,
                                    assign_date = ur.Assigned_Date
-                               };
+                               });
             return Json(new { data = userRoleData.ToList() });
         }
 

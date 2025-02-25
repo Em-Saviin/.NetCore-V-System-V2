@@ -1,3 +1,5 @@
+using Azure.Core;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc; 
 using Microsoft.EntityFrameworkCore; 
 using System.Diagnostics; 
@@ -5,16 +7,16 @@ using V_System_Core.Data;
 using V_System_Core.Models; 
 
 namespace V_System_Core.Controllers
-{
+{ 
     public class HomeController : Controller
     { 
         private readonly V_System_Core.Data.AppDbContext db;
-        private int UserID { get; set; }  
-        public HomeController(AppDbContext _dbContext )
+        private int UserID { get; set; } 
+        public HomeController(AppDbContext _dbContext  )
         { 
             this.db = _dbContext; 
         }
-
+      
         public IActionResult Index()
         { 
             if (Request.Cookies["UserID"] != null)
@@ -54,8 +56,8 @@ namespace V_System_Core.Controllers
             }
             else
             { 
-                FinalMenuResult = db.GetMenuByRole(UserID, Convert.ToInt32(userRoleId)).ToList(); 
-                FinalModuleResult = db.GetModuleByRole(UserID, Convert.ToInt32(userRoleId)).ToList(); 
+                FinalMenuResult = db.GetMenuByRole(UserID).ToList(); 
+                FinalModuleResult = db.GetModuleByRole(UserID).ToList(); 
                 ViewBag.Rolename = "NotAdmin";
             }
 
