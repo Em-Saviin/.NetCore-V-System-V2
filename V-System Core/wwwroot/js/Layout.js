@@ -1,11 +1,13 @@
 ﻿ 
 
-function InitializeLayout() {  
+function InitializeLayout(roleName) {  
+    if (roleName == "Admin") {
+        addNewTab('Permission', 65, 'Permission', 'bi-universal-access');
+    };
     $('.modal').modal({
         backdrop: 'static',
         keyboard: false
-    });
-    addNewTab('Permission', 65, 'Permission', 'bi-universal-access' );
+    }); 
     var firstLink = $(".sidebar-nav li a[data-bs-target='#components-nav-1']").first();
     firstLink.removeClass('collapsed');
     $('.toggle-sidebar-btn').on('click', function () {

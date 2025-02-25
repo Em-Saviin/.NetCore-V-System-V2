@@ -26,8 +26,7 @@ namespace V_System_Core.Controllers
         //Block Permission on Role
         public IActionResult GetDataSelect2()
         {
-            var RoleData = StaticClass.GetSelect2Item(db, "ROLE", 0);
-            //var MenuData = StaticClass.GetSelect2Item(db, "MENU", 0);
+            var RoleData = StaticClass.GetSelect2Item(db, "ROLE", 0); 
             var MenuData = db.tbl_Menus.Where(m => m.is_active == true).Select(mm => new { Id = mm.ID, Text = mm.menu_name }).ToArray();
             return Json(new { RoleData = RoleData, MenuData = MenuData });
         }
@@ -75,6 +74,28 @@ namespace V_System_Core.Controllers
                 return Json(new { code = 500, message = $"An error occurred: {ex.Message}" });
             }
         }
+
+        public IActionResult AssignRoleToUser(int roleId, string userDataId, string remark  )
+        {
+            try
+            {
+                string sql = "SP_GET_MODULE_ON_USER_ROLE_PERMISSION";
+                var param = new[]
+                { 
+                new SqlParameter("@RoleId", roleId),
+                new SqlParameter("@UserDataId", userDataId),
+                new SqlParameter("@Remark", remark)
+              };
+                var rows = StaticClass.ExecSPWithParam(db, sql, param);
+                return Json(new { data = rows });
+            }
+            catch (Exception ex) { 
+                return Json(new { code = 500 , message = ex.Message });
+            }
+         
+        
+        }
+
         //---------------------------------------------------------------------------------
         public IActionResult GetListPermissionOnUserRole(int menuId, int roleId , int userId)
         {

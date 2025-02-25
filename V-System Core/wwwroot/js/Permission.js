@@ -64,7 +64,7 @@ function InitializeTablePermissionRole() {
                             $(`#menu_${item.id}`).after(`
                                 <tr class="border">
                                     <td class="text-end"> <i class="bi-arrow-right-circle"></i> </td>
-                                    <td> ${item1.module_name} </td>
+                                    <td class="text-start"> ${item1.module_name} </td>
                                     <td> ${item1.remark} </td>
                                     <td style="width:150px;" class="m-0 p-0">
                                         <div class="form-switch">
@@ -164,12 +164,35 @@ function LoadDataRoleSelect2() {
         }
     })
 }
-function OnSavePermissionOnRole() {
-     Swal.fire({
-         title: 'Warning',
-         type: 'warning',
-         html:  "មិនទាន់អាចរក្សារទុកទិន្ន័បានទេ!!"
-     });
+function OnSaveAssignRole(){
+     //Swal.fire({
+     //    title: 'Warning',
+     //    type: 'warning',
+     //    html:  "មិនទាន់អាចរក្សារទុកទិន្ន័បានទេ!!"
+    //});
+    var dataJson = [];
+    dataJson.push({
+        request_id: $("#slsRoleUser").val() 
+    });
+    var userIdData = $("#slsRoleUser").val();
+     
+    console.log(userIdData);
+    console.log(dataJson);
+    return;
+    $.ajax({
+        url: '/ControllerName/ExecuteStoredProc', // Your Controller Action URL
+        type: 'POST',
+        contentType: 'application/json', // To tell the server you're sending JSON data
+        data: JSON.stringify(jsonData), // Convert JS object to JSON string
+        success: function (response) {
+            console.log('Data sent successfully');
+            console.log(response);
+        },
+        error: function (error) {
+            console.log('Error:', error);
+        }
+    });
+
 }
 
 
@@ -440,7 +463,7 @@ function InitializeTablePermissionUserRole() {
                             $(`#menuOnuserRole_${item.id}`).after(`
                                 <tr class="border">
                                     <td class="text-end"> <i class="bi-arrow-right-circle"></i> </td>
-                                    <td> ${item1.module_name} </td>
+                                    <td class="text-start"> ${item1.module_name} </td>
                                     <td> ${item1.remark} </td>
                                     <td style="width:150px;" class="m-0 p-0">
                                         <div class="form-switch">

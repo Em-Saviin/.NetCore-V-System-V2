@@ -290,6 +290,7 @@
                              <option value="0" disabled>---Select User---</option> 
                           </select>
                     </div>
+                   
                     <!-- Description Input -->
                     <div class="mb-3">
                         <label for="description" class="form-label">Description <span class="text-danger">*</span> </label>
@@ -306,8 +307,8 @@
 </div>
 
  
-
-<script src="~/js/Permission.js"></script>
+<script src="~/js/permission.js"></script>
+ 
 <script>
     $('.select2').select2();
     $('.select2').select2({
@@ -319,6 +320,37 @@
     InitializeTableRole(); 
     InitializeTablePermissionUserRole();
     $("#tblAssignRoleUser").dataTable();  
+
+    function OnSaveAssignRole() {
+        //Swal.fire({
+        //    title: 'Warning',
+        //    type: 'warning',
+        //    html:  "មិនទាន់អាចរក្សារទុកទិន្ន័បានទេ!!"
+        //});
+        var dataJson = [];
+        dataJson.push({
+            request_id: $("#slsRoleUser").val()
+        });
+        var userIdData = $("#slsRoleUser").val();  
+        const _remark = $("#description").val();
+        const _roleId = parseInt($("#txtRoleName2").val();
+        $.ajax({
+            url: '/Permission/AssignRoleToUser', 
+            type: 'POST',
+            contentType: 'application/json',  
+            data: { 
+                roleId: _roleId, 
+                userDataId: JSON.stringify(dataJson), 
+                remark: _remark },
+            success: function (response) {
+              
+            },
+            error: function (error) {
+                console.log('Error:', error);
+            }
+        });
+
+    }
 </script>
 
 <style>
