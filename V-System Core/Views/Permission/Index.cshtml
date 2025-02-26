@@ -28,23 +28,22 @@
                 <div class="card m-0 p-0">
                     <div class="card-header">
                        <div class="row d-flex justify-content-start">
+                            <div class="form-group d-grid col-2 ">
+                                <label class="label">Role </label>
+                                <select class="form-select select2" id="slsRoles" style="width:100%" onchange="InitializeTablePermissionRole()">
+                                    <option value="0">---Select Role---</option>
+                                </select>
+                            </div>
+
                             <div class="form-group d-grid  col-2  ">
                                 <label class="label">Menu </label>
                                 <select class="form-select select2" id="slsRoleMenus" onchange="InitializeTablePermissionRole()" style="width:100%">
                                     <option value="0">--- Select Menu ---</option>
                                 </select>
-                             </div>
-
-                                <div class="form-group d-grid col-2 ">
-                                    <label class="label">Role </label>
-                                    <select class="form-select select2" id="slsRoles" style="width:100%" onchange="InitializeTablePermissionRole()">
-                                                <option value="0">---Select Role---</option>
-                                     </select>
-                                </div>
-                                  
-                                  <div class="col-8 float-end d-flex justify-content-end align-items-center">
-                                       <button class="btn-sm btn-outline-success" onclick="OnSavePermissionOnRole()"> <i class="bi-bookmark-check-fill"> </i>  Save </button>
-                                  </div> 
+                             </div> 
+                            <div class="col-8 float-end d-flex justify-content-end align-items-center">
+                                <button class="btn-sm btn-outline-success" onclick="OnSavePermissionOnRole()"> <i class="bi-bookmark-check-fill"> </i>  Save </button>
+                            </div> 
                        </div>
                     </div>
                     <div class="card-body p-0">
@@ -86,23 +85,19 @@
                             <div class="row d-flex justify-content-between "> 
                               <div class="col-7">
                                   <div class="row">
-                                        <div class="form-group d-grid  col-3  ">
-                                            <label class="label">Menu ​ </label>
-                                            <select class="form-select select2" id="slsRoleMenusOnUser" style="width:100%" onchange="OnChangeMenuSelectRoleUser();">
-                                                <option value="0">--- Select Menu ---</option>
-                                            </select>
-                                        </div> 
 
                                         <div class="form-group d-grid  col-3 " id="eleUserSelect">
                                             <label class="label">User <span class="text-danger fw-bolder">*</span> </label>
-                                            <select class="form-select select2" id="slsUsers" style="width:100%">
+                                            <select class="form-select select2" id="slsUsers" style="width:100%" onchange="InitializeTablePermissionUserRole();">
                                                 <option value="0">--- Select User ---</option>
                                             </select>
-                                        </div>
-                                        <div class="form-group d-grid  col-3 ">
-                                            <label class="label text-secondary "> Find</label>
-                                            <button class="btn-sm btn-outline-dark " id="btnSearchUserRole" onclick="InitializeTablePermissionUserRole();" style="width:40px"> <i class="bi bi-search"></i> </button>
-                                        </div>
+                                        </div> 
+                                        <div class="form-group d-grid  col-3  ">
+                                            <label class="label">Menu ​ </label>
+                                            <select class="form-select select2" id="slsRoleMenusOnUser" style="width:100%" onchange="InitializeTablePermissionUserRole();">
+                                                <option value="0">--- Select Menu ---</option>
+                                            </select>
+                                        </div>   
                                   </div> 
                               </div>
                                 <div class="col-5 d-flex justify-content-end align-items-center">
@@ -308,8 +303,7 @@
         width: '100%'
     }); 
     LoadDataRoleSelect2(); 
-    InitializeTableRole(); 
-    InitializeTablePermissionUserRole();
+    InitializeTableRole();  
     $("#tblAssignRoleUser").dataTable();   
 </script>
 
@@ -322,9 +316,7 @@
         border-color: white;
         font-weight: bolder;
         color: white;
-    }
-
-    
+    } 
 
     #tblPermissionRoleOnModule td ,   #tblPermissionUserRoleOnModule td{
         align-items: center;

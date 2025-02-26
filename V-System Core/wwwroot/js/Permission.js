@@ -31,28 +31,13 @@ function InitializeTablePermissionRole() {
                     data: { menuId: _menuId, roleId : $("#slsRoles").val()},
                     success: function (rs) { 
                         const _dataModule = rs.data; 
-                        _dataModule.map(function (item1, index1) {
+                        _dataModule.map(function (item1, index1) { 
                             var _IsFullCheck = "";
                             var _IsListCheck = "";
                             var _IsAddCheck = "";
                             var _IsEditCheck = "";
                             var _IsDeleteCheck = "";
-                            var _IsPrintCheck = ""; 
-                            if (item1.list == true) {
-                                _IsListCheck = "checked"
-                            }
-                            if (item1.add == true) {
-                                _IsAddCheck = "checked"
-                            }
-                            if (item1.edit == true) {
-                                _IsEditCheck = "checked"
-                            }
-                            if (item1.delete == true) {
-                                _IsDeleteCheck = "checked"
-                            }
-                            if (item1.print == true) {
-                                _IsPrintCheck = "checked"
-                            }
+                            var _IsPrintCheck = "";  
                             if (item1.full == true) {
                                 _IsFullCheck = "checked"
                                 _IsListCheck = "checked"
@@ -68,33 +53,33 @@ function InitializeTablePermissionRole() {
                                     <td> ${item1.remark} </td>
                                     <td style="width:150px;" class="m-0 p-0">
                                         <div class="form-switch">
-                                            <input class="form-check-input" type="checkbox"   onchange="onCheckPermission(this, '${item1.module_id}', '${item1.module_name}', 'full')"  role="switch" id="FullflexSwitchCheck_${item1.module_id}" ${_IsFullCheck}>
-                                        </div>
+                                              ${item1.full}
+                                         </div>
                                     </td>
                                     <td style="width:150px;" class="m-0 p-0">
                                         <div class="form-switch">
-                                            <input class="form-check-input" type="checkbox" role="switch"  onchange="onCheckPermission(this, '${item1.module_id}', '${item1.module_name}', 'list')"  id="ListflexSwitchCheck_${item1.module_id}" ${_IsListCheck}>
-                                        </div>
+                                              ${item1.list}
+                                         </div>
                                     </td>
                                     <td style="width:150px;" class="m-0 p-0">
                                         <div class="form-switch">
-                                            <input class="form-check-input" type="checkbox" role="switch"  onchange="onCheckPermission(this, '${item1.module_id}', '${item1.module_name}', 'add')"  id="AddflexSwitchCheck_${item1.module_id}" ${_IsAddCheck}>
-                                        </div>
+                                             ${item1.add}
+                                         </div>
                                     </td>
                                     <td style="width:150px;" class="m-0 p-0">
                                         <div class="form-switch">
-                                            <input class="form-check-input" type="checkbox" role="switch"  onchange="onCheckPermission(this, '${item1.module_id}', '${item1.module_name}', 'edit')"  id="EditflexSwitchCheck_${item1.module_id}" ${_IsEditCheck}>
-                                        </div>
+                                             ${item1.edit}
+                                         </div>
                                     </td>
                                     <td style="width:150px;" class="m-0 p-0">
                                         <div class="form-switch">
-                                            <input class="form-check-input" type="checkbox" role="switch"  onchange="onCheckPermission(this, '${item1.module_id}', '${item1.module_name}', 'delete')"  id="DeleteflexSwitchCheck_${item1.module_id}" ${_IsDeleteCheck}>
-                                        </div>
+                                             ${item1.delete}
+                                         </div>
                                     </td>
                                     <td style="width:150px;" class="m-0 p-0">
                                         <div class="form-switch">
-                                            <input class="form-check-input" type="checkbox" role="switch"   onchange="onCheckPermission(this, '${item1.module_id}', '${item1.module_name}', 'print')"  id="PrintflexSwitchCheck_${item1.module_id}" ${_IsPrintCheck}>
-                                        </div>
+                                            ${item1.print}
+                                         </div>
                                     </td>
                                 </tr>
                     `); 
@@ -106,12 +91,39 @@ function InitializeTablePermissionRole() {
        } 
    })
 } 
-function onCheckPermission(checkbox, moduleId, moduleName, permissionType) {
-    const perEdit = $("#EditflexSwitchCheck_" + moduleId);
-    const perList = $("#ListflexSwitchCheck_" + moduleId);
-    const perAdd = $("#AddflexSwitchCheck_" + moduleId);
-    const perDelete = $("#DeleteflexSwitchCheck_" + moduleId);
-    const perPrint = $("#PrintflexSwitchCheck_" + moduleId);
+function onCheckPermissionRole(checkbox, moduleId, moduleName, permissionType) {
+    const perEdit = $("#RoleEditflexSwitchCheck_" + moduleId);
+    const perFull = $("#RoleFullflexSwitchCheck_" + moduleId);
+    const perList = $("#RoleListflexSwitchCheck_" + moduleId);
+    const perAdd = $("#RoleAddflexSwitchCheck_" + moduleId);
+    const perDelete = $("#RoleDeleteflexSwitchCheck_" + moduleId);
+    const perPrint = $("#RolePrintflexSwitchCheck_" + moduleId);
+    const isCheckedAll = checkbox.checked;
+    if (permissionType == 'full') {
+        if (isCheckedAll) {
+            if (!perEdit.prop("checked")) perEdit.prop("checked", true);
+            if (!perList.prop("checked")) perList.prop("checked", true);
+            if (!perAdd.prop("checked")) perAdd.prop("checked", true);
+            if (!perDelete.prop("checked")) perDelete.prop("checked", true);
+            if (!perPrint.prop("checked")) perPrint.prop("checked", true);
+        } else {
+            perAdd.prop("checked", false);
+        }
+    } else {
+        if (perEdit.prop("checked") && perList.prop("checked") && perAdd.prop("checked") && perDelete.prop("checked") && perPrint.prop("checked")) {
+            perFull.prop("checked", true);
+        } else {
+            perFull.prop("checked", false);
+        }
+    }
+}
+function onCheckPermissionUser(checkbox, moduleId, moduleName, permissionType) { 
+    const perEdit = $("#UserEditflexSwitchCheck_" + moduleId);
+    const perFull = $("#UserFullflexSwitchCheck_" + moduleId);
+    const perList = $("#UserListflexSwitchCheck_" + moduleId);
+    const perAdd = $("#UserAddflexSwitchCheck_" + moduleId);
+    const perDelete = $("#UserDeleteflexSwitchCheck_" + moduleId);
+    const perPrint = $("#UserPrintflexSwitchCheck_" + moduleId);
     const isCheckedAll = checkbox.checked; 
     if (permissionType == 'full') {
         if (isCheckedAll) {
@@ -121,13 +133,15 @@ function onCheckPermission(checkbox, moduleId, moduleName, permissionType) {
             if (!perDelete.prop("checked")) perDelete.prop("checked", true);
             if (!perPrint.prop("checked")) perPrint.prop("checked", true);
         } else {
-            if (perEdit.prop("checked")) perEdit.prop("checked", false);
-            if (perList.prop("checked")) perList.prop("checked", false);
-            if (perAdd.prop("checked")) perAdd.prop("checked", false);
-            if (perDelete.prop("checked")) perDelete.prop("checked", false);
-            if (perPrint.prop("checked")) perPrint.prop("checked", false);
+            perAdd.prop("checked", false);
         }
-    } 
+    } else {
+        if (perEdit.prop("checked") && perList.prop("checked") && perAdd.prop("checked") && perDelete.prop("checked") && perPrint.prop("checked")) {
+            perFull.prop("checked", true);
+        } else {
+            perFull.prop("checked", false);
+        }
+    }  
 }
 function LoadDataRoleSelect2() {
     $('#slsRoleMenus').select2('destroy');
@@ -373,11 +387,25 @@ function OnSaveAssignRole() {
         }
     });
 } 
+function OnSavePermissionOnRole() {
+    $.toast({
+        title: "Warning",
+        message: "Not yet write script in sql.",
+        type: "warning",
+        duration: 5000,
+    });
+
+}
+
 //Block permission on user role 
  
 function InitializeTablePermissionUserRole() {
     const bc = $("#slsRoleMenusOnUser").val();   
-    const de = $("#slsUsers").val(); 
+    const de = $("#slsUsers").val();  
+    if (bc === '0' && de === '0') {
+        $("#tblPermissionUserRoleOnModule tbody").empty();
+        return;
+    }  
     $.ajax({
         url: "/Permission/GetMenu",
         type: "GET",
@@ -401,36 +429,7 @@ function InitializeTablePermissionUserRole() {
                     data: { menuId: _menuId,  userId : $("#slsUsers").val()},
                     success: function (rs) {
                         const _dataModule = rs.data;
-                        _dataModule.map(function (item1, index1) {
-                            var _IsFullCheck = "";
-                            var _IsListCheck = "";
-                            var _IsAddCheck = "";
-                            var _IsEditCheck = "";
-                            var _IsDeleteCheck = "";
-                            var _IsPrintCheck = "";
-                            if (item1.list == true) {
-                                _IsListCheck = "checked"
-                            }
-                            if (item1.add == true) {
-                                _IsAddCheck = "checked"
-                            }
-                            if (item1.edit == true) {
-                                _IsEditCheck = "checked"
-                            }
-                            if (item1.delete == true) {
-                                _IsDeleteCheck = "checked"
-                            }
-                            if (item1.print == true) {
-                                _IsPrintCheck = "checked"
-                            }
-                            if (item1.full == true) {
-                                _IsFullCheck = "checked"
-                                _IsListCheck = "checked"
-                                _IsAddCheck = "checked"
-                                _IsEditCheck = "checked"
-                                _IsDeleteCheck = "checked"
-                                _IsPrintCheck = "checked"
-                            }
+                        _dataModule.map(function (item1, index1) { 
                             $(`#menuOnuserRole_${item.id}`).after(`
                                 <tr class="border">
                                     <td class="text-end"> <i class="bi-arrow-right-circle"></i> </td>
@@ -438,33 +437,33 @@ function InitializeTablePermissionUserRole() {
                                     <td> ${item1.remark} </td>
                                     <td style="width:150px;" class="m-0 p-0">
                                         <div class="form-switch">
-                                            <input class="form-check-input" type="checkbox"   onchange="onCheckPermission(this, '${item1.module_id}', '${item1.module_name}', 'full')"  role="switch" id="FullflexSwitchCheck_${item1.module_id}" ${_IsFullCheck}>
+                                           ${item1.full}
                                         </div>
                                     </td>
                                     <td style="width:150px;" class="m-0 p-0">
                                         <div class="form-switch">
-                                            <input class="form-check-input" type="checkbox" role="switch"  onchange="onCheckPermission(this, '${item1.module_id}', '${item1.module_name}', 'list')"  id="ListflexSwitchCheck_${item1.module_id}" ${_IsListCheck}>
+                                            ${item1.list}
                                         </div>
                                     </td>
                                     <td style="width:150px;" class="m-0 p-0">
                                         <div class="form-switch">
-                                            <input class="form-check-input" type="checkbox" role="switch"  onchange="onCheckPermission(this, '${item1.module_id}', '${item1.module_name}', 'add')"  id="AddflexSwitchCheck_${item1.module_id}" ${_IsAddCheck}>
+                                         ${item1.add}
                                         </div>
                                     </td>
                                     <td style="width:150px;" class="m-0 p-0">
                                         <div class="form-switch">
-                                            <input class="form-check-input" type="checkbox" role="switch"  onchange="onCheckPermission(this, '${item1.module_id}', '${item1.module_name}', 'edit')"  id="EditflexSwitchCheck_${item1.module_id}" ${_IsEditCheck}>
+                                          ${item1.edit}
                                         </div>
                                     </td>
                                     <td style="width:150px;" class="m-0 p-0">
                                         <div class="form-switch">
-                                            <input class="form-check-input" type="checkbox" role="switch"  onchange="onCheckPermission(this, '${item1.module_id}', '${item1.module_name}', 'delete')"  id="DeleteflexSwitchCheck_${item1.module_id}" ${_IsDeleteCheck}>
-                                        </div>
+                                          ${item1.print}
+                                         </div>
                                     </td>
                                     <td style="width:150px;" class="m-0 p-0">
                                         <div class="form-switch">
-                                            <input class="form-check-input" type="checkbox" role="switch"   onchange="onCheckPermission(this, '${item1.module_id}', '${item1.module_name}', 'print')"  id="PrintflexSwitchCheck_${item1.module_id}" ${_IsPrintCheck}>
-                                        </div>
+                                               ${item1.delete}
+                                         </div>
                                     </td>
                                 </tr>
                     `);

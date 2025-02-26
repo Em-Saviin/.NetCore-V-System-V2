@@ -110,7 +110,7 @@ namespace V_System_Core.Controllers
         //---------------------------------------------------------------------------------
         public IActionResult GetListPermissionOnUserRole(int menuId , int userId)
         {
-            string sql = "SP_GET_MODULE_ON_USER_ROLE_PERMISSION";
+            string sql = "SP_GET_MODULE_ON_USER_ROLE_PERMISSION_V2";
             var param = new[]
             {
                 new SqlParameter("@MenuId", menuId), 
