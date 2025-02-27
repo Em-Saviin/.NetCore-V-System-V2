@@ -25,7 +25,7 @@ namespace V_System_Core.Data
         public DbSet<CoreSelect2Item> CoreSelect2Item { get; set; }
         public DbSet<tbl_Permission_Module_On_Role> tbl_Permission_Module_On_Role { get; set; }
         public DbSet<tbl_Permission_Module_On_User> tbl_Permission_Module_On_User { get; set; }
-        
+        public DbSet<tbl_Telegram_Users> tbl_Telgram_Users { get; set; }
       
         public IQueryable<tbl_Menus> GetMenuByRole(int userId = 0)
         {

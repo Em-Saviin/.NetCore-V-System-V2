@@ -1,13 +1,16 @@
 ﻿
 @{
     ViewData["Title"] = "Index";
-    Layout = "~/Views/Shared/_Iframe.cshtml";
+    Layout = "~/Views/Shared/_Iframe.cshtml"; 
+}
+@{
+    var telegramUsers = ViewData["TelegramUsers"] as List<V_System_Core.Models.tbl_Telegram_Users>;
 }
 
 <div class="container-fluid">
     <ul class="nav nav-tabs" role="tablist">
         <li class="nav-item" role="presentation">
-            <a class="nav-link active" id="icon-tab-0" data-bs-toggle="tab" href="#icon-tabpanel-0" role="tab" aria-controls="icon-tabpanel-0" aria-selected="true"><i class="bi-aspect-ratio-fill"></i> Permission on role </a>
+            <a class="nav-link active" id="icon-tab-0" data-bs-toggle="tab" href="#icon-tabpanel-0" role="tab" aria-controls="icon-tabpanel-0" aria-selected="true"><i class="bi-controller"> </i> &nbsp; Telegram Chat Bot </a>
         <li class="nav-item" role="presentation">
             <a class="nav-link" id="icon-tab-1" data-bs-toggle="tab" href="#icon-tabpanel-1" role="tab" aria-controls="icon-tabpanel-1" aria-selected="false"><i class="bi-person-vcard-fill"></i> Permission on user </a>
         </li>
@@ -16,8 +19,91 @@
         </li>
     </ul>
     <div class="tab-content pt-5" id="tab-content">
-        <div class="tab-pane active" id="icon-tabpanel-0" role="tabpanel" aria-labelledby="icon-tab-0">Content of module base on role </div>
+        <div class="tab-pane active p-2" id="icon-tabpanel-0" role="tabpanel" aria-labelledby="icon-tab-0">
+            <h2 class="pb-3 fw-bolder fs-3">Telegram Users</h2> 
+            <table class="sample" id="tbl_TelegramUsers">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>User ID</th>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Username</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @if (telegramUsers != null)
+                    {
+                        @foreach (var user in telegramUsers)
+                        {
+                            <tr>
+                                <td>@user.ID</td>
+                                <td>@user.user_id</td>
+                                <td>@user.first_name</td>
+                                <td>@user.last_name</td>
+                                <td>  @user.user_name</td>
+                                <td>
+                                    <button class="btn-sm btn-outline-success" onclick="OnApproved(@user.user_id)"> Approve </button>
+                                </td>
+                            </tr>
+                        }
+                    }
+                    else
+                    {
+                        <tr>
+                            <td colspan="5" class="text-center">No data available</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        
+        </div>
         <div class="tab-pane" id="icon-tabpanel-1" role="tabpanel" aria-labelledby="icon-tab-1">Content of module base on user on role </div>
         <div class="tab-pane" id="icon-tabpanel-2" role="tabpanel" aria-labelledby="icon-tab-2">  Content of ,,</div>
     </div>
 </div>
+
+
+<script>
+    $("#tbl_TelegramUsers").dataTable();
+
+     
+    function OnApproved(telegramId){
+        var _userId = telegramId;
+        var _message = "✅ Your request has been approved!";
+
+        $.ajax({
+            // url: 'http://localhost:3000/send-message',
+            url: '/RoleManagement/SentMessageTelegram',
+            type: 'POST', 
+            data: { userId: _userId, message: _message } ,
+            success: function (response) { 
+               if(response.code == 0){
+                       Swal.fire({
+                        title: 'Success',
+                        type: 'success',
+                        html: response.message
+                    }); 
+               }else{
+                    Swal.fire({
+                        title: 'Warning',
+                        type: 'warning',
+                        html: response.message
+                    });
+                }
+                
+            },
+            error: function (xhr, status, error) {
+                console.log(status);
+                console.log(error);
+                Swal.fire({
+                    title: 'Warning',
+                    type: 'warning',
+                    html: 'Error sending message: ' + xhr.responseText
+                }); 
+            }
+        });
+    }
+     
+</script>
