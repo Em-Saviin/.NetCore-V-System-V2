@@ -73,54 +73,143 @@ var Loading_Page =  `
  ` 
 function loadTabIframeContent(partialViewName, tabContentId, moduleId) {
     $("#" + tabContentId).html(Loading_Page);
-   
+
     $.ajax({
-        url: '/Home/LoadIframeView',  
-        data: { moduleId: moduleId }, 
+        url: '/Home/LoadIframeView',
+        data: { moduleId: moduleId },
         type: 'POST',
-        success: function (response) {  
+        success: function (response) {
             var _data = response.data;
-            var _UrlFrame = '/' + _data.moduleController + '/' + _data.moduleViews;   
+            var _UrlFrame = '/' + _data.moduleController + '/' + _data.moduleViews;
             $("#" + tabContentId).empty();
-            if (_data.moduleController == null) {
+
+            if (!_data.moduleController || !_data.moduleViews) {
+                // If the moduleController or moduleViews is missing, show a 404 error
                 $("#" + tabContentId).html(`
-                <div class="container" > 
+                <div class="container"> 
+                    <section class="section error-404 min-vh-100 d-flex flex-column align-items-center justify-content-center">
+                        <h1 class="text-danger">404</h1>
+                        <h2 class="text-danger">Page Not Found</h2>
+                        <h2 class="text-danger">The page you are looking for doesn't exist.</h2> 
+                    </section>
+                </div>
+                `);
+            } else {
+                // Before appending the iframe, check if the file exists
+                $.ajax({
+                    url: _UrlFrame,
+                    type: 'HEAD',
+                    success: function () {
+                        // If the file exists, load the iframe
+                        $("#" + tabContentId).append(`
+                            <div class="container-fluid bg-light" style="background-color:white">    
+                                <ol class="breadcrumb mt-2 p-0 col-12 d-flex justify-content-end align-items-center">
+                                    <li class="breadcrumb-item mt-2 text-decoration-none">
+                                        <a href="#"> <i class="${_data.menuIcon}"></i> ${_data.menuName} </a>
+                                    </li>
+                                    <li class="breadcrumb-item mt-2 active text-decoration-none" aria-current="page">
+                                        ${_data.moduleName}
+                                        &nbsp;
+                                        <i title="Refresh" class="float-end bi bi-arrow-clockwise text-primary" onclick="ReloadView('${partialViewName}', '${tabContentId}', ${moduleId})"></i>
+                                    </li> 
+                                </ol>     
+                            </div>
+                            <iframe src="${_UrlFrame}" id="iframe-${tabContentId}" style="width:100%;height:100vh; overflow:hidden;"></iframe>
+                        `);
+                    },
+                    error: function () {
+                        // If the file does not exist, show a 404 error
+                        $("#" + tabContentId).html(`
+                            <div class="container"> 
+                                <section class="section error-404 min-vh-100 d-flex flex-column align-items-center justify-content-center">
+                                    <h1 class="text-danger">404</h1>
+                                    <h2 class="text-danger">Page Not Found</h2>
+                                    <h2 class="text-danger">The page you are looking for doesn't exist.</h2> 
+                                </section>
+                            </div>
+                        `);
+                    }
+                });
+            }
+        },
+        error: function (jqXHR) {
+            if (jqXHR.status === 404) {
+                $("#" + tabContentId).html(`
+                    <div class="container"> 
                         <section class="section error-404 min-vh-100 d-flex flex-column align-items-center justify-content-center">
                             <h1 class="text-danger">404</h1>
                             <h2 class="text-danger">Page Not Found</h2>
                             <h2 class="text-danger">The page you are looking for doesn't exist.</h2> 
                         </section>
-                 </div>
+                    </div>
                 `);
             } else {
-                $("#" + tabContentId).append(`
-                    <div class="container-fluid bg-light" style="background-color:white">    
-                            <ol class="breadcrumb mt-2 p-0  col-12 d-flex justify-content-end align-items-center ">
-                                <li class="breadcrumb-item mt-2 text-decoration-none"><a  href="#"> <i class=" ${_data.menuIcon}"> </i>  ${_data.menuName} </a> </li>
-                                <li class="breadcrumb-item mt-2 active text-decoration-none" aria-current="page"> </i>${_data.moduleName}   
-                                 &nbsp;
-                                 <i title="Refresh" class="float-end bi bi-arrow-clockwise text-primary"  onclick="ReloadView('${partialViewName}', '${tabContentId}', ${moduleId})">   </i>  
-                                </li> 
-                            </ol>     
-                    </div>
-                    <iframe src="${_UrlFrame}" id="iframe-${tabContentId}" style="width:100%;height:100vh";overflow:hidden > </iframe>
-                `); 
-            } 
-        },
-        error: function () { 
-            $("#" + tabContentId).html(` 
-                      <iframe src="/NoPermission/ErrorStatus400" style="width:100%;height:100vh ;overflow: hidden" > </iframe >
-            `);
-                //<div class="container" > 
-                //        <section class="section error-404 min-vh-100 d-flex flex-column align-items-center justify-content-center">
-                //            <h1 class="text-danger">404</h1>
-                //            <h2 class="text-danger">Page Not Found</h2>
-                //            <h2 class="text-danger">The page you are looking for doesn't exist.</h2> 
-                //        </section>
-                // </div>
+                $("#" + tabContentId).html(`
+                    <iframe src="/NoPermission/ErrorStatus400" style="width:100%;height:100vh; overflow:hidden;"></iframe>
+                `);
+            }
         }
     });
 }
+
+
+//function loadTabIframeContent(partialViewName, tabContentId, moduleId) {
+//    $("#" + tabContentId).html(Loading_Page);
+   
+//    $.ajax({
+//        url: '/Home/LoadIframeView',  
+//        data: { moduleId: moduleId }, 
+//        type: 'POST',
+//        success: function (response) {  
+//            var _data = response.data;
+//            var _UrlFrame = '/' + _data.moduleController + '/' + _data.moduleViews;   
+//            $("#" + tabContentId).empty();
+//            if (_data.moduleController == null) {
+//                $("#" + tabContentId).html(`
+//                <div class="container" > 
+//                        <section class="section error-404 min-vh-100 d-flex flex-column align-items-center justify-content-center">
+//                            <h1 class="text-danger">404</h1>
+//                            <h2 class="text-danger">Page Not Found</h2>
+//                            <h2 class="text-danger">The page you are looking for doesn't exist.</h2> 
+//                        </section>
+//                 </div>
+//                `);
+//            } else {
+//                $("#" + tabContentId).append(`
+//                    <div class="container-fluid bg-light" style="background-color:white">    
+//                            <ol class="breadcrumb mt-2 p-0  col-12 d-flex justify-content-end align-items-center ">
+//                                <li class="breadcrumb-item mt-2 text-decoration-none"><a  href="#"> <i class=" ${_data.menuIcon}"> </i>  ${_data.menuName} </a> </li>
+//                                <li class="breadcrumb-item mt-2 active text-decoration-none" aria-current="page"> </i>${_data.moduleName}   
+//                                 &nbsp;
+//                                 <i title="Refresh" class="float-end bi bi-arrow-clockwise text-primary"  onclick="ReloadView('${partialViewName}', '${tabContentId}', ${moduleId})">   </i>  
+//                                </li> 
+//                            </ol>     
+//                    </div>
+//                    <iframe src="${_UrlFrame}" id="iframe-${tabContentId}" style="width:100%;height:100vh";overflow:hidden > </iframe>
+//                `); 
+//            } 
+//        },
+//        error: function (jqXHR) {
+//            if (jqXHR.status === 404) {
+//                // Handle 404 error specifically
+//                $("#" + tabContentId).html(`
+//                    <div class="container"> 
+//                        <section class="section error-404 min-vh-100 d-flex flex-column align-items-center justify-content-center">
+//                            <h1 class="text-danger">404</h1>
+//                            <h2 class="text-danger">Page Not Found</h2>
+//                            <h2 class="text-danger">The page you are looking for doesn't exist.</h2> 
+//                        </section>
+//                    </div>
+//                `);
+//            } else {
+//                // Handle other errors
+//                $("#" + tabContentId).html(`
+//                    <iframe src="/NoPermission/ErrorStatus400" style="width:100%;height:100vh; overflow:hidden;"></iframe>
+//                `);
+//            }
+//        } 
+//    });
+//}
 
 function closeTab(moduleId) {
     $("#tab-header-" + moduleId).remove();

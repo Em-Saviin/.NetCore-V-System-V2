@@ -5,25 +5,25 @@
  
 }
 
- 
- 
+
 <div class="container-fluid p-0">
-    <div class="row">
+    <div class="row " >
         <section class="section">
             <div class="row">
                 <div class="col-lg-12">
                     <div class="card">
                         <div class="card-header d-flex justify-content-end">
                             <div class="col-1">
+                                <a  id="exportToPdf"   class="btn btn-outline-primary">Export to PDF</a>
                                 <button class="float-end btn-sm btn-outline-danger" onclick="window.print();" id="btnPrint">Print</button>
                             </div>
                         </div>
-                        <div class="card-body"> 
+                        <div class="card-body" > 
                             <table class="display text-center" id="tblIcon" style="width:100%"> 
                                 <thead>
                                     <tr>
                                         <th>No</th>
-                                        <th>Class Name</th>
+                                        <th>បញ្ជូលបញ្ជេញត្រៀមតម្រៀបគ្នា</th>
                                         <th>Icon</th>
                                         <th>Label</th>
                                     </tr>
@@ -44,12 +44,76 @@
 
 
 
- 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
 
-<link href="~/css/SalesReport.css" rel="stylesheet" /> 
+<link href="~/css/SalesReport.css" rel="stylesheet" media="print" /> 
 <script src="~/js/Icon.js"></script>
 
-<script>    
-      InitializeTblIcons();
-     
+
+ 
+<style>
+    table thead th {
+        font-family: 'Peng Huoth';
+    }
+    table tbody td{
+        font-family: 'Peng Huoth';
+    }
+</style>
+
+<script>
+    
+    // $("#exportToPdf").click(function (e) {
+    //     console.log(e)
+    //     e.preventDefault();
+
+    //     // Ensure DataTable has finished loading before capturing HTML
+    //     setTimeout(function () {
+    //         var tableHtml = $("#tblIcon").prop("outerHTML"); // Get the full table including data
+
+    //         $.ajax({
+    //             url: "/BoostrapIcons/ExportToPdf",
+    //             type: "POST",
+    //             data: { tableHtml: tableHtml },
+    //             success: function (response) {
+    //                 window.location.href = response; 
+    //             }
+    //         });
+    //     }, 1000); 
+    // });
+    function exportTableToPdf(tableId, fileName) {
+        const { jsPDF } = window.jspdf; // ✅ Correct way to access jsPDF
+
+        var table = document.getElementById(tableId);
+
+        html2canvas(table, {
+            scrollX: 0,
+            scrollY: -window.scrollY,
+            useCORS: true,
+            backgroundColor: "#ffffff",
+            scale: 2
+        }).then(canvas => {
+            var imgData = canvas.toDataURL("image/png");
+            var pdf = new jsPDF("p", "mm", "a4"); // ✅ Ensure jsPDF is initialized properly
+
+            var imgWidth = 190;
+            var imgHeight = (canvas.height * imgWidth) / canvas.width;
+
+            pdf.addImage(imgData, "PNG", 10, 10, imgWidth, imgHeight);
+            pdf.save(fileName + ".pdf");
+        }).catch(error => {
+            console.error("Error generating PDF: ", error);
+            alert("Failed to export PDF. Try again.");
+        });
+    }
+
+
+
+    $("#exportToPdf").click(function () {
+        exportTableToPdf("tblIcon", "IconsReport");
+    });
+
+
+    InitializeTblIcons();
+    
 </script>

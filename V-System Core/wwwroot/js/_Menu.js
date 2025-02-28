@@ -97,15 +97,27 @@ function onEditMenu(menuId) {
         data: {objs: objMenu },
         success: function (response) {
            if (response.code == 0) {
-            toastr.success(response.message);
+               Swal.fire({
+                   title: 'Save Success',
+                   type: 'success',
+                   html: response.message
+               }); 
             $('#ModalMenu').modal('hide');
         _tblMenu.ajax.reload(); 
         } else {
-        toastr.error(response.message)
+               Swal.fire({
+                   title: 'Error Save',
+                   type: 'error',
+                   html: response.message
+               }); 
           }
             },
     error: function (response) {
-
+        Swal.fire({
+            title: 'Error Save',
+            type: 'error',
+            html: response.message
+        }); 
     }
         })
     }

@@ -6,8 +6,7 @@ function onBrowseImage() {
     $('#inputImage').change(function (e) { 
         var tmppath = URL.createObjectURL(e.target.files[0]);  
         $("#userImage").attr('src', tmppath); 
-    });
-
+    }); 
 }
 
 function OpenModalUser() {
@@ -29,7 +28,7 @@ function InitializeTblUser() {
                         _IsActive = `<div class="text-danger"> Active </div>`
                     }
                     $("#tblUser tbody").append(`
-                         <tr>
+                       <tr>
                             <td>${index + 1}</td>
                             <td>${item.firstname}</td>
                             <td>${item.lastname}</td>
@@ -40,18 +39,22 @@ function InitializeTblUser() {
                             <td>${item.phone}</td>
                             <td>${_IsActive}</td>
                             <td>
-                             <div class="dropdown">
-                                    <button class="btn btn-primary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown-menu">
-                                        Actions
-                                    </button>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="#">Edit</a></li>
-                                        <li><a class="dropdown-item" href="#">Delete</a></li>
-                                        <li><a class="dropdown-item" href="#">View</a></li>
-                                    </ul>
+                                <div class="dropdown">
+                                    <button class="btn btn-sm ms-auto p-0" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                          <i class="fw-bolder bi bi-grip-vertical text-secondary ">  </i>
+                                    </button>  
+                                    <ul class="dropdown-menu p-0">
+                                        <li>
+                                            <a class="dropdown-item btn-delete-transition" href="javascript:"> <i class="bi bi-pencil-fill text-success"></i> Edit </a>
+                                        </li> 		
+                                        <li>
+                                            <a class="dropdown-item btn-copy-transition" href="javascript:"><i class="bi bi-trash3 text-danger"></i> Delete </a>
+                                        </li> 	
+                                    </ul>  
                                 </div>
                             </td>
                         </tr>
+
         
                      `);
                 })   
@@ -59,56 +62,7 @@ function InitializeTblUser() {
         error: function (err) {
 
         }
-    })
-
-
-    //_tblUser = $('#tblUser').DataTable({
-    //    processing: true,
-    //    "ajax": {
-    //        url: `${MyController}/GetUserList`  ,
-    //        dataSrc: 'data', 
-    //        error: function (xhr, error, thrown) {
-    //            console.log('Error occurred while loading data: ', error);
-    //        }
-    //    },
-    //    columns: [
-    //        {
-    //            render: function (data, type, row, meta) {
-    //                return meta.row + meta.settings._iDisplayStart + 1;
-    //            }
-    //        },
-    //        { data: 'firstname' },
-    //        { data: 'lastname' },
-    //        { data: 'username' },
-    //        { data: 'email' },
-    //        { data: 'sex' },
-    //        { data: 'address' },
-    //        { data: 'phone' }, 
-    //        {
-    //            data: null,
-    //            render: function (data) {
-    //                if (data.is_active == true) {
-    //                    return `<div class="text-success">Active</div>`;
-    //                } else if (data.is_active == false) {
-    //                    return `<div class="text-danger">InActive</div>`;
-    //                } 
-    //            }
-    //        }, 
-    //        {
-    //            data: null,
-    //            render: function (data) {
-    //                return `
-                       
-    //                `
-    //            }
-    //        }
-    //    ],
-    //    "paging": true,
-    //    "info": true,
-    //    "language": {
-    //        "emptyTable": "No data available"
-    //    }, 
-    //});
+    }) 
 }
 
 $('form').on('submit', function (e) {

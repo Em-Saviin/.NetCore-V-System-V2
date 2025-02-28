@@ -170,11 +170,19 @@ function SaveModule() {
         data: { objs: _objModule },
         success: function (response) {
             if (response.code == 0) {
-                toastr.success(response.message);
+                Swal.fire({
+                    title: 'Save Success',
+                    type: 'success',
+                    html: response.message
+                }); 
                 $('#ModalModule').modal('hide');
                 _tblModule.ajax.reload();
             } else {
-                toastr.error(response.message)
+                Swal.fire({
+                    title: 'Save Error',
+                    type: 'error',
+                    html: response.message
+                }); 
             }
         },
         error: function (response) {
