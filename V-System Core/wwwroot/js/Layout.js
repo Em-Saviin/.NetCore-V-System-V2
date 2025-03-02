@@ -11,7 +11,8 @@ function InitializeLayout(roleName) {
     var firstLink = $(".sidebar-nav li a[data-bs-target='#components-nav-1']").first();
     firstLink.removeClass('collapsed');
     $('.toggle-sidebar-btn').on('click', function () {
-        $('body').toggleClass('toggle-sidebar');
+        $('body').toggleClass('toggle-sidebar'); 
+       
     });
     
 }
@@ -102,8 +103,7 @@ function loadTabIframeContent(partialViewName, tabContentId, moduleId) {
                     success: function () {
                         // If the file exists, load the iframe
                         $("#" + tabContentId).append(`
-                            <div class="container-fluid bg-light" style="background-color:white">    
-                                <ol class="breadcrumb mt-2 p-0 col-12 d-flex justify-content-end align-items-center">
+                         <ol class="breadcrumb mt-2 p-0 col-12 d-flex justify-content-end align-items-center">
                                     <li class="breadcrumb-item mt-2 text-decoration-none">
                                         <a href="#"> <i class="${_data.menuIcon}"></i> ${_data.menuName} </a>
                                     </li>
@@ -112,9 +112,8 @@ function loadTabIframeContent(partialViewName, tabContentId, moduleId) {
                                         &nbsp;
                                         <i title="Refresh" class="float-end bi bi-arrow-clockwise text-primary" onclick="ReloadView('${partialViewName}', '${tabContentId}', ${moduleId})"></i>
                                     </li> 
-                                </ol>     
-                            </div>
-                            <iframe src="${_UrlFrame}" id="iframe-${tabContentId}" style="width:100%;height:100vh; overflow:hidden;"></iframe>
+                                </ol>      
+                            <iframe class="iframe-content" src="${_UrlFrame}" id="iframe-${tabContentId}" style="width:100%;height:100vh; overflow:hidden;"></iframe>
                         `);
                     },
                     error: function () {
@@ -151,66 +150,7 @@ function loadTabIframeContent(partialViewName, tabContentId, moduleId) {
         }
     });
 }
-
-
-//function loadTabIframeContent(partialViewName, tabContentId, moduleId) {
-//    $("#" + tabContentId).html(Loading_Page);
-   
-//    $.ajax({
-//        url: '/Home/LoadIframeView',  
-//        data: { moduleId: moduleId }, 
-//        type: 'POST',
-//        success: function (response) {  
-//            var _data = response.data;
-//            var _UrlFrame = '/' + _data.moduleController + '/' + _data.moduleViews;   
-//            $("#" + tabContentId).empty();
-//            if (_data.moduleController == null) {
-//                $("#" + tabContentId).html(`
-//                <div class="container" > 
-//                        <section class="section error-404 min-vh-100 d-flex flex-column align-items-center justify-content-center">
-//                            <h1 class="text-danger">404</h1>
-//                            <h2 class="text-danger">Page Not Found</h2>
-//                            <h2 class="text-danger">The page you are looking for doesn't exist.</h2> 
-//                        </section>
-//                 </div>
-//                `);
-//            } else {
-//                $("#" + tabContentId).append(`
-//                    <div class="container-fluid bg-light" style="background-color:white">    
-//                            <ol class="breadcrumb mt-2 p-0  col-12 d-flex justify-content-end align-items-center ">
-//                                <li class="breadcrumb-item mt-2 text-decoration-none"><a  href="#"> <i class=" ${_data.menuIcon}"> </i>  ${_data.menuName} </a> </li>
-//                                <li class="breadcrumb-item mt-2 active text-decoration-none" aria-current="page"> </i>${_data.moduleName}   
-//                                 &nbsp;
-//                                 <i title="Refresh" class="float-end bi bi-arrow-clockwise text-primary"  onclick="ReloadView('${partialViewName}', '${tabContentId}', ${moduleId})">   </i>  
-//                                </li> 
-//                            </ol>     
-//                    </div>
-//                    <iframe src="${_UrlFrame}" id="iframe-${tabContentId}" style="width:100%;height:100vh";overflow:hidden > </iframe>
-//                `); 
-//            } 
-//        },
-//        error: function (jqXHR) {
-//            if (jqXHR.status === 404) {
-//                // Handle 404 error specifically
-//                $("#" + tabContentId).html(`
-//                    <div class="container"> 
-//                        <section class="section error-404 min-vh-100 d-flex flex-column align-items-center justify-content-center">
-//                            <h1 class="text-danger">404</h1>
-//                            <h2 class="text-danger">Page Not Found</h2>
-//                            <h2 class="text-danger">The page you are looking for doesn't exist.</h2> 
-//                        </section>
-//                    </div>
-//                `);
-//            } else {
-//                // Handle other errors
-//                $("#" + tabContentId).html(`
-//                    <iframe src="/NoPermission/ErrorStatus400" style="width:100%;height:100vh; overflow:hidden;"></iframe>
-//                `);
-//            }
-//        } 
-//    });
-//}
-
+ 
 function closeTab(moduleId) {
     $("#tab-header-" + moduleId).remove();
     $("#content-" + moduleId).remove();

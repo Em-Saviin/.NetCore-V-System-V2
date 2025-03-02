@@ -6,8 +6,7 @@ function InitializeTablePermissionRole() {
     if (ab === '0' && bc === '0') {
         $("#tblPermissionRoleOnModule tbody").empty();
         return;
-    }
-
+    } 
    $.ajax({
        url: "/Permission/GetMenu",
        type: "GET",
@@ -20,7 +19,7 @@ function InitializeTablePermissionRole() {
                         <tr class="border" >  
                             <td colspan="9" style="background-color:#f2f3f2" class=" text-start fw-bold"> <p style="margin-left:36px;width:auto"> <i class="bi-arrow-down-right-square-fill"></i>  &nbsp;  ${item.menu_name} </p> </td>
                         </tr> 
-                        <tr id="menu_${item.id}">
+                        <tr id="menuOnRole_${item.id}">
 
                         </tr>
                 `)
@@ -31,23 +30,9 @@ function InitializeTablePermissionRole() {
                     data: { menuId: _menuId, roleId : $("#slsRoles").val()},
                     success: function (rs) { 
                         const _dataModule = rs.data; 
-                        _dataModule.map(function (item1, index1) { 
-                            var _IsFullCheck = "";
-                            var _IsListCheck = "";
-                            var _IsAddCheck = "";
-                            var _IsEditCheck = "";
-                            var _IsDeleteCheck = "";
-                            var _IsPrintCheck = "";  
-                            if (item1.full == true) {
-                                _IsFullCheck = "checked"
-                                _IsListCheck = "checked"
-                                _IsAddCheck = "checked"
-                                _IsEditCheck = "checked"
-                                _IsDeleteCheck = "checked"
-                                _IsPrintCheck = "checked"
-                            }
-                            $(`#menu_${item.id}`).after(`
-                                <tr class="border">
+                        _dataModule.map(function (item1, index1) {   
+                            $(`#menuOnRole_${item.id}`).after(` 
+                                <tr class="border" data-permission-role-module-id="${item1.module_id}">
                                     <td class="text-end"> <i class="bi-arrow-right-circle"></i> </td>
                                     <td class="text-start"> ${item1.module_name} </td>
                                     <td> ${item1.remark} </td>
@@ -92,8 +77,8 @@ function InitializeTablePermissionRole() {
    })
 } 
 function onCheckPermissionRole(checkbox, moduleId, moduleName, permissionType) {
-    const perEdit = $("#RoleEditflexSwitchCheck_" + moduleId);
     const perFull = $("#RoleFullflexSwitchCheck_" + moduleId);
+    const perEdit = $("#RoleEditflexSwitchCheck_" + moduleId);
     const perList = $("#RoleListflexSwitchCheck_" + moduleId);
     const perAdd = $("#RoleAddflexSwitchCheck_" + moduleId);
     const perDelete = $("#RoleDeleteflexSwitchCheck_" + moduleId);
@@ -338,7 +323,7 @@ function OnSaveNewRole() {
     })
   
 }
-function OnSaveAssignRole() { 
+function OnSaveAssignRole() {  
     const valueSelect2 = $("#slsRoleUser").val(); 
     var testobj = []; 
 
@@ -347,8 +332,9 @@ function OnSaveAssignRole() {
     });   
 }
 function OnSaveAssignRole() {   
-    var _userId = $("#slsRoleUser").val();
-    if (_userId.length === 0) {
+    var _userId = $("#slsRoleUser").val();  
+    console.log("User ID:", _userId);  
+    if (!_userId || _userId.length === 0) {  
         $.toast({
             title: "Warning",
             message: "សូមជ្រើសរើសឈ្មោះអ្នកប្រើប្រាស់!",
