@@ -42,7 +42,7 @@
                                 </select>
                              </div> 
                             <div class="col-8 float-end d-flex justify-content-end align-items-center">
-                                <button class="btn-sm btn-outline-success" onclick="OnSavePermissionOnRole()"> <i class="bi-bookmark-check-fill"> </i>  Save </button>
+                                <button class="btn-sm btn-outline-success" id="btnSavePermissionRole"> <i class="bi-bookmark-check-fill"> </i>  Save </button>
                             </div> 
                        </div>
                     </div>
@@ -294,7 +294,7 @@
 </div>
 
  
-<script src="~/js/permission.js"></script>
+<script src="~/js/Permission.js"></script>
  
 <script>
     $('.select2').select2();
@@ -304,7 +304,70 @@
     }); 
     LoadDataRoleSelect2(); 
     InitializeTableRole();  
-    $("#tblAssignRoleUser").dataTable();   
+    $("#tblAssignRoleUser").dataTable();
+
+    $("#btnSavePermissionRole").click(function () {
+        let permissions = [];
+
+        $("#tblPermissionRoleOnModule tbody tr").each(function () {
+            let permissionRoleModuleId = $(this).attr("data-permission-role-module-id");
+
+            if (permissionRoleModuleId) {
+                let full = $("#RoleFullflexSwitchCheck_" + permissionRoleModuleId).prop("checked") ? 1 : 0;
+                let list = $("#RoleListflexSwitchCheck_" + permissionRoleModuleId).prop("checked") ? 1 : 0;
+                let add = $("#RoleAddflexSwitchCheck_" + permissionRoleModuleId).prop("checked") ? 1 : 0;
+                let edit = $("#RoleEditflexSwitchCheck_" + permissionRoleModuleId).prop("checked") ? 1 : 0;
+                let deletePermission = $("#RoleDeleteflexSwitchCheck_" + permissionRoleModuleId).prop("checked") ? 1 : 0;
+                let print = $("#RolePrintflexSwitchCheck_" + permissionRoleModuleId).prop("checked") ? 1 : 0;
+
+                permissions.push({
+                    Module_Id: permissionRoleModuleId,
+                    Full: full,
+                    List: list,
+                    Add: add,
+                    Edit: edit,
+                    Delete: deletePermission,
+                    Print: print,
+                    Role_Id: $("#slsRoles").val()
+                });
+            }
+        });
+
+        let jsonData = JSON.stringify(permissions);  
+
+        $.ajax({
+            url: "/Permission/SavePermissionsOnRole",
+            type: "POST",
+            data: { 
+                JsonData: jsonData  
+            },
+            success: function (response) {
+               if(response.code == 0){
+                    Swal.fire({
+                        title: 'Success',
+                        type: 'success',
+                        html: response.message
+                    });
+               }else{
+                    Swal.fire({
+                        title: 'Error',
+                        type: 'error',
+                        html: response.message
+                    });
+               }
+                 
+            },
+            error: function (err) {
+                Swal.fire({
+                    title: 'Error',
+                    type: 'error',
+                    html:err
+                });
+            }
+        });
+    }); 
+    
+       
 </script>
 
 <style>

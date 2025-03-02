@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using System.Text;
 using V_System_Core.Component;
 using V_System_Core.Data;
-using Rotativa.AspNetCore;
+ 
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -47,13 +47,7 @@ builder.Services.AddCors(options =>
 
 var app = builder.Build();
 
-// 🔹 **Fix: Configure Rotativa Path**
-var rotativaPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot");
-RotativaConfiguration.Setup(rotativaPath);  // ✅ This ensures correct path detection
-
-// Configure Rotativa **after setting the path**
-app.UseRotativa();
-
+ 
 // Configure the HTTP request pipeline
 if (!app.Environment.IsDevelopment())
 {

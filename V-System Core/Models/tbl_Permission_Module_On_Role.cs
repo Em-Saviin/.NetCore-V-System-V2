@@ -14,6 +14,7 @@
         public int? role_id { get; set; }
         public bool? is_active { get; set; }
         public DateTime? assign_date { get; set; }
+        public int? assign_by { get; set; }
       
     }
 }

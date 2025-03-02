@@ -1,5 +1,4 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Rotativa.AspNetCore;
 using V_System_Core.Data;
 
 namespace V_System_Core.Controllers
@@ -31,13 +30,13 @@ namespace V_System_Core.Controllers
             }
         }
  
-        public IActionResult ExportToPdf()
-        {
-            return new ViewAsPdf("Index")
-            {
-                FileName = "IconsReport.pdf",
-                PageSize = Rotativa.AspNetCore.Options.Size.A4
-            };
-        } 
+        //public IActionResult ExportToPdf()
+        //{
+        //    return new ViewAsPdf("Index")
+        //    {
+        //        FileName = "IconsReport.pdf",
+        //        PageSize = Rotativa.AspNetCore.Options.Size.A4
+        //    };
+        //} 
     }
 }

@@ -5,6 +5,7 @@ using Microsoft.CodeAnalysis.CSharp.Syntax;
 using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
+using System.Data;
 using V_System_Core.Component;
 using V_System_Core.Data;
 using V_System_Core.Models;
@@ -105,6 +106,31 @@ namespace V_System_Core.Controllers
             catch (Exception ex) { 
                 return Json(new { code = 500 , message = ex.Message });
             }  
+        }
+        public IActionResult SavePermissionsOnRole(string JsonData)
+        {
+
+            try
+            {
+                if (string.IsNullOrEmpty(JsonData))
+                {
+                    return Json(new { code = 300, message = "User cannot be null!!" });
+                }
+
+               // string sql = "SP_ASSIGN_PERMISSION_ROLE";
+                var param = new[]
+                    {
+                        new SqlParameter("@AssignBy", SqlDbType.Int) { Value = _ManagerUserID._UserId },
+                        new SqlParameter("@JsonData", SqlDbType.NVarChar) { Value = JsonData }
+                    };
+
+                var _FromMessage = StaticClass.Exec_SP_CUD_WithReturnMessage(db, "SP_ASSIGN_PERMISSION_ROLE", param);
+                return Json(new { code = 0, message = _FromMessage }); 
+            }
+            catch (Exception ex)
+            {
+                return Json(new { code = 500, message = ex.Message });
+            } 
         }
 
         //---------------------------------------------------------------------------------
