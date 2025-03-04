@@ -2,7 +2,7 @@
 
 function InitializeLayout(roleName) {  
     if (roleName == "Admin") {
-        addNewTab('Permission', 65, 'Permission', 'bi-universal-access');
+        addNewTab('Overview', 27, 'Overview', 'bi bi-fan');
     };
     $('.modal').modal({
         backdrop: 'static',

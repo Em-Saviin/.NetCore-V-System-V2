@@ -44,8 +44,14 @@
 
 
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+@* <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script> *@
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.23/jspdf.plugin.autotable.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+ 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/pdfmake.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/vfs_fonts.js"></script>
 
 <link href="~/css/SalesReport.css" rel="stylesheet" media="print" /> 
 <script src="~/js/Icon.js"></script>
@@ -61,59 +67,89 @@
     }
 </style>
 
+<script> 
+
+    InitializeTblIcons();
+</script>
+ 
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/pdfmake.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/vfs_fonts.js"></script>
+
 <script>
-    
-    // $("#exportToPdf").click(function (e) {
-    //     console.log(e)
-    //     e.preventDefault();
+    function loadKhmerFont(callback) {
+        fetch("/font/PengHuoth-Thin.ttf") // ✅ Ensure this path is correct
+            .then(response => response.blob())
+            .then(blob => {
+                let reader = new FileReader();
+                reader.readAsDataURL(blob);
+                reader.onload = function () {
+                    let base64String = reader.result.split(",")[1]; // Extract Base64
+                    callback(base64String);
+                };
+            })
+            .catch(error => console.error("Error loading Khmer font:", error));
+    }
 
-    //     // Ensure DataTable has finished loading before capturing HTML
-    //     setTimeout(function () {
-    //         var tableHtml = $("#tblIcon").prop("outerHTML"); // Get the full table including data
-
-    //         $.ajax({
-    //             url: "/BoostrapIcons/ExportToPdf",
-    //             type: "POST",
-    //             data: { tableHtml: tableHtml },
-    //             success: function (response) {
-    //                 window.location.href = response; 
-    //             }
-    //         });
-    //     }, 1000); 
-    // });
     function exportTableToPdf(tableId, fileName) {
-        const { jsPDF } = window.jspdf; // ✅ Correct way to access jsPDF
+        loadKhmerFont((khmerFontBase64) => {
+            pdfMake.vfs["PengHuoth-Thin.ttf"] = khmerFontBase64; // Store in virtual file system
 
-        var table = document.getElementById(tableId);
+            pdfMake.fonts = {
+                KhmerFont: {
+                    normal: "PengHuoth-Thin.ttf",
+                    bold: "PengHuoth-Thin.ttf",
+                    italics: "PengHuoth-Thin.ttf",
+                    bolditalics: "PengHuoth-Thin.ttf"
+                }
+            };
 
-        html2canvas(table, {
-            scrollX: 0,
-            scrollY: -window.scrollY,
-            useCORS: true,
-            backgroundColor: "#ffffff",
-            scale: 2
-        }).then(canvas => {
-            var imgData = canvas.toDataURL("image/png");
-            var pdf = new jsPDF("p", "mm", "a4"); // ✅ Ensure jsPDF is initialized properly
+            let table = document.getElementById(tableId);
+            let tableData = [];
 
-            var imgWidth = 190;
-            var imgHeight = (canvas.height * imgWidth) / canvas.width;
+            // Extract table headers
+            let headers = [];
+            table.querySelectorAll("thead tr th").forEach(th => {
+                headers.push({ text: th.innerText, style: "tableHeader" });
+            });
+            tableData.push(headers);
 
-            pdf.addImage(imgData, "PNG", 10, 10, imgWidth, imgHeight);
-            pdf.save(fileName + ".pdf");
-        }).catch(error => {
-            console.error("Error generating PDF: ", error);
-            alert("Failed to export PDF. Try again.");
+            // Extract table rows
+            table.querySelectorAll("tbody tr").forEach(tr => {
+                let rowData = [];
+                tr.querySelectorAll("td").forEach(td => {
+                    rowData.push({ text: td.innerText, style: "tableCell" });
+                });
+                tableData.push(rowData);
+            });
+
+            let docDefinition = {
+                content: [
+                    { text: "របាយការណ៍ Icons", style: "header" }, // ✅ Correct Khmer title
+                    {
+                        table: {
+                            headerRows: 1,
+                            widths: Array(headers.length).fill("*"), // Auto column width
+                            body: tableData
+                        }
+                    }
+                ],
+                styles: {
+                    header: { fontSize: 16, bold: true, alignment: "center", margin: [0, 0, 0, 10] },
+                    tableHeader: { bold: true, fontSize: 12, color: "black", fillColor: "#f3f3f3" },
+                    tableCell: { fontSize: 10 }
+                },
+                defaultStyle: { font: "KhmerFont" } // ✅ Apply Khmer font globally
+            };
+
+            pdfMake.createPdf(docDefinition).download(fileName + ".pdf");
         });
     }
 
-
-
+    // ✅ Click event to trigger PDF export
     $("#exportToPdf").click(function () {
         exportTableToPdf("tblIcon", "IconsReport");
     });
-
-
-    InitializeTblIcons();
-    
 </script>
+
+ 

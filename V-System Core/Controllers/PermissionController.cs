@@ -153,10 +153,33 @@ namespace V_System_Core.Controllers
 
         }
 
+        public IActionResult SavePermissionsRoleOnUser(String JsonData)
+        {
+            try
+            {
+                if (string.IsNullOrEmpty(JsonData))
+                {
+                    return Json(new { code = 300, message = "User cannot be null!!" });
+                }
+                 
+                var param = new[]
+                    {
+                        new SqlParameter("@AssignBy", SqlDbType.Int) { Value = _ManagerUserID._UserId },
+                        new SqlParameter("@JsonData", SqlDbType.NVarChar) { Value = JsonData }
+                    };
+
+                var _FromMessage = StaticClass.Exec_SP_CUD_WithReturnMessage(db, "SP_SAVE_USER_ROLE_PERMISSIONS", param);
+                return Json(new { code = 0, message = _FromMessage });
+            }
+            catch (Exception ex)
+            {
+                return Json(new { code = 500, message = ex.Message });
+            }
+        }
 
 
         //---------------------------------------------------------------------------------
-         
+
         //Block System Role
         public IActionResult GetRoleData()
         {

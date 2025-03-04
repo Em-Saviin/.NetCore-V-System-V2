@@ -42,7 +42,7 @@
                                 </select>
                              </div> 
                             <div class="col-8 float-end d-flex justify-content-end align-items-center">
-                                <button class="btn-sm btn-outline-success" id="btnSavePermissionRole"> <i class="bi-bookmark-check-fill"> </i>  Save </button>
+                                <button class="btn-sm btn-outline-success"   onclick="OnSaverPermissionRoles()"> <i class="bi-bookmark-check-fill"> </i>  Save </button>
                             </div> 
                        </div>
                     </div>
@@ -101,7 +101,7 @@
                                   </div> 
                               </div>
                                 <div class="col-5 d-flex justify-content-end align-items-center">
-                                    <button class="btn-sm btn-outline-success float-end" onclick="OnSavePermissionOnRole()"> <i class="bi-bookmark-check-fill"> </i>  Save </button>
+                                    <button class="btn-sm btn-outline-success float-end" onclick="OnSaverPermissionUserRoles()"> <i class="bi-bookmark-check-fill"> </i>  Save </button>
                                 </div>
                             </div>
                         </div>
@@ -306,9 +306,14 @@
     InitializeTableRole();  
     $("#tblAssignRoleUser").dataTable();
 
-    $("#btnSavePermissionRole").click(function () {
-        let permissions = [];
 
+     function OnSaverPermissionRoles(){
+        const roleValue = $("#slsRoles").val();
+        if (roleValue == 0) {
+            return;
+        }
+        
+        let permissions = [];
         $("#tblPermissionRoleOnModule tbody tr").each(function () {
             let permissionRoleModuleId = $(this).attr("data-permission-role-module-id");
 
@@ -333,41 +338,109 @@
             }
         });
 
-        let jsonData = JSON.stringify(permissions);  
+        let jsonData = JSON.stringify(permissions);
+          
 
         $.ajax({
             url: "/Permission/SavePermissionsOnRole",
             type: "POST",
-            data: { 
-                JsonData: jsonData  
+            data: {
+                JsonData: jsonData
             },
             success: function (response) {
-               if(response.code == 0){
+                if (response.code == 0) {
                     Swal.fire({
                         title: 'Success',
                         type: 'success',
                         html: response.message
                     });
-               }else{
+                } else {
                     Swal.fire({
                         title: 'Error',
                         type: 'error',
                         html: response.message
                     });
-               }
-                 
+                }
+
             },
             error: function (err) {
                 Swal.fire({
                     title: 'Error',
                     type: 'error',
-                    html:err
+                    html: err
                 });
             }
         });
-    }); 
-    
-       
+     }
+
+    function OnSaverPermissionUserRoles() {
+        const userValue = $("#slsUsers").val();
+        if(userValue == 0){
+            return;
+        }
+
+         
+        let permissions = [];
+        $("#tblPermissionUserRoleOnModule tbody tr").each(function () {
+            let permissionuserRoleModuleId = 0; 
+            let hasDisabledInput = $(this).find("input[disabled]").length > 0; 
+            if (!hasDisabledInput) { 
+                  permissionUserRoleModuleId = $(this).attr("data-permission-UserRole-module-id"); 
+            }
+            if (permissionUserRoleModuleId) {
+                let full = $("#UserFullflexSwitchCheck_" + permissionUserRoleModuleId).prop("checked") ? 1 : 0;
+                let list = $("#UserListflexSwitchCheck_" + permissionUserRoleModuleId).prop("checked") ? 1 : 0;
+                let add = $("#UserAddflexSwitchCheck_" + permissionUserRoleModuleId).prop("checked") ? 1 : 0;
+                let edit = $("#UserEditflexSwitchCheck_" + permissionUserRoleModuleId).prop("checked") ? 1 : 0;
+                let deletePermission = $("#UserDeleteflexSwitchCheck_" + permissionUserRoleModuleId).prop("checked") ? 1 : 0;
+                let print = $("#UserPrintflexSwitchCheck_" + permissionUserRoleModuleId).prop("checked") ? 1 : 0;
+
+                permissions.push({
+                    Module_Id: permissionUserRoleModuleId,
+                    Full: full,
+                    List: list,
+                    Add: add,
+                    Edit: edit,
+                    Delete: deletePermission,
+                    Print: print,
+                    User_Id: userValue
+                });
+            }
+        });
+
+        let jsonData = JSON.stringify(permissions);
+        console.log(jsonData);  
+        $.ajax({
+            url: "/Permission/SavePermissionsRoleOnUser",
+            type: "POST",
+            data: {
+                JsonData: jsonData
+            },
+            success: function (response) {
+                if (response.code == 0) {
+                    Swal.fire({
+                        title: 'Success',
+                        type: 'success',
+                        html: response.message
+                    });
+                } else {
+                    Swal.fire({
+                        title: 'Error',
+                        type: 'error',
+                        html: response.message
+                    });
+                }
+
+            },
+            error: function (err) {
+                Swal.fire({
+                    title: 'Error',
+                    type: 'error',
+                    html: err
+                });
+            }
+        });
+    }
 </script>
 
 <style>
