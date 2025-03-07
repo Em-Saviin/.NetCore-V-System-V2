@@ -415,9 +415,11 @@ function InitializeTablePermissionUserRole() {
                     data: { menuId: _menuId,  userId : $("#slsUsers").val()},
                     success: function (rs) {
                         const _dataModule = rs.data;
+                        
                         _dataModule.map(function (item1, index1) { 
+                            console.log(item1)
                             $(`#menuOnuserRole_${item.id}`).after(`
-                                <tr class="border" data-permission-UserRole-module-id="${item1.module_id}" >
+                                <tr class="border" data-permission-UserRole-module-id="${item1.module_id}" data-permission-RoleId="${item1.role_id}">
                                     <td class="text-end"> <i class="bi-arrow-right-circle"></i> </td>
                                     <td class="text-start"> ${item1.module_name} </td>
                                     <td> ${item1.remark} </td>
