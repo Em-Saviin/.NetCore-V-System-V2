@@ -124,7 +124,7 @@ namespace V_System_Core.Controllers
                         new SqlParameter("@JsonData", SqlDbType.NVarChar) { Value = JsonData }
                     };
 
-                var _FromMessage = StaticClass.Exec_SP_CUD_WithReturnMessage(db, "SP_ASSIGN_PERMISSION_ROLE", param);
+                var _FromMessage = StaticClass.Exec_SP_CUD_WithReturnMessage(db, "SP_SAVE_ON_ROLE_PERMISSION", param);
                 return Json(new { code = 0, message = _FromMessage }); 
             }
             catch (Exception ex)
@@ -136,7 +136,7 @@ namespace V_System_Core.Controllers
         //---------------------------------------------------------------------------------
         public IActionResult GetListPermissionOnUserRole(int menuId , int userId)
         {
-            string sql = "SP_GET_MODULE_ON_USER_ROLE_PERMISSION_V2";
+            string sql = "SP_GET_MODULE_ON_USER_ROLE_PERMISSION";
             var param = new[]
             {
                 new SqlParameter("@MenuId", menuId), 
