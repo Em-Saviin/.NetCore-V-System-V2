@@ -115,9 +115,7 @@ namespace V_System_Core.Controllers
                 if (string.IsNullOrEmpty(JsonData))
                 {
                     return Json(new { code = 300, message = "User cannot be null!!" });
-                }
-
-               // string sql = "SP_ASSIGN_PERMISSION_ROLE";
+                } 
                 var param = new[]
                     {
                         new SqlParameter("@AssignBy", SqlDbType.Int) { Value = _ManagerUserID._UserId },

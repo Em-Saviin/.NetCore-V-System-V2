@@ -170,7 +170,6 @@ function LoadDataRoleSelect2() {
 
 
 
-
 //Block System Role
 var _tblRole = null;
 function InitializeTableRole() {
@@ -464,5 +463,4 @@ function InitializeTablePermissionUserRole() {
             })
         }
     })
-} 
-
+}  

@@ -56,9 +56,7 @@ function addNewTab(moduleName, moduleId, partialViewName, moduleIcon ) {
             <div class="tab-pane fade" id="${tabContentId}" role="tabpanel">
                 Loading content for ${moduleName}...
                 
-            </div>
-           
-            `;
+            </div>`;
         $("#tab-content-container").append(newTabContent);
         loadTabIframeContent(partialViewName, tabContentId, moduleId);
     }
@@ -94,7 +92,7 @@ function loadTabIframeContent(partialViewName, tabContentId, moduleId) {
                         <h2 class="text-danger">The page you are looking for doesn't exist.</h2> 
                     </section>
                 </div>
-                `);
+                `)
             } else {
                 // Before appending the iframe, check if the file exists
                 $.ajax({

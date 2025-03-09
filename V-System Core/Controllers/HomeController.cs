@@ -2,7 +2,8 @@ using Azure.Core;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc; 
 using Microsoft.EntityFrameworkCore; 
-using System.Diagnostics; 
+using System.Diagnostics;
+using V_System_Core.Component;
 using V_System_Core.Data;
 using V_System_Core.Models; 
 
@@ -60,7 +61,7 @@ namespace V_System_Core.Controllers
                 FinalModuleResult = db.GetModuleByRole(UserID).ToList(); 
                 ViewBag.Rolename = "NotAdmin";
             }
-
+         
             ViewData["MenuData"] = FinalMenuResult;
             ViewData["ModuleData"] = FinalModuleResult;
             ViewBag.Username = InfoUser?.username ?? "Unknow User"; 

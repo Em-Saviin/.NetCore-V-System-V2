@@ -307,7 +307,6 @@
     $("#tblAssignRoleUser").dataTable();
 
 
-
     function OnSaverPermissionRoles() {
         const roleValue = $("#slsRoles").val();
         if (roleValue == 0) {
@@ -356,7 +355,7 @@
                         html: response.message
                     });
                     permissionsRole.length = 0;
-                    
+
                 } else {
                     Swal.fire({
                         title: 'Error',
@@ -376,6 +375,8 @@
         });
     }
 
+
+
     function OnSaverPermissionUserRoles() {
         const userValue = $("#slsUsers").val();
         if (userValue == 0) {
@@ -385,7 +386,7 @@
         $("#tblPermissionUserRoleOnModule tbody tr").each(function () {
             let permissionUserRoleModuleId = $(this).attr("data-permission-userrole-module-id");
             let role = $(this).attr("data-permission-roleid");
-            let allDisabled = $(this).find("input[type='checkbox']").length === $(this).find("input[type='checkbox']:disabled").length; 
+            let allDisabled = $(this).find("input[type='checkbox']").length === $(this).find("input[type='checkbox']:disabled").length;
             if (!allDisabled && permissionUserRoleModuleId) {
                 let full = $("#DisabledUserFullflexSwitchCheck_" + permissionUserRoleModuleId).prop("checked") ? 1 : 0;
                 let list = $("#UserListflexSwitchCheck_" + permissionUserRoleModuleId).prop("checked") ? 1 : 0;
@@ -405,7 +406,7 @@
                     Print: print,
                     User_Id: userValue
                 });
-            }  
+            }
         });
 
         let jsonData = JSON.stringify(permissionsUserRole);
@@ -441,6 +442,7 @@
             }
         });
     }
+
 </script>
 
 <style>

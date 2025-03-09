@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Identity.Client;
 using V_System_Core.Models;
+using V_System_Core.Component;
 
 namespace V_System_Core.Data
 {
@@ -31,13 +32,13 @@ namespace V_System_Core.Data
         {
              var userIdParam = new SqlParameter("@UserId", userId); 
              
-            return this.tbl_Menus.FromSqlRaw("EXECUTE  SP_GET_MENU_PERMISSION_ON_SCREEN @UserId", userIdParam);
+            return  this.tbl_Menus.FromSqlRaw("EXECUTE  SP_GET_MENU_PERMISSION_ON_SCREEN @UserId", userIdParam);
         }
         public IQueryable<tbl_Modules> GetModuleByRole(int userId = 0)
         {
             var userIdParam = new SqlParameter("@UserId", userId); 
 
-            return this.tbl_Modules.FromSqlRaw("EXECUTE  SP_GET_MODULE_PERMISSION_ON_SCREEN @UserId", userIdParam);
+            return this.tbl_Modules.FromSqlRaw("EXECUTE  SP_GET_MODULE_PERMISSION_ON_SCREEN_V2 @UserId", userIdParam);
         }
 
     }
