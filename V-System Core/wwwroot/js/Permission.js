@@ -13,7 +13,16 @@ function InitializeTablePermissionRole() {
        data: { menuId: $("#slsRoleMenus").val() },
        success: function (rs) { 
            $("#tblPermissionRoleOnModule tbody").empty();
-            const _dataMenu = rs.data;
+           const _dataMenu = rs.data;
+           if (_dataMenu.length < 0) {
+               $("#tblPermissionRoleOnModule tbody").append(`
+                        <tr class="border" >  
+                            <td colspan="9" style="background-color:#f2f3f2" class=" text-start fw-bold"> <p style="margin-left:36px;width:auto"> <i class="bi-arrow-down-right-square-fill"></i>  &nbsp; No Data </p> </td>
+                        </tr> 
+                        
+                `)
+               return;
+           }
             _dataMenu.map(function (item, index) {
                 $("#tblPermissionRoleOnModule tbody").append(`
                         <tr class="border" >  

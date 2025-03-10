@@ -1,9 +1,12 @@
 ﻿ 
 
-function InitializeLayout(roleName) {  
-    if (roleName == "Admin") {
+function InitializeLayout(isDashboard) { 
+    if (isDashboard == 'True') {
         addNewTab('Overview', 27, 'Overview', 'bi bi-fan');
     };
+    //if (roleName == "Admin") {
+    //    addNewTab('Overview', 27, 'Overview', 'bi bi-fan');
+    //};
     $('.modal').modal({
         backdrop: 'static',
         keyboard: false

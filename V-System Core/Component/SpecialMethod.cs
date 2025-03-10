@@ -9,9 +9,9 @@ namespace V_System_Core.Component
         {
             context.Response.Cookies.Append(cookieName, cookieValue, new CookieOptions
             {
-                Expires = DateTimeOffset.UtcNow.AddMinutes(10),
+                Expires = DateTimeOffset.UtcNow.AddMinutes(2),
                 HttpOnly = true,
-                Secure = false,
+                Secure = true,
                 SameSite = SameSiteMode.Lax
             });
         } 

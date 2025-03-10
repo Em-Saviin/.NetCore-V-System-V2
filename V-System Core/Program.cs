@@ -30,7 +30,26 @@ builder.Services.AddSignalR();
 builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
     .AddCookie(options =>
     {
-        options.LoginPath = "/NoPermission/ErrorStatus401UnAuthorize";
+        options.LoginPath = "/NoPermission/ErrorStatus401UnAuthorize"; // Redirect when not authenticated
+        options.AccessDeniedPath = "/NoPermission/ErrorStatus400"; // Redirect when access is denied
+        options.ExpireTimeSpan = TimeSpan.FromMinutes(1); // Set cookie expiration time
+        options.SlidingExpiration = true; // Extend session when active
+        options.Cookie.HttpOnly = true; // Prevent JavaScript access (XSS protection)
+        options.Cookie.SecurePolicy = CookieSecurePolicy.Always; // Use HTTPS only
+        options.Cookie.SameSite = SameSiteMode.Strict; // Prevent CSRF attacks
+        options.Events = new CookieAuthenticationEvents
+        {
+            OnRedirectToLogin = context =>
+            {
+                if (context.Request.Path.StartsWithSegments("/api"))
+                { 
+                    context.Response.StatusCode = 401;
+                    return Task.CompletedTask;
+                } 
+                context.Response.Redirect("/NoPermission/ErrorStatus401UnAuthorize");
+                return Task.CompletedTask;
+            }
+        };
     });
 
 builder.Services.AddCors(options =>
@@ -59,16 +78,14 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 app.UseCors("AllowSpecificOrigins");
 app.UseRouting();
-
-// ✅ Register SignalR Hub 
-app.MapHub<FingerprintHub>("/fingerprintHub");
+ 
 
 app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Dashboard}/{action=Login}/{id?}"); // Default route
+    pattern: "{controller=Dashboard}/{action=Login}/{id?}");  
 
 // Start the application
 app.Run();

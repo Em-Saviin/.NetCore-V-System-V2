@@ -38,7 +38,7 @@ namespace V_System_Core.Data
         {
             var userIdParam = new SqlParameter("@UserId", userId); 
 
-            return this.tbl_Modules.FromSqlRaw("EXECUTE  SP_GET_MODULE_PERMISSION_ON_SCREEN_V2 @UserId", userIdParam);
+            return this.tbl_Modules.FromSqlRaw("EXECUTE  SP_GET_MODULE_PERMISSION_ON_SCREEN @UserId", userIdParam);
         }
 
     }

@@ -1,8 +1,10 @@
 using Azure.Core;
 using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Mvc; 
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Infrastructure;
 using Microsoft.EntityFrameworkCore; 
 using System.Diagnostics;
+using System.Security.Claims;
 using V_System_Core.Component;
 using V_System_Core.Data;
 using V_System_Core.Models; 
@@ -15,19 +17,12 @@ namespace V_System_Core.Controllers
         private int UserID { get; set; } 
         public HomeController(AppDbContext _dbContext  )
         { 
-            this.db = _dbContext; 
+            this.db = _dbContext;  
         }
       
         public IActionResult Index()
-        { 
-            if (Request.Cookies["UserID"] != null)
-            {
-                UserID = Convert.ToInt32(Request.Cookies["UserID"]);
-            }
-            else
-            {
-                return RedirectToAction("Login", "Dashboard");
-            }
+        {
+            UserID = Convert.ToInt32(User.FindFirst(ClaimTypes.NameIdentifier)?.Value); 
             var InfoUser = db.tbl_Users.Where(u => u.ID == UserID).FirstOrDefault(); 
             
             if (InfoUser == null)
@@ -49,22 +44,16 @@ namespace V_System_Core.Controllers
                          select new   { r.ID,  r.Role_Name }).ToList();
             
             bool isAdmin = userRoles.Any(role => role.Role_Name == "Admin");
-            var userRoleId = userRoles.Select(role => role.ID).FirstOrDefault() ; 
-            if (isAdmin) { 
-                  FinalMenuResult = db.tbl_Menus.Where(m => m.is_active == true).ToList();
-                  FinalModuleResult = db.tbl_Modules.Where(md => md.is_active == true).ToList();
-                  ViewBag.Rolename = "Admin";
-            }
-            else
-            { 
-                FinalMenuResult = db.GetMenuByRole(UserID).ToList(); 
-                FinalModuleResult = db.GetModuleByRole(UserID).ToList(); 
-                ViewBag.Rolename = "NotAdmin";
-            }
-         
+            var userRoleId = userRoles.Select(role => role.ID).FirstOrDefault() ;  
+          
+            FinalMenuResult = db.GetMenuByRole(UserID).ToList(); 
+            FinalModuleResult = db.GetModuleByRole(UserID).ToList(); 
+            ViewBag.Rolename = "NotAdmin";
+          
             ViewData["MenuData"] = FinalMenuResult;
             ViewData["ModuleData"] = FinalModuleResult;
-            ViewBag.Username = InfoUser?.username ?? "Unknow User"; 
+            ViewBag.OverviewDashboard = FinalModuleResult.FirstOrDefault(md => md.ID == 27) != null ? true : false;
+            ViewBag.Username = InfoUser?.username ?? "Unknow User" ;
             return View();
         }
 

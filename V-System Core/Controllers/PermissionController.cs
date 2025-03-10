@@ -9,29 +9,33 @@ using System.Data;
 using V_System_Core.Component;
 using V_System_Core.Data;
 using V_System_Core.Models;
-
+using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Http;
+using System.Security.Claims;
 
 namespace V_System_Core.Controllers
 {
-   
+
+    [Authorize]
     public class PermissionController : Controller
     {
        private readonly UserManagerInfo _ManagerUserID;  
         private readonly V_System_Core.Data.AppDbContext db;
+        private   int UserID { get; set; }
         public PermissionController(AppDbContext _dbContext , UserManagerInfo userMangerInfo  )
-        {
+        { 
             this.db = _dbContext;
             this._ManagerUserID = userMangerInfo;
+            this.UserID = ClaimsPrincipalExtensions.GetUserIdFromCookie(HttpContext);
         }
-
-
+         
         public IActionResult Index()
         {
+          
             return View();
         }
 
-        //Block Action
-
+        //Block Action 
         //Block Permission on Role
         public IActionResult GetDataSelect2()
         {
@@ -54,7 +58,7 @@ namespace V_System_Core.Controllers
                 return Json(new { data = MenuData });
             }
 
-        }
+        } 
         public IActionResult GetListPermissionOnRole(int menuId   , int roleId  )
         {
             string sql = "SP_GET_MODULE_ON_ROLE_PERMISSION";

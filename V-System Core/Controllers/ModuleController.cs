@@ -1,10 +1,12 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using V_System_Core.Component;
 using V_System_Core.Data;
 using V_System_Core.Models;
 
 namespace V_System_Core.Controllers
 {
+    [Authorize]
     public class ModuleController : Controller
     {
         private readonly V_System_Core.Data.AppDbContext db;

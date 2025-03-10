@@ -486,7 +486,8 @@ h6 {
 }
 
 .header-nav .notifications {
-  inset: 8px -15px auto auto !important;
+    /*inset: 8px -15px auto auto !important;*/
+    inset: auto auto auto auto !important;
 }
 
 .header-nav .notifications .notification-item {
@@ -517,9 +518,9 @@ h6 {
   background-color: #f6f9ff;
 }
 
-.header-nav .messages {
+/*.header-nav .messages {
   inset: 8px -15px auto auto !important;
-}
+*/}
 
 .header-nav .messages .message-item {
   padding: 15px 10px;
@@ -678,13 +679,13 @@ h6 {
   color: #4154f1;
   transition: 0.3;
   background: #f6f9ff;
-  padding: 10px 15px;
+  padding: 3px 15px;
   border-radius: 4px;
 }
 
 .sidebar-nav .nav-link i {
   font-size: 16px;
-  margin-right: 10px;
+  margin-right: 5px;
   color: #4154f1;
 }
 
