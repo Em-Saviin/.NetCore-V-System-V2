@@ -14,11 +14,17 @@ namespace V_System_Core.Controllers
 {
     public class AdminstratorController : Controller
     {
-        private readonly V_System_Core.Data.AppDbContext db; 
-       
-        public AdminstratorController(AppDbContext _dbContext)
+        private readonly V_System_Core.Data.AppDbContext db;
+        private readonly UserManagerInfo _ManagerUserID;  
+
+        public AdminstratorController(AppDbContext _dbContext, UserManagerInfo userMangerInfo)
         {
-            this.db = _dbContext;
+            this.db = _dbContext; 
+            this._ManagerUserID = userMangerInfo;
+            if (_ManagerUserID._UserId == 0)
+            {
+                SpecialMethod.RedirectToLogin(); 
+            };
         }
 
         public IActionResult Index()

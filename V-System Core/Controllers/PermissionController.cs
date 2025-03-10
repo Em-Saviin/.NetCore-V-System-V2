@@ -20,13 +20,14 @@ namespace V_System_Core.Controllers
     public class PermissionController : Controller
     {
        private readonly UserManagerInfo _ManagerUserID;  
-        private readonly V_System_Core.Data.AppDbContext db;
-        private   int UserID { get; set; }
+        private readonly V_System_Core.Data.AppDbContext db; 
         public PermissionController(AppDbContext _dbContext , UserManagerInfo userMangerInfo  )
         { 
             this.db = _dbContext;
-            this._ManagerUserID = userMangerInfo;
-            this.UserID = ClaimsPrincipalExtensions.GetUserIdFromCookie(HttpContext);
+            this._ManagerUserID = userMangerInfo;  
+            if(_ManagerUserID._UserId == 0 ) { 
+                RedirectToAction("Login", "Dashboard");
+            };
         }
          
         public IActionResult Index()

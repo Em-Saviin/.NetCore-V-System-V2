@@ -1,15 +1,24 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using V_System_Core.Component;
 using V_System_Core.Data;
 
 namespace V_System_Core.Controllers
 {
     public class BoostrapIconsController : Controller
     {
-        private readonly V_System_Core.Data.AppDbContext db;
-        public BoostrapIconsController(AppDbContext _dbContext)
+        private readonly V_System_Core.Data.AppDbContext db; 
+        private readonly UserManagerInfo _ManagerUserID;
+        public BoostrapIconsController(AppDbContext _dbContext , UserManagerInfo userMangerInfo)
         {
             this.db = _dbContext;
+            this.db = _dbContext;
+            this._ManagerUserID = userMangerInfo;
+            if (_ManagerUserID._UserId == 0)
+            {
+                SpecialMethod.RedirectToLogin();
+            };
         }
+      
         //View Index
         public IActionResult Index()
         {

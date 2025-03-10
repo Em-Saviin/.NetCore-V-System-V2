@@ -254,7 +254,7 @@
                 {
                     var modules = tbl_Modules.Where(mod => mod.menu_id == menu.ID).OrderBy(mod => mod.level).ToList();
                     var hasModules = modules.Any();
-                    <a class="nav-link collapsed fw-bolder" data-bs-target="#components-nav-@menu.ID" data-bs-toggle="collapse" href="#"  >
+                    <a class="nav-link collapsed fw-bolder pt-1" data-bs-target="#components-nav-@menu.ID" data-bs-toggle="collapse" href="#"  >
                         <i class="@menu.icon"></i> <span>@menu.menu_name</span> 
                         @if (hasModules)
                         {
@@ -374,7 +374,9 @@
 </script>
  
  <style>
-     
+    .sidebar-nav .nav-link, .dark-sidebar .nav-link {
+        padding: 10px ;
+    }
         .dark-mode {
             background-color: #121212 !important;
             color: #ffffff !important;

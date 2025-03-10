@@ -14,7 +14,7 @@ function InitializeTablePermissionRole() {
        success: function (rs) { 
            $("#tblPermissionRoleOnModule tbody").empty();
            const _dataMenu = rs.data;
-           if (_dataMenu.length < 0) {
+           if (_dataMenu.length === 0) {
                $("#tblPermissionRoleOnModule tbody").append(`
                         <tr class="border" >  
                             <td colspan="9" style="background-color:#f2f3f2" class=" text-start fw-bold"> <p style="margin-left:36px;width:auto"> <i class="bi-arrow-down-right-square-fill"></i>  &nbsp; No Data </p> </td>
@@ -38,7 +38,10 @@ function InitializeTablePermissionRole() {
                     type: "Get",
                     data: { menuId: _menuId, roleId : $("#slsRoles").val()},
                     success: function (rs) { 
-                        const _dataModule = rs.data; 
+                        const _dataModule = rs.data;
+                        if (_dataModule === undefined) {
+                            return;
+                        }
                         _dataModule.map(function (item1, index1) {   
                             $(`#menuOnRole_${item.id}`).after(` 
                                 <tr class="border" data-permission-role-module-id="${item1.module_id}">
@@ -231,7 +234,7 @@ function OnMappingRole(_roleId, _roleName, _roleDescription) {
         data: { roleId: _roleId },
         success: function (rs) { 
             var _dataUserWithRole = rs.data; 
-            if (_dataUserWithRole.length == 0) {
+            if (_dataUserWithRole.length === 0) {
                 $("#tblAssignRoleUser tbody").append(`
                           <tr>
                             <td colspan='6' class="text-center text-danger"> No data </td> 
@@ -409,6 +412,15 @@ function InitializeTablePermissionUserRole() {
         success: function (rs) {
             $("#tblPermissionUserRoleOnModule tbody").empty();
             const _dataMenu = rs.data;
+            if (_dataMenu == undefined) {
+                $("#tblPermissionUserRoleOnModule tbody").append(`
+                        <tr class="border" >  
+                            <td colspan="9" style="background-color:#f2f3f2" class=" text-start fw-bold text-danger"> No Data </td>
+                        </tr> 
+                        
+                `)
+                return;
+            }
             _dataMenu.map(function (item, index) {
                 $("#tblPermissionUserRoleOnModule tbody").append(`
                         <tr class="border" >  

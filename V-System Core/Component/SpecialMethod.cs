@@ -1,5 +1,7 @@
 ﻿using Azure.Core;
 using Azure;
+using Microsoft.AspNetCore.Mvc.Filters;
+using Microsoft.AspNetCore.Mvc;
 
 namespace V_System_Core.Component
 {
@@ -9,11 +11,16 @@ namespace V_System_Core.Component
         {
             context.Response.Cookies.Append(cookieName, cookieValue, new CookieOptions
             {
-                Expires = DateTimeOffset.UtcNow.AddMinutes(2),
+                Expires = DateTimeOffset.UtcNow.AddMinutes(10),
                 HttpOnly = true,
                 Secure = true,
                 SameSite = SameSiteMode.Lax
             });
-        } 
+        }
+        public static IActionResult RedirectToLogin()
+        {
+            return new RedirectResult("/Dashboard/Login");
+        }
     }
 }
+     

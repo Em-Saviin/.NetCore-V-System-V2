@@ -14,10 +14,11 @@ namespace V_System_Core.Controllers
     public class HomeController : Controller
     { 
         private readonly V_System_Core.Data.AppDbContext db;
-        private int UserID { get; set; } 
-        public HomeController(AppDbContext _dbContext  )
+        private int UserID { get; set; }
+        
+        public HomeController(AppDbContext _dbContext )
         { 
-            this.db = _dbContext;  
+            this.db = _dbContext; 
         }
       
         public IActionResult Index()

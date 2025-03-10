@@ -7,16 +7,18 @@ using Microsoft.AspNetCore.Authorization;
 using System.Security.Claims;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authentication;
+using Microsoft.EntityFrameworkCore;
+
 namespace V_System_Core.Controllers
 {
     
     public class DashboardController : Controller
     {
-        private readonly AppDbContext _db;
-
-        public DashboardController(AppDbContext dbcontext)
-        {
-            _db = dbcontext;
+   
+        private readonly V_System_Core.Data.AppDbContext db; 
+        public DashboardController(AppDbContext _dbContext)
+        { 
+            this.db = _dbContext;  
         }
 
         public IActionResult Index()
@@ -60,7 +62,7 @@ namespace V_System_Core.Controllers
                 return Json(new { success = 12, redirectUrl = Url.Action("Login", "Dashboard"), message = "Please input your information!" });
             }
 
-            var user = _db.tbl_Users.FirstOrDefault(u => u.username == objs.username && u.password == objs.password);
+            var user = db.tbl_Users.FirstOrDefault(u => u.username == objs.username && u.password == objs.password);
 
             if (user != null && user.ID.HasValue && user.username != null)
             {
@@ -69,7 +71,7 @@ namespace V_System_Core.Controllers
                     {
                         new Claim(ClaimTypes.Name, user.username), 
                         new Claim(ClaimTypes.NameIdentifier, user.ID.ToString() ?? "0"),
-                         new Claim("UserId", user.ID.ToString() ?? "0")
+                         new Claim("UserID", user.ID.ToString() ?? "0")
 
                     }; 
                 var claimsIdentity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
