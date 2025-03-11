@@ -13,6 +13,7 @@ builder.Services.AddControllersWithViews();
 // Register IHttpContextAccessor to allow accessing HttpContext in services
 builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 
+builder.Services.AddHttpContextAccessor();
 // Register UserManagerInfo as scoped (it depends on IHttpContextAccessor)
 builder.Services.AddScoped<UserManagerInfo>();
 
@@ -32,7 +33,7 @@ builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationSc
     {
         options.LoginPath = "/NoPermission/ErrorStatus401UnAuthorize"; // Redirect when not authenticated
         options.AccessDeniedPath = "/NoPermission/ErrorStatus400"; // Redirect when access is denied
-        options.ExpireTimeSpan = TimeSpan.FromMinutes(1); // Set cookie expiration time
+        options.ExpireTimeSpan = TimeSpan.FromMinutes(10); // Set cookie expiration time
         options.SlidingExpiration = true; // Extend session when active
         options.Cookie.HttpOnly = true; // Prevent JavaScript access (XSS protection)
         options.Cookie.SecurePolicy = CookieSecurePolicy.Always; // Use HTTPS only
