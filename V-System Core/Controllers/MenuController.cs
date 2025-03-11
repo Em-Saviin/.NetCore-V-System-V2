@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.Data.SqlClient;
+using Microsoft.EntityFrameworkCore;
 using System.Drawing;
 using System.Reflection.Metadata;
 using V_System_Core.Component;
@@ -10,16 +11,24 @@ namespace V_System_Core.Controllers
 {
     public class MenuController : Controller
     {
-
+        private readonly UserManagerInfo _UserManagerInfo;
         private readonly V_System_Core.Data.AppDbContext db;
-        public MenuController(AppDbContext _dbContext)
+        public MenuController(AppDbContext _dbContext , UserManagerInfo UserInfo)
         {
             this.db = _dbContext;
+            this._UserManagerInfo = UserInfo;
         }
         //View Index
         public IActionResult Index()
         {
-            return View();
+            var moduleId = MyMethodHelper.GetModuleId();
+            var sql = "EXEC SP_GET_PERMISSION_WHEN_CLICK_OPEN_MODULE @UserId  , @ModuleId "; 
+            var para = new List<SqlParameter>() {
+                    new SqlParameter("@UserId", _UserManagerInfo.GetUserId()),
+                    new SqlParameter("@ModuleId", moduleId) 
+                };
+            IEnumerable<PartialModel.DataPermissionCheck> objDataPermission = db.Database.SqlQueryRaw<PartialModel.DataPermissionCheck>(sql); 
+            return View(objDataPermission.FirstOrDefault());
         }
 
 

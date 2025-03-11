@@ -15,7 +15,7 @@ namespace V_System_Core.Controllers
             this._ManagerUserID = userManagerInfo;
             if (_ManagerUserID._UserId == 0)
             {
-                SpecialMethod.RedirectToLogin();
+                MyMethodHelper.RedirectToLogin();
             };
         }
 
