@@ -1,9 +1,23 @@
-﻿
+﻿@model IEnumerable<V_System_Core.Component.PartialModel.DataPermissionCheck>
+
 @{
     ViewData["Title"] = "Index";
     Layout = "~/Views/Shared/_Iframe.cshtml";
 }
- 
+ <script>
+     
+     @foreach(var permission in Model)
+         {
+         var list = permission.list;
+         var full = permission.full;
+         var  edit = permission.edit;
+         var  print = permission.print;
+         var delete = permission.delete;
+         }
+
+         console.log(list + full + edit + print + delete);
+</script>
+
 <div class="container-fluid p-1 ">
     <div class="row">
         <section class="section">

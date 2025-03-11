@@ -1,4 +1,5 @@
 ﻿var MyControllerPermmission = "/Permission";
+var tblAssignRoleUser;    //tblRoleUser
 //Block Permission on Role
 function InitializeTablePermissionRole() {
     const ab = $("#slsRoles").val();
@@ -14,10 +15,10 @@ function InitializeTablePermissionRole() {
        success: function (rs) { 
            $("#tblPermissionRoleOnModule tbody").empty();
            const _dataMenu = rs.data;
-           if (_dataMenu.length === 0) {
+           if (!Array.isArray(_dataMenu) || _dataMenu.length === 0) {
                $("#tblPermissionRoleOnModule tbody").append(`
                         <tr class="border" >  
-                            <td colspan="9" style="background-color:#f2f3f2" class=" text-start fw-bold"> <p style="margin-left:36px;width:auto"> <i class="bi-arrow-down-right-square-fill"></i>  &nbsp; No Data </p> </td>
+                            <td colspan="9" style="background-color:#f2f3f2" class=" text-center fw-bold text-danger"> No Data  </td>
                         </tr> 
                         
                 `)
@@ -219,54 +220,95 @@ function InitializeTableRole() {
 }
 
 var _RoleId = "";
-var _RoleName = "";
+var _RoleName = ""; 
+var _RoleDescription = "";
 function OnMappingRole(_roleId, _roleName, _roleDescription) {
     _RoleId = _roleId;
     _RoleName = _roleName;
+    _RoleDescription = _roleDescription;
     $("#txtRoleName").val(_roleName);
-    $("#txtRoleDescription").val(_roleDescription);
+    $("#txtRoleDescription").val(_RoleDescription);
     $("#txtRoleName2").val(_roleName);
     $("#tblAssignRoleUser tbody").empty();
     GetSelect2UserNotInRole(_RoleId);
-    $.ajax({
-        url: MyControllerPermmission + '/GetUserOfRole',
-        type: "GET",
-        data: { roleId: _roleId },
-        success: function (rs) { 
-            var _dataUserWithRole = rs.data; 
-            if (_dataUserWithRole.length === 0) {
-                $("#tblAssignRoleUser tbody").append(`
-                          <tr>
-                            <td colspan='6' class="text-center text-danger"> No data </td> 
-                        </tr> 
-                `)
-            } else {
-                _dataUserWithRole.map(function (item, index) {
-                    $("#tblAssignRoleUser tbody").append(`
-                         <tr>
-                            <td>#</th>
-                            <td>${item.fullname}</td>
-                            <td>${item.user_name}</td>
-                            <td>${item.sex}</td>
-                            <td>${item.role_name}</td>
-                            <td>
-                                <a class="text-danger cursor-pointer" id="${item.id}" > Remove </a>
-                            </td>
-                        </tr>
-                `)
-                });
+    tblAssignRoleUser = $("#tblAssignRoleUser").DataTable({
+        ajax: {
+            url: MyControllerPermmission + "/GetUserOfRole",
+            type: "GET",
+            data: function (d) {
+                d.roleId = _roleId; 
             }
-          
-        }
-    })
-    
+        },
+        responsive: true,
+        searching: true,
+        paging: true,
+        ordering: true,
+        destroy: true,
+        columns: [
+            { data: null, render: (data, type, row, meta) => meta.row + 1 },  
+            { data: "fullname" },
+            { data: "user_name" },
+            { data: "sex" },
+            { data: "role_name" },
+            {
+                data: "user_id",
+                render: function (data) {
+                    return `<a class="text-danger" style="cursor:pointer;" onclick="onRemoveRoleUser(${data})"> Remove </a>`;
+                }
+            }
+        ],
+        columnDefs: [{ orderable: false, targets: [5] }]  
+    });  
 }
-function onOpenModalNewRole() {
-    $("#modalNewRole").modal('show')
-}
+
+ 
+
+
+
+
+
 function onOpenModalAssignRole(){
     $("#modalAssignRoleToUser").modal('show');
 }
+
+function onOpenModalNewRole() {
+    $("#modalNewRole").modal('show')
+}
+function onRemoveRoleUser(userId) { 
+    $.ajax({
+        url: "/Permission/RemoveRoleFromUser",
+        type: "POST",
+        data: { roleId: _RoleId, userId: userId },
+        success: function (rs) {
+            if (rs.code == 0) {
+                Swal.fire({
+                    title: 'error',
+                    icon: 'success',
+                    type: 'Success Deleted',
+                    html: rs.message
+                });
+            } else {
+                Swal.fire({
+                    title: 'Issue with delete',
+                    icon: 'warning',
+                    type: 'warning',
+                    html: rs.message
+                });
+            }
+            tblAssignRoleUser.ajax.reload();
+        },
+        error: function (err) {
+            Swal.fire({
+                title: 'Error',
+                type: 'error',
+                icon: 'info',
+                html: err.message
+            });
+        }
+    })
+}
+
+
 
 function GetSelect2UserNotInRole(dataRoleId) {
     $.ajax({
@@ -336,17 +378,9 @@ function OnSaveNewRole() {
     })
   
 }
-function OnSaveAssignRole() {  
-    const valueSelect2 = $("#slsRoleUser").val(); 
-    var testobj = []; 
-
-    testobj.push({
-        userId: valueSelect2
-    });   
-}
+ 
 function OnSaveAssignRole() {   
-    var _userId = $("#slsRoleUser").val();  
-    console.log("User ID:", _userId);  
+    var _userId = $("#slsRoleUser").val();   
     if (!_userId || _userId.length === 0) {  
         $.toast({
             title: "Warning",
@@ -374,9 +408,11 @@ function OnSaveAssignRole() {
                 type: 'success',
                 html: rs.message
             });
-            _remark.val(""); 
+            _remark = "";
             _RoleId = 0;
             $("#slsRoleUser").empty().trigger('change') 
+            tblAssignRoleUser.ajax.reload();
+            $("#modalAssignRoleToUser").modal('hide');
         } else {
             Swal.fire({
                 title: 'Error',
@@ -386,15 +422,7 @@ function OnSaveAssignRole() {
         }
     });
 } 
-function OnSavePermissionOnRole() {
-    $.toast({
-        title: "Warning",
-        message: "Not yet write script in sql.",
-        type: "warning",
-        duration: 5000,
-    });
-
-}
+ 
 
 //Block permission on user role 
  
@@ -412,7 +440,7 @@ function InitializeTablePermissionUserRole() {
         success: function (rs) {
             $("#tblPermissionUserRoleOnModule tbody").empty();
             const _dataMenu = rs.data;
-            if (_dataMenu == undefined) {
+            if (!Array.isArray(_dataMenu) || _dataMenu.length === 0)   {
                 $("#tblPermissionUserRoleOnModule tbody").append(`
                         <tr class="border" >  
                             <td colspan="9" style="background-color:#f2f3f2" class=" text-start fw-bold text-danger"> No Data </td>
@@ -438,8 +466,7 @@ function InitializeTablePermissionUserRole() {
                     success: function (rs) {
                         const _dataModule = rs.data;
                         
-                        _dataModule.map(function (item1, index1) { 
-                            console.log(item1)
+                        _dataModule.map(function (item1, index1) {  
                             $(`#menuOnuserRole_${item.id}`).after(`
                                 <tr class="border" data-permission-UserRole-module-id="${item1.ID}" data-permission-RoleId="${item1.role_id}">
                                     <td class="text-end"> <i class="bi-arrow-right-circle"></i> </td>

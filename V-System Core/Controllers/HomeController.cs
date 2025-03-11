@@ -77,6 +77,7 @@ namespace V_System_Core.Controllers
                             MenuName = mn.menu_name
                         }).FirstOrDefault();
 
+            MyMethodHelper.SetModuleId(moduleId);
 
             if (dataModule == null)
             {

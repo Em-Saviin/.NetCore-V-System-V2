@@ -19,7 +19,7 @@ namespace V_System_Core.Controllers
     [Authorize]
     public class PermissionController : Controller
     {
-       private readonly UserManagerInfo _ManagerUserID;  
+        private readonly UserManagerInfo _ManagerUserID;  
         private readonly V_System_Core.Data.AppDbContext db; 
         public PermissionController(AppDbContext _dbContext , UserManagerInfo userMangerInfo  )
         { 
@@ -220,6 +220,27 @@ namespace V_System_Core.Controllers
             var UserNotInRoleData = StaticClass.GetSelect2Item(db, "USER_NOT_IN_ROLE", roleId);
             return Json(new { UserNotInRoleData });
 
+        }
+        public IActionResult RemoveRoleFromUser(int roleId , int userId)
+        {
+            try
+            {
+                var messageParam = MyMethodHelper.GetOutputMessageParameter();
+                string sql = "EXEC SP_DELETE_ROLE_FROM_USER @RoleId, @UserId, @Message OUTPUT";
+
+                db.Database.ExecuteSqlRaw(sql,
+                    new SqlParameter("@RoleId", roleId),
+                    new SqlParameter("@UserId", userId),
+                    messageParam);
+
+                string message = messageParam.Value.ToString() ?? "";
+
+                return Json(new { code = 0, message = "Success delete!" });
+            }
+            catch(Exception e)
+            {
+                return Json(new { code = 400, message = e.Message });
+            }
         }
     }
 }

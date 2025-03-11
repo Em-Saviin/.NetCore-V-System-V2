@@ -13,6 +13,7 @@ builder.Services.AddControllersWithViews();
 // Register IHttpContextAccessor to allow accessing HttpContext in services
 builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 
+builder.Services.AddHttpContextAccessor();
 // Register UserManagerInfo as scoped (it depends on IHttpContextAccessor)
 builder.Services.AddScoped<UserManagerInfo>();
 
