@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Identity.Client;
 using V_System_Core.Models;
 using V_System_Core.Component;
+using static V_System_Core.Component.PartialModel;
 
 namespace V_System_Core.Data
 {
@@ -28,6 +29,8 @@ namespace V_System_Core.Data
         public DbSet<tbl_Permission_Module_On_User> tbl_Permission_Module_On_User { get; set; }
         public DbSet<tbl_Telegram_Users> tbl_Telgram_Users { get; set; }
       
+
+
         public IQueryable<tbl_Menus> GetMenuByRole(int userId = 0)
         {
              var userIdParam = new SqlParameter("@UserId", userId); 
@@ -40,6 +43,6 @@ namespace V_System_Core.Data
 
             return this.tbl_Modules.FromSqlRaw("EXECUTE  SP_GET_MODULE_PERMISSION_ON_SCREEN @UserId", userIdParam);
         }
-
+       
     }
 }

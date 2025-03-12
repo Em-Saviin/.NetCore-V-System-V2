@@ -75,10 +75,7 @@ namespace V_System_Core.Controllers
                             ModuleIcon = md.icon,
                             MenuIcon = mn.icon,
                             MenuName = mn.menu_name
-                        }).FirstOrDefault();
-
-            MyMethodHelper.SetModuleId(moduleId);
-
+                        }).FirstOrDefault();  
             if (dataModule == null)
             {
                 return Json(new { error = "Module not found" });

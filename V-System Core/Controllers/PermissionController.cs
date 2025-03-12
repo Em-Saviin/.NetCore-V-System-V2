@@ -40,7 +40,7 @@ namespace V_System_Core.Controllers
         //Block Permission on Role
         public IActionResult GetDataSelect2()
         {
-            var RoleData = StaticClass.GetSelect2Item(db, "ROLE", 0); 
+            var RoleData = MyHelperSql.GetSelect2Item(db, "ROLE", 0); 
             var MenuData = db.tbl_Menus.Where(m => m.is_active == true).Select(mm => new { Id = mm.ID, Text = mm.menu_name }).ToArray();
             var UserData = db.tbl_Users.Where(u => u.is_active == true).Select(uu => new { Id = uu.ID, Text = uu.lastname + " " + uu.firstname }).ToArray();
             return Json(new { RoleData = RoleData, MenuData = MenuData ,UserData = UserData });
@@ -68,7 +68,7 @@ namespace V_System_Core.Controllers
                 new SqlParameter("@MenuId", menuId),
                 new SqlParameter("@RoleId", roleId)
             };
-            var rows = StaticClass.ExecSPWithParam(db, sql, param);
+            var rows = MyHelperSql.ExecSpReturnObj(db, sql, param);
                         return Json(new { data = rows });
         }
 
@@ -105,7 +105,7 @@ namespace V_System_Core.Controllers
                 new SqlParameter("@JsonData", JsonData),
                 new SqlParameter("@Remark", remark)
                 };
-              var _FromMessage =   StaticClass.Exec_SP_CUD_WithReturnMessage(db, sql, param);
+              var _FromMessage =   MyHelperSql.ExexSpReturnMessageFromStore(db, sql, param);
                 return Json(new {code = 0 , message = _FromMessage });
             }
             catch (Exception ex) { 
@@ -127,7 +127,7 @@ namespace V_System_Core.Controllers
                         new SqlParameter("@JsonData", SqlDbType.NVarChar) { Value = JsonData }
                     };
 
-                var _FromMessage = StaticClass.Exec_SP_CUD_WithReturnMessage(db, "SP_SAVE_ON_ROLE_PERMISSION", param);
+                var _FromMessage = MyHelperSql.ExexSpReturnMessageFromStore(db, "SP_SAVE_ON_ROLE_PERMISSION", param);
                 return Json(new { code = 0, message = _FromMessage }); 
             }
             catch (Exception ex)
@@ -145,13 +145,13 @@ namespace V_System_Core.Controllers
                 new SqlParameter("@MenuId", menuId), 
                 new SqlParameter("@UserId", userId)
             };
-            var rows = StaticClass.ExecSPWithParam(db, sql, param);
+            var rows = MyHelperSql.ExecSpReturnObj(db, sql, param);
             return Json(new { data = rows });
         }
 
         public IActionResult GetUserSelect2(int roleId = 0)
         {
-            var UserData = StaticClass.GetSelect2Item(db, "DATA_USER_ROLE", roleId);
+            var UserData = MyHelperSql.GetSelect2Item(db, "DATA_USER_ROLE", roleId);
             return Json(new { userData = UserData });
 
         }
@@ -171,7 +171,7 @@ namespace V_System_Core.Controllers
                         new SqlParameter("@JsonData", SqlDbType.NVarChar) { Value = JsonData }
                     };
 
-                var _FromMessage = StaticClass.Exec_SP_CUD_WithReturnMessage(db, "SP_SAVE_USER_ROLE_PERMISSIONS", param);
+                var _FromMessage = MyHelperSql.ExexSpReturnMessageFromStore(db, "SP_SAVE_USER_ROLE_PERMISSIONS", param);
                 return Json(new { code = 0, message = _FromMessage });
             }
             catch (Exception ex)
@@ -217,7 +217,7 @@ namespace V_System_Core.Controllers
 
         public IActionResult GetSelect2UserNotInRole(int roleId = 0)
         {
-            var UserNotInRoleData = StaticClass.GetSelect2Item(db, "USER_NOT_IN_ROLE", roleId);
+            var UserNotInRoleData = MyHelperSql.GetSelect2Item(db, "USER_NOT_IN_ROLE", roleId);
             return Json(new { UserNotInRoleData });
 
         }

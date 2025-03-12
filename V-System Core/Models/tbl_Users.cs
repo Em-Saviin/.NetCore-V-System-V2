@@ -1,10 +1,13 @@
 ﻿using Newtonsoft.Json;
+using System.ComponentModel.DataAnnotations;
 
 namespace V_System_Core.Models
 {
     public class tbl_Users
     {
+
         [JsonProperty("id")]
+        [Key]
         public int? ID { get; set; }
 
         [JsonProperty("username")]

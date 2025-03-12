@@ -20,15 +20,8 @@ namespace V_System_Core.Controllers
         }
         //View Index
         public IActionResult Index()
-        {
-            var moduleId = MyMethodHelper.GetModuleId();
-            var sql = "EXEC SP_GET_PERMISSION_WHEN_CLICK_OPEN_MODULE @UserId  , @ModuleId "; 
-            var para = new List<SqlParameter>() {
-                    new SqlParameter("@UserId", _UserManagerInfo.GetUserId()),
-                    new SqlParameter("@ModuleId", moduleId) 
-                };
-            IEnumerable<PartialModel.DataPermissionCheck> objDataPermission = db.Database.SqlQueryRaw<PartialModel.DataPermissionCheck>(sql); 
-            return View(objDataPermission.FirstOrDefault());
+        { 
+            return View();
         }
 
 
@@ -99,7 +92,7 @@ namespace V_System_Core.Controllers
                         };
 
                         // Execute the stored procedure
-                        StaticClass.ExecSPWithoutReturn(db, sql, param);
+                        MyHelperSql.ExecSpNotReturn(db, sql, param);
 
 
                         return Json(new { code = 0, message = "Menu " + objs.menu_name + " updated successfully!" });
@@ -135,6 +128,27 @@ namespace V_System_Core.Controllers
 
             }
         }
+
+        public JsonResult GetPermissionOnThisMenu()
+        {
+            var moduleId = MyMethodHelper.GetModuleId();
+            var sql = "SP_GET_PERMISSION_WHEN_CLICK_OPEN_MODULE";
+            var para = new List<SqlParameter>() {
+                    new SqlParameter("@UserId", _UserManagerInfo.GetUserId()),
+                    new SqlParameter("@ModuleId", moduleId)
+                };
+            var data = MyHelperSql.ExecSpReturnObj(db, sql, para.ToArray());
+            return Json(new { code = 0, data = data.ToList() });
+        }
+
+
+
+
+
+
+
+
+
 
     }
 }

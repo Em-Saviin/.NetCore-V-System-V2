@@ -5,7 +5,7 @@ using V_System_Core.Models;
 
 namespace V_System_Core.Component
 {
-    public static class StaticClass
+    public static class MyHelperSql
     {
        public static   object defaultSelect2 = new
         {
@@ -13,7 +13,7 @@ namespace V_System_Core.Component
             text = "Select an option"
         };
 
-        public static List<Dictionary<string, object>> ExecSPWithParam(DbContext dbContext, string storedProcedureName, params SqlParameter[] parameters)
+        public static List<Dictionary<string, object>> ExecSpReturnObj(DbContext dbContext, string storedProcedureName, params SqlParameter[] parameters)
         {
             var result = new List<Dictionary<string, object>>();
 
@@ -54,7 +54,7 @@ namespace V_System_Core.Component
             return result;
         }
 
-        public static List<Dictionary<string, object>> ExecSPWithoutParam(DbContext dbContext, string storedProcedureName)
+        public static List<Dictionary<string, object>> ExecSpReturnObj_NoParam(DbContext dbContext, string storedProcedureName)
         {
             var result = new List<Dictionary<string, object>>();
 
@@ -94,7 +94,7 @@ namespace V_System_Core.Component
                 .ToList();
         } 
 
-        public static void ExecSPWithoutReturn(DbContext dbContext, string storedProcedureName, params SqlParameter[] parameters)
+        public static void ExecSpNotReturn(DbContext dbContext, string storedProcedureName, params SqlParameter[] parameters)
         {
             using (var command = dbContext.Database.GetDbConnection().CreateCommand())
             { 
@@ -124,7 +124,7 @@ namespace V_System_Core.Component
             }
         }
 
-        public static string Exec_SP_CUD_WithReturnMessage(DbContext dbContext, string storedProcedureName, params SqlParameter[] parameters)
+        public static string ExexSpReturnMessageFromStore(DbContext dbContext, string storedProcedureName, params SqlParameter[] parameters)
         {
             string outputMessage = "";
 

@@ -1,17 +1,14 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
+using System.Security.Claims;
 using V_System_Core.Data;
 using V_System_Core.Models;
- using V_System_Core.Component;
-using Azure.Core;
-using Microsoft.AspNetCore.Authorization;
-using System.Security.Claims;
-using Microsoft.AspNetCore.Authentication.Cookies;
-using Microsoft.AspNetCore.Authentication;
-using Microsoft.EntityFrameworkCore;
 
 namespace V_System_Core.Controllers
 {
-    
+
     public class DashboardController : Controller
     {
    
@@ -54,6 +51,7 @@ namespace V_System_Core.Controllers
         //    }
         //}
 
+        [AllowAnonymous]
         [HttpPost]
         public async Task<IActionResult> CheckLogin(tbl_Users objs)
         {

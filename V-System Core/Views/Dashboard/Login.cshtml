@@ -39,7 +39,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script> 
     <script src="~/js/msgbox.js"></script>
     <script src="~/js/toast-plugin-min.js"></script>
-</head>
+</head> 
 <body class="bg-dark"> 
 
     <div id="myModal" class="">
@@ -60,7 +60,7 @@
                             <input type="password" name="password" class="form-control" value="123" id="txtPassword" required>
                         </div>        
 					<div class="form-group">
-                            <button type="button" style="background-color:#343a40" class="btn" onclick="OnCheckLogin()">Login</button>
+                            <button type="button" style="background-color:#343a40" class="btn" id="btnLogin" >Login</button>
 					</div>
 				</form>
 			</div>
@@ -69,49 +69,50 @@
 			</div>
 		</div>
 	</div>
-</div>      
+</div>
+
+
 </body>
 </html> 
 
+
 <script>
     $(document).ready(function () {
-
-    })
-    function OnCheckLogin() {  
-        var obj = {};
-        obj.username = $("#txtUserName").val();
-        obj.password = $("#txtPassword").val();
-        $.ajax({
-            url: '/Dashboard/CheckLogin',
-            type: 'POST',
-            dataType: 'json',
-            data: { objs: obj },
-            success: function (response) { 
-                if (response.success == 0) { 
-                    $.toast({
-                        title: "Message",
-                        message: "Login Success.",
-                        type: "success",
-                        duration: 5000,
-                    });
-                    window.location.href = response.redirectUrl;
-                } else {
+        $("#btnLogin").click(function () { 
+            var obj = {};
+            obj.username = $("#txtUserName").val();
+            obj.password = $("#txtPassword").val();
+            $.ajax({
+                url: '/Dashboard/CheckLogin',
+                type: 'POST',
+                dataType: 'json',
+                data: { objs: obj },
+                success: function (response) {
+                    if (response.success == 0) {
+                        toastr.success("Login Success.", "Message");
+                        window.location.href = response.redirectUrl;
+                    } else {
+                        Swal.fire({
+                            title: 'Error',
+                            icon: 'error', // ✅ Fixed
+                            html: response.message
+                        });
+                    }
+                }, error: function (err) {
                     Swal.fire({
                         title: 'Error',
-                        type: 'error',
-                        html: response.message
-                    }); 
+                        icon: 'error', // ✅ Fixed
+                        html: err.responseText  
+                    });
                 }
-            }, error: function (err) {
-                Swal.fire({
-                    title: 'Error',
-                    type: 'error',
-                    html: err
-                });
-            }
+            })
         })
+    })
+    function OnCheckLogin1() {
+       
     }
 </script>
+
 <style>
     body {
         position: relative;

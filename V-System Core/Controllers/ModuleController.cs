@@ -34,7 +34,7 @@ namespace V_System_Core.Controllers
                     text = m.menu_name
                 }).ToList();
 
-                var combinedResult = new[] { StaticClass.defaultSelect2 }
+                var combinedResult = new[] { MyHelperSql.defaultSelect2 }
                                             .Concat(MenuResult)
                                             .ToList();
                 return Json(new { code = 0, data = combinedResult });

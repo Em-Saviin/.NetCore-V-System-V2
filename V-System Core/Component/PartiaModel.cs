@@ -24,17 +24,7 @@ namespace V_System_Core.Component
             public int? level { get; set; }    
         }
 
-        public class DataPermissionCheck
-        {
-            public int module_id { get; set; }
-            public int full { get; set; }
-            public int list { get; set; }
-            public int add { get; set; }
-            public int delete { get; set; }
-            public int edit { get; set; }
-            public int print { get; set; }
-        }
-
+     
     }
 
    
