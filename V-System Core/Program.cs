@@ -26,7 +26,7 @@ builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationSc
     {
         options.LoginPath = "/NoPermission/ErrorStatus401UnAuthorize"; // Unauthorized redirect
         options.AccessDeniedPath = "/NoPermission/ErrorStatus400"; // Access denied redirect
-        options.ExpireTimeSpan = TimeSpan.FromMinutes(10);
+        options.ExpireTimeSpan = TimeSpan.FromMinutes(1);
         options.SlidingExpiration = true;
         options.Cookie.HttpOnly = true;
         options.Cookie.SecurePolicy = CookieSecurePolicy.Always;
