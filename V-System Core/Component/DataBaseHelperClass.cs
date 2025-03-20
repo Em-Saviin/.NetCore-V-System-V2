@@ -141,6 +141,30 @@ public static class DatabaseHelper
             };
         }
     }
+
+     /// <summary>
+    /// Execute stored procedure and return list of a different model
+    /// </summary>
+    public static List<T> ExecuteStoredProcedureList<T>(string storedProcedureName, object parameters = null)
+    {
+        using (var connection = new SqlConnection(_connectionString))
+        {
+            connection.Open();
+            return connection.Query<T>(storedProcedureName, parameters, commandType: CommandType.StoredProcedure).ToList();
+        }
+    }
+
+    /// <summary>
+    /// Execute stored procedure and return a single object in a different model
+    /// </summary>
+    public static T ExecuteStoredProcedureSingle<T>(string storedProcedureName, object parameters = null)
+    {
+        using (var connection = new SqlConnection(_connectionString))
+        {
+            connection.Open();
+            return connection.QueryFirstOrDefault<T>(storedProcedureName, parameters, commandType: CommandType.StoredProcedure);
+        }
+    }
 }
 
 /// <summary>
