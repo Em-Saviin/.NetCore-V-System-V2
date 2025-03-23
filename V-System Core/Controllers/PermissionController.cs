@@ -1,7 +1,6 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.CodeAnalysis;
-using Microsoft.CodeAnalysis.CSharp.Syntax;
 using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
@@ -9,9 +8,6 @@ using System.Data;
 using V_System_Core.Component;
 using V_System_Core.Data;
 using V_System_Core.Models;
-using Microsoft.AspNetCore.Authentication;
-using Microsoft.AspNetCore.Http;
-using System.Security.Claims;
 
 namespace V_System_Core.Controllers
 {
@@ -214,7 +210,26 @@ namespace V_System_Core.Controllers
                                });
             return Json(new { data = userRoleData.ToList() });
         }
+        public JsonResult DeleteRole(int roleId)
+        {
+            try
+            {
+                var thisRole = db.tbl_Roles.FirstOrDefault(r => r.ID == roleId);  
 
+                if (thisRole == null)
+                {
+                    return Json(new { code = 404, message = "Role not found!" });
+                }
+
+                db.tbl_Roles.Remove(thisRole); 
+                db.SaveChanges();  
+                return Json(new { code = 0, message = "Role deleted successfully!" });
+            }
+            catch (Exception ex)
+            {
+                return Json(new {code = 500 , message = ex.Message});
+            }
+        }
         public IActionResult GetSelect2UserNotInRole(int roleId = 0)
         {
             var UserNotInRoleData = MyHelperSql.GetSelect2Item(db, "USER_NOT_IN_ROLE", roleId);

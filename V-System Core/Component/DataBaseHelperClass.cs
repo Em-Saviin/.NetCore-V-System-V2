@@ -1,10 +1,6 @@
-using System;
-using System.Collections.Generic;
-using System.Data;
-using System.Data.SqlClient;
-using System.Linq;
 using Dapper;
-using Microsoft.Extensions.Configuration;
+using System.Data;
+using Microsoft.Data.SqlClient; // ? Correct for .NET Core
 
 public static class DatabaseHelper
 {
@@ -21,64 +17,64 @@ public static class DatabaseHelper
     /// <summary>
     /// Executes a stored procedure and returns a list of objects
     /// </summary>
-    public static ResultModel<List<T>> ExecuteStoredProcedureList<T>(string storedProcedureName, object parameters = null)
-    {
-        try
-        {
-            using (var connection = new SqlConnection(_connectionString))
-            {
-                connection.Open();
-                var result = connection.Query<T>(storedProcedureName, parameters, commandType: CommandType.StoredProcedure).ToList();
+    //public static ResultModel<List<T>> ExecuteStoredProcedureList<T>(string storedProcedureName, object parameters = null)
+    //{
+    //    try
+    //    {
+    //        using (var connection = new SqlConnection(_connectionString))
+    //        {
+    //            connection.Open();
+    //            var result = connection.Query<T>(storedProcedureName, parameters, commandType: CommandType.StoredProcedure).ToList();
 
-                return new ResultModel<List<T>>
-                {
-                    Data = result,
-                    Message = "Stored procedure executed successfully.",
-                    Success = true
-                };
-            }
-        }
-        catch (Exception ex)
-        {
-            return new ResultModel<List<T>>
-            {
-                Data = null,
-                Message = $"Error: {ex.Message}",
-                Success = false
-            };
-        }
-    }
+    //            return new ResultModel<List<T>>
+    //            {
+    //                Data = result,
+    //                Message = "Stored procedure executed successfully.",
+    //                Success = true
+    //            };
+    //        }
+    //    }
+    //    catch (Exception ex)
+    //    {
+    //        return new ResultModel<List<T>>
+    //        {
+    //            Data = null,
+    //            Message = $"Error: {ex.Message}",
+    //            Success = false
+    //        };
+    //    }
+    //}
 
     /// <summary>
     /// Executes a stored procedure and returns a single object
     /// </summary>
-    public static ResultModel<T> ExecuteStoredProcedureSingle<T>(string storedProcedureName, object parameters = null)
-    {
-        try
-        {
-            using (var connection = new SqlConnection(_connectionString))
-            {
-                connection.Open();
-                var result = connection.QueryFirstOrDefault<T>(storedProcedureName, parameters, commandType: CommandType.StoredProcedure);
+    //public static ResultModel<T> ExecuteStoredProcedureSingle<T>(string storedProcedureName, object parameters = null)
+    //{
+    //    try
+    //    {
+    //        using (var connection = new SqlConnection(_connectionString))
+    //        {
+    //            connection.Open();
+    //            var result = connection.QueryFirstOrDefault<T>(storedProcedureName, parameters, commandType: CommandType.StoredProcedure);
 
-                return new ResultModel<T>
-                {
-                    Data = result,
-                    Message = result != null ? "Stored procedure executed successfully." : "No data found.",
-                    Success = result != null
-                };
-            }
-        }
-        catch (Exception ex)
-        {
-            return new ResultModel<T>
-            {
-                Data = default,
-                Message = $"Error: {ex.Message}",
-                Success = false
-            };
-        }
-    }
+    //            return new ResultModel<T>
+    //            {
+    //                Data = result,
+    //                Message = result != null ? "Stored procedure executed successfully." : "No data found.",
+    //                Success = result != null
+    //            };
+    //        }
+    //    }
+    //    catch (Exception ex)
+    //    {
+    //        return new ResultModel<T>
+    //        {
+    //            Data = default,
+    //            Message = $"Error: {ex.Message}",
+    //            Success = false
+    //        };
+    //    }
+    //}
 
     /// <summary>
     /// Executes a stored procedure that does not return data (INSERT, UPDATE, DELETE)
@@ -178,4 +174,4 @@ public class ResultModel<T>
 }
 
 
-Install-Package Dapper
+//Install-Package Dapper

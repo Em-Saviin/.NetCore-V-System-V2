@@ -202,12 +202,19 @@ function InitializeTableRole() {
                     return meta.row + meta.settings._iDisplayStart + 1;
                 }
             },
-            { data: 'role_name' },
+            { data:null,
+              render: function (data) {
+                  return `   ${data.role_name}  `
+                }
+            },
             { data: 'description' },  
             {
                 data: null,  
                 render: function (data) {
-                    return `<a class="m-auto btn-sm btn-outline-primary bi-arrow-right-square" onclick="OnMappingRole(${data.id} , '${data.role_name}' ,'${data.description}' )"> </a>`
+                    return `
+                            <a class="m-auto btn-sm btn-outline-danger bi-dash-circle" title="Delete"  onclick="OnDeleteRole(${data.id})"></a> 
+                            <a class="m-auto btn-sm btn-outline-primary bi-arrow-right-square" title="Assign" onclick="OnMappingRole(${data.id} , '${data.role_name}' ,'${data.description}' )"> </a>
+                           `
                 }
             }
         ],  
@@ -218,6 +225,50 @@ function InitializeTableRole() {
         }
     }); 
 }
+function OnDeleteRole(thisRoleId) {
+    Swal.fire({
+        title: "Are you sure?",
+        text: "You won't be able to revert this!",
+        icon: "warning",
+        showCancelButton: true,
+        confirmButtonColor: "#d33",
+        cancelButtonColor: "#3085d6",
+        confirmButtonText: "Yes, delete it!"
+    }).then((result) => {
+        console.log(result)
+        if (result.value == true) {
+            $.ajax({
+                url: "/Permission/DeleteRole",
+                type: "POST",
+                data: { roleId: thisRoleId },
+                success: function (rs) {
+                    if (rs.code === 0) {
+                        Swal.fire({
+                            title: "Role Deleted!",
+                            text: rs.message,
+                            icon: "success"
+                        });
+                        _tblRole.ajax.reload(); // Reload DataTable
+                    } else {
+                        Swal.fire({
+                            title: "Error!",
+                            text: rs.message,
+                            icon: "error"
+                        });
+                    }
+                },
+                error: function () {
+                    Swal.fire({
+                        title: "Error!",
+                        text: "Failed to delete the role.",
+                        icon: "error"
+                    });
+                }
+            });
+        }
+    });
+}
+
 
 var _RoleId = "";
 var _RoleName = ""; 

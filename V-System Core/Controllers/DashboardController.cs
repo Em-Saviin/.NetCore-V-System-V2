@@ -29,7 +29,7 @@ namespace V_System_Core.Controllers
             return View();
         } 
 
-        [AllowAnonymous]
+         [AllowAnonymous]
         [HttpPost]
         public async Task<IActionResult> CheckLogin(tbl_Users objs)
         {

@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
 using System.Drawing;
@@ -9,6 +10,7 @@ using V_System_Core.Models;
 
 namespace V_System_Core.Controllers
 {
+    [Authorize]
     public class MenuController : Controller
     {
         private readonly UserManagerInfo _UserManagerInfo;

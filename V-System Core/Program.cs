@@ -4,7 +4,7 @@ using V_System_Core.Component;
 using V_System_Core.Data;
 
 var builder = WebApplication.CreateBuilder(args);
-
+ 
 // ✅ Add services to the container
 builder.Services.AddControllersWithViews();
 builder.Services.AddHttpContextAccessor();
@@ -26,7 +26,7 @@ builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationSc
     {
         options.LoginPath = "/NoPermission/ErrorStatus401UnAuthorize"; // Unauthorized redirect
         options.AccessDeniedPath = "/NoPermission/ErrorStatus400"; // Access denied redirect
-        options.ExpireTimeSpan = TimeSpan.FromMinutes(1);
+        options.ExpireTimeSpan = TimeSpan.FromMinutes(5);
         options.SlidingExpiration = true;
         options.Cookie.HttpOnly = true;
         options.Cookie.SecurePolicy = CookieSecurePolicy.Always;
