@@ -102,7 +102,7 @@ namespace V_System_Core.Controllers
                 new SqlParameter("@Remark", remark)
                 };
               var _FromMessage =   MyHelperSql.ExexSpReturnMessageFromStore(db, sql, param);
-                return Json(new {code = 0 , message = _FromMessage });
+              return Json(new {code = 0 , message = _FromMessage });
             }
             catch (Exception ex) { 
                 return Json(new { code = 500 , message = ex.Message });

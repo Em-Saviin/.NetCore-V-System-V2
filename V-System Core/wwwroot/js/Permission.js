@@ -333,18 +333,16 @@ function onRemoveRoleUser(userId) {
         success: function (rs) {
             if (rs.code == 0) {
                 Swal.fire({
-                    title: 'error',
-                    icon: 'success',
-                    type: 'Success Deleted',
+                    title: 'Success Deleted',
+                    type: 'success',
                     html: rs.message
-                });
+                }); 
             } else {
                 Swal.fire({
                     title: 'Issue with delete',
-                    icon: 'warning',
                     type: 'warning',
                     html: rs.message
-                });
+                });  
             }
             tblAssignRoleUser.ajax.reload();
         },
@@ -453,6 +451,7 @@ function OnSaveAssignRole() {
         jsonData: JSON.stringify(dataJson)
     }
     $.post('/Permission/AssignRoleToUser', dataObj, function (rs) {
+     
         if (rs.code == 0) {
             Swal.fire({
                 title: 'Success',
@@ -476,7 +475,6 @@ function OnSaveAssignRole() {
  
 
 //Block permission on user role 
- 
 function InitializeTablePermissionUserRole() {
     const bc = $("#slsRoleMenusOnUser").val();   
     const de = $("#slsUsers").val();  
@@ -562,4 +560,74 @@ function InitializeTablePermissionUserRole() {
             })
         }
     })
-}  
+} 
+
+
+
+function OnSaverPermissionUserRoles() {
+    const userValue = $("#slsUsers").val();
+    if (userValue == 0) {
+        return;
+    }
+    let permissionsUserRole = [];
+    $("#tblPermissionUserRoleOnModule tbody tr").each(function () {
+        let permissionUserRoleModuleId = $(this).attr("data-permission-userrole-module-id");
+        let role = $(this).attr("data-permission-roleid");
+        let allDisabled = $(this).find("input[type='checkbox']").length === $(this).find("input[type='checkbox']:disabled").length;
+        if (!allDisabled && permissionUserRoleModuleId) {
+            let full = $("#DisabledUserFullflexSwitchCheck_" + permissionUserRoleModuleId).prop("checked") ? 1 : 0;
+            let list = $("#UserListflexSwitchCheck_" + permissionUserRoleModuleId).prop("checked") ? 1 : 0;
+            let add = $("#DisabledUserAddflexSwitchCheck_" + permissionUserRoleModuleId).prop("checked") ? 1 : 0;
+            let edit = $("#UserEditflexSwitchCheck_" + permissionUserRoleModuleId).prop("checked") ? 1 : 0;
+            let deletePermission = $("#UserDeleteflexSwitchCheck_" + permissionUserRoleModuleId).prop("checked") ? 1 : 0;
+            let print = $("#UserPrintflexSwitchCheck_" + permissionUserRoleModuleId).prop("checked") ? 1 : 0;
+
+            permissionsUserRole.push({
+                Module_Id: permissionUserRoleModuleId,
+                Role_Id: role,
+                Full: full,
+                List: list,
+                Add: add,
+                Edit: edit,
+                Delete: deletePermission,
+                Print: print,
+                User_Id: userValue
+            });
+        }
+    });
+
+    let jsonData = JSON.stringify(permissionsUserRole);
+    $.ajax({
+        url: "/Permission/SavePermissionsRoleOnUser",
+        type: "POST",
+        data: {
+            JsonData: jsonData
+        },
+        success: function (response) {
+            if (response.code == 0) {
+                Swal.fire({
+                    title: 'Success',
+                    type: 'success',
+                    html: response.message
+                });
+                permissionsUserRole.length = 0;
+                InitializeTablePermissionUserRole();
+            } else {
+                Swal.fire({
+                    title: 'Error',
+                    type: 'error',
+                    html: response.message
+                });
+            }
+
+        },
+        error: function (err) {
+            Swal.fire({
+                title: 'Error',
+                type: 'error',
+                html: err
+            });
+        }
+    });
+}
+
