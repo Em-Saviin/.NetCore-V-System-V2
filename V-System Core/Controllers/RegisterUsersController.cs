@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
  
 using System.Web.Razor.Tokenizer.Symbols;
+using V_System_Core.Component;
 using V_System_Core.Data;
 
 namespace V_System_Core.Controllers
@@ -34,7 +35,19 @@ namespace V_System_Core.Controllers
                 return Json(new { code = 11, message = ex.Message });
             }
         }
-
+        public JsonResult LookupData()
+        {
+            try
+            {
+                var LookupCompany = MyHelperSql.GetSelect2Item(db, "COMPANY");
+                var LookupDepartment = MyHelperSql.GetSelect2Item(db, "COMPANY");
+                return Json(new {code = 0 , company = LookupCompany, department = LookupDepartment});
+            }
+            catch(Exception ex)
+            {
+                return Json(new { code = 12, message = ex.Message});
+            }
+        }
 
     }
 }

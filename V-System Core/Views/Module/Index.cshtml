@@ -3,18 +3,14 @@
     Layout = "_Iframe";
 }
 
-<!DOCTYPE html>
-
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>Index</title> 
+ 
     <script src="~/js/_Module.js"></script> 
-</head>
+ 
   @model V_System_Core.Models.tbl_Modules
-<body> 
+ 
     <div class="container-fluid p-0 ">
         <div class="row">
+        <button class="btn btn-sm btn-outline-primary" onclick="showLoading()">Show Loading</button>
             <section class="section">
                 <div class="row ">
                     <div class="col-lg-12">
@@ -56,9 +52,7 @@
                 </div>
             </section>
         </div>
-    </div>
-
-     
+    </div> 
     <!-- Modal Module -->
     <div class="modal fade" id="ModalModule" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
@@ -127,15 +121,20 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> 
 
-
-</body>
-</html>
-
+   
 <script>
     LoadSelect2();
-    makeDraggable($('#ModalModule .modal-header'));
+    makeDraggable($('#ModalModule .modal-header'));  
+
+    function showLoading() {
+        $('#loadingModal').modal('show');
+    }
+
+    function hideLoading() {
+        $('#loadingModal').modal('hide');
+    }
 </script>
 
 <style>

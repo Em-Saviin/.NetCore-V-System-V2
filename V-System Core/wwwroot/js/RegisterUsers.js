@@ -1,5 +1,30 @@
 ﻿var MyController = "/RegisterUsers"
-  
+$(document).ready(function () {
+    InitializeTblUser();
+    StartupIndex();
+    makeDraggable($('#userModal .modal-header'));
+})
+function StartupIndex() {
+    $.ajax({
+        url: "/RegisterUsers/LookupData",
+        type: "GET",
+        success: function (rs) {
+            if (rs.code == 0) {
+                var lookupCompany = rs.company.map(function (item) { return { id: item.id, text: item.text }; });
+                var lookupDepartment = rs.department.map(function (item) { return { id: item.id, text: item.text }; });
+
+                $('#slsCompany').select2({
+                    data: lookupCompany,
+                    dropdownParent: $('#userModal'),
+                });
+                $('#slsDepartment').select2({
+                    dropdownParent: $('#userModal'),
+                    data: lookupDepartment
+                });
+            }
+        }
+    })
+}
 function onBrowseImage() {
     $("#userImage").attr('src', '/lib/assets/img/uploadphotoimage.jpg'); 
     $("#inputImage").click(); 
@@ -8,7 +33,7 @@ function onBrowseImage() {
         $("#userImage").attr('src', tmppath); 
     }); 
 }
-
+ 
 function OpenModalUser() {
     $("#userModal").modal('show');
 }
@@ -64,7 +89,7 @@ function InitializeTblUser() {
         }
     }) 
 }
-
+ 
 $('form').on('submit', function (e) {
     e.preventDefault();   
     var formData = new FormData();  
