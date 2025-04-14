@@ -1,8 +1,10 @@
 ﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Components.Routing;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.CodeAnalysis;
 using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration.UserSecrets;
 using Microsoft.IdentityModel.Tokens;
 using System.Data;
 using V_System_Core.Component;
@@ -38,7 +40,8 @@ namespace V_System_Core.Controllers
         {
             var RoleData = MyHelperSql.GetSelect2Item(db, "ROLE", 0); 
             var MenuData = db.tbl_Menus.Where(m => m.is_active == true).Select(mm => new { Id = mm.ID, Text = mm.menu_name }).ToArray();
-            var UserData = db.tbl_Users.Where(u => u.is_active == true).Select(uu => new { Id = uu.ID, Text = uu.lastname + " " + uu.firstname }).ToArray();
+            var UserData = MyHelperSql.GetSelect2Item(db, "USER", 0);
+            /*  var UserData = db.tbl_Users.Where(u => u.is_active == true).Select(uu => new { Id = uu.ID, Text = uu.lastname + " " + uu.firstname }).ToArray();*/
             return Json(new { RoleData = RoleData, MenuData = MenuData ,UserData = UserData });
         }
         public IActionResult GetMenu(int menuId = 0, int roleId = 0)
@@ -255,6 +258,90 @@ namespace V_System_Core.Controllers
             catch(Exception e)
             {
                 return Json(new { code = 400, message = e.Message });
+            }
+        }
+        //Block System Users
+        public IActionResult GetUserByRole(int _RoleId)
+        {
+            var UserInRole = MyHelperSql.GetSelect2Item(db, "DATA_USER_ROLE", _RoleId);
+            return Json(new { UserInRole= UserInRole }); 
+        }
+        public JsonResult GetDataTblSystemUser(int _UserId = 0)
+        {
+            try
+            {
+                string sql = "SP_GETDATA_SYSTEM_USER";
+                var param = new[]
+                { 
+                    new SqlParameter("@UserId", _UserId)
+                }; 
+                var rsData = MyHelperSql.ExecSpReturnObj(db, sql, param);
+                return Json(new { code = 0, data = rsData });
+
+            }
+            catch (Exception ex)
+            {
+                return Json(new { code = 500, message = ex.Message });
+            }
+          
+        }
+        public JsonResult GetInfoUserWithRole(int _UserId = 0)
+        {
+            try
+            {
+                var rsUser = db.tbl_Users.Where(u => u.ID == _UserId && u.is_active == true).FirstOrDefault();
+                if (rsUser == null)
+                {
+                    return Json(new { code = 404 });
+                }
+                var rsRoleUser = db.tbl_UserRoles
+                                            .Where(ur => ur.User_Id == _UserId)
+                                            .Join(db.tbl_Roles,
+                                                        ur => ur.Role_Id,
+                                                        r => r.ID,
+                                                        (ur, r) => new { ur, r })
+                                            .Join(db.tbl_Users,  combined => combined.ur.User_Id,
+                                                    u => u.ID,
+                                                    (combined, u) => new
+                                                    {
+                                                        ID = combined.r.ID,
+                                                        text = combined.r.Role_Name
+                                                    })
+                                            .Distinct()
+                                            .ToList();
+
+                return Json(new { code = 0 , userData = rsUser, roleUserData = rsRoleUser });
+            }
+            catch (Exception ex)
+            {
+                return Json(new { code = 500, message = ex.Message });
+            }
+
+        }
+        public JsonResult SaveInfoUser(int _UserId, string _RoleId)
+        {
+            try
+            {
+                if (string.IsNullOrEmpty(_RoleId))
+                {
+                    return Json(new { code = 300, message = "Role cannot be null!!" });
+                }
+                var messageParam = MyMethodHelper.GetOutputMessageParameter();
+                string sql = "EXEC SP_SAVE_USER_INFO_BY_ROLE @AssignBy, @UserId, @RoleId, @Message OUTPUT";
+
+                db.Database.ExecuteSqlRaw(sql,
+                    new SqlParameter("@AssignBy", _ManagerUserID._UserId),
+                    new SqlParameter("@UserId", _UserId),
+                    new SqlParameter("@RoleId", _RoleId),
+                    messageParam);
+
+                string _message = messageParam.Value.ToString() ?? "";
+
+                return Json(new { code = 0, message = _message });
+            }
+            catch(Exception ex)
+            {
+                return Json(new { code = 500, message = ex.Message });
             }
         }
     }

@@ -3,6 +3,7 @@
     ViewData["Title"] = "Index";
     Layout = "~/Views/Shared/_Iframe.cshtml";
 } 
+<script src="~/js/permission.js"></script>
     <div class="container-fluid">
         <ul class="nav nav-tabs gap-1 mt-1" role="tablist">
             <li class="nav-item " role="presentation">
@@ -31,8 +32,7 @@
             <div class="tab-content pt-1" id="tab-content">
             <!--Block Permission On Role-->
             <div class="tab-pane active" id="tab-permission-on-role" role="tabpanel" aria-labelledby="icon-tab-permission-on-role">
-                <div class="row p-2">
-                <h4 style="font-weight:bolder; font-size:20px" class=" text-success text-start py-2 px-3 m-0">Permission On Role</h4>
+                <div class="row p-2"> 
                 <div class="card m-0 p-0">
                     <div class="card-header">
                        <div class="row d-flex justify-content-start">
@@ -86,8 +86,7 @@
               <!--Permission On User-->
         <div class="tab-pane" id="tab-permissioin-on-user" role="tabpanel" aria-labelledby="icon-tab-permission-on-user">
             <div class="card-body px-0 py-0">
-                <div class="row p-2">
-                        <h4 style="font-weight:bolder; font-size:20px" class="text-start text-danger py-2 px-3 m-0 m-0">Permission On user</h4> 
+                <div class="row p-2"> 
                     <div class="card m-0 p-0">
                         <div class="card-header">
                             <div class="row d-flex justify-content-between "> 
@@ -145,51 +144,34 @@
         <div class="tab-pane" id="tab-system-user" role="tabpanel" aria-labelledby="icon-tab-system-user">
             <div class="card-body px-0 py-0">
                 <div class="row p-2">
-                        <h4 style="font-weight:bolder; font-size:20px" class="text-start text-warning py-2 px-3 m-0 m-0">System User</h4> 
+                       
                     <div class="card m-0 p-0">
                         <div class="card-header">
                             <div class="row d-flex justify-content-between "> 
                               <div class="col-7">
-                                  <div class="row">
-
-                                        <div class="form-group d-grid  col-3 " id="eleUserSelect">
-                                            <label class="label">User <span class="text-danger fw-bolder">*</span> </label>
-                                            <select class="form-select select2" id="slsUsers" style="width:100%" onchange="InitializeTablePermissionUserRole();">
-                                                <option value="0">--- Select User ---</option>
-                                            </select>
-                                        </div> 
+                                  <div class="row">  
                                         <div class="form-group d-grid  col-3  ">
-                                            <label class="label">Menu ​ </label>
-                                            <select class="form-select select2" id="slsRoleMenusOnUser" style="width:100%" onchange="InitializeTablePermissionUserRole();">
-                                                <option value="0">--- Select Menu ---</option>
+                                            <label class="label">Username  <span class="text-danger fw-bolder">*</span>​ </label>
+                                            <select class="form-select select2" id="slsUserNames" onchange="OnIntitialzeTblSystemUsers()" style="width:100%">
+                                               
                                             </select>
-                                        </div>   
+                                        </div>
                                   </div> 
-                              </div>
-                                <div class="col-5 d-flex justify-content-end align-items-center">
-                                    <button class="btn-sm btn-outline-success float-end" onclick="OnSaverPermissionUserRoles()"> <i class="bi-bookmark-check-fill"> </i>  Save </button>
-                                </div>
+                              </div> 
                             </div>
                         </div>
-                        <div class="card-body p-0">
-                            <table id="d" class="table table-sm" style="width:100%">
-                                <thead>
-                                    <tr>
-                                        <th colspan="3">Module Info</th>
-                                        <th colspan="6">Permission</th>
-                                    </tr>
+                        <div class="card-body p-1">
+                            <table id="tblSystemUsers" class="table table-sm" style="width:100%">
+                                <thead> 
                                     <tr>
                                         <th>#</th>
-                                        <th>Menu Name</th>
-                                        <th>Remark</th>
-                                        <th>Full</th>
-                                        <th>List</th>
-                                        <th>Add</th>
-                                        <th>Edit</th>
-                                        <th>Delete</th>
-                                        <th>Print</th>
-                                    </tr>
-
+                                        <th>Username</th>
+                                        <th>Fullname</th>
+                                        <th>Sex</th> 
+                                        <th>Address</th>
+                                        <th>Phone</th> 
+                                        <th>Action</th>
+                                    </tr> 
                                 </thead>
                                 <tbody>
                                     <!--Dynamic-->
@@ -204,8 +186,7 @@
              <!--Block System Role-->
         <div class="tab-pane" id="tab-permission-system-role" role="tabpanel" aria-labelledby="icon-tab-system-role">
                 <div class="card-body m-0 px-0 py-0">
-                        <div class="row p-2">
-                            <h4 style="font-weight:bolder; font-size:20px" class="text-start text-primary py-2 px-3 m-0">System Role</h4>
+                        <div class="row p-2"> 
                                 <!--Role Table-->
                             <div class="col-xl-5 col-sm-12 col-md-12">
                                     <div class="card">
@@ -242,7 +223,7 @@
                             <div class="card-header">
                                 <div class="row d-flex justify-content-start">
                                     <div class="form-group d-grid col-2 ">
-                                        <h4> <i class="bi-rocket-takeoff"></i> Role Information</h4>
+                                        <h4> <i class="bi-rocket-takeoff"></i> Role</h4>
                                     </div> 
                                     <div class="col-10 float-end d-flex justify-content-end align-items-center">
                                         <button class="btn-sm btn-outline-success" onclick="onOpenModalAssignRole()"> <i class="bi-bookmark-plus-fill"> </i> Assign New User </button>
@@ -359,8 +340,44 @@
     </div>
 </div>
 
- 
-<script src="~/js/Permission.js"></script>
+
+<div class="modal" tabindex="-1" role="dialog" id="modalUserInfo">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <h5 class="modal-title">User Info</h5> 
+            </div>
+
+            <div class="modal-body">
+                <form id="userForm">
+                    <div class="form-group">
+                        <label for="mdTxtUsername">Username</label>
+                        <input type="text" class="form-control" id="mdTxtUsername" disabled>
+                        <input type="text" class="form-control" id="mdTxtUserId" hidden disabled>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="mdTxtSex">Sex</label>
+                        <input type="text" class="form-control" id="mdTxtSex" disabled>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="mdSlsRole">Role</label> 
+                        <select class="select2 form-control" id="mdSlsRole" multiple="multiple">  </select>
+                    </div>
+                </form>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" onclick="SaveUserInfo();">Save changes</button>
+                <button type="button" class="btn btn-secondary" onclick="onCloseModalRoleByuser();">Close</button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
  
 <script>
     $('.select2').select2();
@@ -369,8 +386,8 @@
         width: '100%'
     }); 
     LoadDataRoleSelect2(); 
-    InitializeTableRole();   
-
+    InitializeTableRole();
+    OnIntitialzeTblSystemUsers();
     function OnSaverPermissionRoles() {
         const roleValue = $("#slsRoles").val();
         if (roleValue == 0) {
@@ -438,8 +455,6 @@
             }
         });
     }
-  
-
 </script>
 
 <style>

@@ -1,6 +1,7 @@
 ﻿var MyControllerPermmission = "/Permission";
 var tblAssignRoleUser;    //tblRoleUser
 //Block Permission on Role
+ 
 function InitializeTablePermissionRole() {
     const ab = $("#slsRoles").val();
     const bc = $("#slsRoleMenus").val();
@@ -160,6 +161,11 @@ function LoadDataRoleSelect2() {
             var optionsUser = userResult.map(function (item) {
                 return { id: item.id, text: item.text };
             });
+            $('#slsUserNames').select2({
+                data: optionsUser,
+                placeholder: '---Select User---',
+                width: '100%',
+            });
             $('#slsRoles').select2({ 
                 data: optionsRole, 
             });
@@ -173,16 +179,24 @@ function LoadDataRoleSelect2() {
             $('#slsUsers').select2({
                 data: optionsUser,
                 placeholder: "--- Select User ---"
-            });  
+            }); 
+            $('#slsRoleName').select2({
+                data: optionsRole,
+            }); 
+            $('#mdSlsRole').select2({
+                data: optionsRole,
+                multiple: true,
+                dropdownParent: $("#modalUserInfo"),
+                width: '100%',
+                allowClear: true
+            }); 
         },
         error: function (err) {
             console.log(err)
         }
     })
 }
-
-
-
+ 
 //Block System Role
 var _tblRole = null;
 function InitializeTableRole() {
@@ -311,13 +325,7 @@ function OnMappingRole(_roleId, _roleName, _roleDescription) {
         columnDefs: [{ orderable: false, targets: [5] }]  
     });  
 }
-
  
-
-
-
-
-
 function onOpenModalAssignRole(){
     $("#modalAssignRoleToUser").modal('show');
 }
@@ -631,3 +639,174 @@ function OnSaverPermissionUserRoles() {
     });
 }
 
+//Block System User
+function InitializeTableSystemUser() {
+    const ab = $("#slsRoleName").val();
+    const bc = $("#slsUserNames").val(); 
+    $.ajax({
+        url: "/Permission/GetMenu",
+        type: "GET",
+        data: { menuId: $("#slsRoleMenus").val() },
+        success: function (rs) {
+            $("#tblPermissionRoleOnModule tbody").empty();
+            const _dataMenu = rs.data;
+            if (!Array.isArray(_dataMenu) || _dataMenu.length === 0) {
+                $("#tblPermissionRoleOnModule tbody").append(`
+                        <tr class="border" >  
+                            <td colspan="9" style="background-color:#f2f3f2" class=" text-center fw-bold text-danger"> No Data  </td>
+                        </tr> 
+                        
+                `)
+                return;
+            }
+            _dataMenu.map(function (item, index) {
+                $("#tblPermissionRoleOnModule tbody").append(`
+                        <tr class="border" >  
+                            <td colspan="9" style="background-color:#f2f3f2" class=" text-start fw-bold"> <p style="margin-left:36px;width:auto"> <i class="bi-arrow-down-right-square-fill"></i>  &nbsp;  ${item.menu_name} </p> </td>
+                        </tr> 
+                        <tr id="menuOnRole_${item.id}">
+
+                        </tr>
+                `)
+                var _menuId = item.id
+                $.ajax({
+                    url: "/Permission/GetListPermissionOnRole",
+                    type: "Get",
+                    data: { menuId: _menuId, roleId: $("#slsRoles").val() },
+                    success: function (rs) {
+                        const _dataModule = rs.data;
+                        if (_dataModule === undefined) {
+                            return;
+                        }
+                        _dataModule.map(function (item1, index1) {
+                            $(`#menuOnRole_${item.id}`).after(` 
+                                <tr class="border" data-permission-role-module-id="${item1.module_id}">
+                                    <td class="text-end"> <i class="bi-arrow-right-circle"></i> </td>
+                                    <td class="text-start"> ${item1.module_name} </td>
+                                    <td> ${item1.remark} </td>
+                                    <td style="width:150px;" class="m-0 p-0">
+                                        <div class="form-switch">
+                                              ${item1.full}
+                                         </div>
+                                    </td>
+                                    <td style="width:150px;" class="m-0 p-0">
+                                        <div class="form-switch">
+                                              ${item1.list}
+                                         </div>
+                                    </td>
+                                    <td style="width:150px;" class="m-0 p-0">
+                                        <div class="form-switch">
+                                             ${item1.add}
+                                         </div>
+                                    </td>
+                                    <td style="width:150px;" class="m-0 p-0">
+                                        <div class="form-switch">
+                                             ${item1.edit}
+                                         </div>
+                                    </td>
+                                    <td style="width:150px;" class="m-0 p-0">
+                                        <div class="form-switch">
+                                             ${item1.delete}
+                                         </div>
+                                    </td>
+                                    <td style="width:150px;" class="m-0 p-0">
+                                        <div class="form-switch">
+                                            ${item1.print}
+                                         </div>
+                                    </td>
+                                </tr>
+                    `);
+                        })
+                    }
+                })
+
+            })
+        }
+    })
+} 
+
+var tblSystemUsers = null;
+function OnIntitialzeTblSystemUsers() { 
+    var __UserId = $("#slsUserNames").val();
+    $("#tblSystemUsers tbody").empty();
+    tblSystemUsers = $("#tblSystemUsers").DataTable({
+        ajax: {
+            url: MyControllerPermmission + "/GetDataTblSystemUser",
+            type: "GET",
+            data: function (d) { 
+                d._UserId = __UserId
+            } 
+        },
+        responsive: true,
+        searching: true,
+        paging: true,
+        ordering: true,
+        destroy: true,
+        columns: [
+            { data: null, render: (data, type, row, meta) => meta.row + 1 },
+            { data: "username" },
+            {
+                data: null,
+                render: function (data) {
+                    return `${data.firstname}  ${data.lastname}`;
+                }
+            },
+            { data: "sex" }, 
+            { data: "address" },
+            { data: "phone" },
+            {
+                data: "ID",
+                render: function (data) {
+                    return `<a class="text-success" style="cursor:pointer;" onclick="onOpenModalEditRoleByUser(${data})"> Edit </a>`;
+                }
+            }
+        ] 
+    });
+}
+var _user_id_ = 0;
+function onOpenModalEditRoleByUser(_userId) {  
+    $("#modalUserInfo").modal('show');
+    $("#mdTxtUserId").val(_userId);
+    $.ajax({
+        url: MyControllerPermmission + "/GetInfoUserWithRole",
+        type: 'GET',
+        data: { _UserId: _userId },
+        success: function (rs) {
+            if (rs.code > 0) return; 
+            const rsRoleOption = rs.roleUserData || [];
+            const rsUserData = rs.userData || {}; 
+            // Set user info
+            $("#mdTxtUsername").val(rsUserData.username || '');
+            $("#mdTxtSex").val(rsUserData.sex || ''); 
+            //Bind id of val select2
+            const selectedRoleIds = rsRoleOption.map(r => r.id);   
+            $('#mdSlsRole').val(selectedRoleIds).trigger('change');
+        }
+
+    })
+}
+function onCloseModalRoleByuser() {
+    $("#modalUserInfo").modal('hide');
+}
+
+function SaveUserInfo() {
+
+    var thisUser = $("#mdTxtUserId").val();  
+    const selectedRoles = $('#mdSlsRole').val();   
+    var jsonData = JSON.stringify(selectedRoles);  
+    $.ajax({
+        url: MyControllerPermmission + "/SaveInfoUser", 
+        method: 'POST', 
+        data: { _UserId: thisUser, _RoleId: jsonData } ,
+        success: function (rs) {
+            if (rs.code == 0) {
+                _user_id_ = 0; 
+                AlertMessage.success(rs.message);
+                $("#modalUserInfo").modal('hide');
+            } else {
+                AlertMessage.error(rs.message);
+            }
+        }
+    });
+
+}
