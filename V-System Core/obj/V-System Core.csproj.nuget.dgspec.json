@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Working With Code\\GitHub Project\\Core V2\\.NetCore-V-System-V2\\V-System Core\\V-System Core.csproj": {}
+    "E:\\Working With Code\\GitHub Project\\.NetCore-V-System-V2\\V-System Core\\V-System Core.csproj": {}
   },
   "projects": {
-    "E:\\Working With Code\\GitHub Project\\Core V2\\.NetCore-V-System-V2\\V-System Core\\V-System Core.csproj": {
+    "E:\\Working With Code\\GitHub Project\\.NetCore-V-System-V2\\V-System Core\\V-System Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Working With Code\\GitHub Project\\Core V2\\.NetCore-V-System-V2\\V-System Core\\V-System Core.csproj",
+        "projectUniqueName": "E:\\Working With Code\\GitHub Project\\.NetCore-V-System-V2\\V-System Core\\V-System Core.csproj",
         "projectName": "V-System Core",
-        "projectPath": "E:\\Working With Code\\GitHub Project\\Core V2\\.NetCore-V-System-V2\\V-System Core\\V-System Core.csproj",
+        "projectPath": "E:\\Working With Code\\GitHub Project\\.NetCore-V-System-V2\\V-System Core\\V-System Core.csproj",
         "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
-        "outputPath": "E:\\Working With Code\\GitHub Project\\Core V2\\.NetCore-V-System-V2\\V-System Core\\obj\\",
+        "outputPath": "E:\\Working With Code\\GitHub Project\\.NetCore-V-System-V2\\V-System Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -44,6 +44,10 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.1.66, )"
+            },
             "Microsoft.AspNet.Mvc": {
               "target": "Package",
               "version": "[5.3.0, )"
