@@ -28,7 +28,8 @@ namespace V_System_Core.Data
         public DbSet<tbl_Permission_Module_On_Role> tbl_Permission_Module_On_Role { get; set; }
         public DbSet<tbl_Permission_Module_On_User> tbl_Permission_Module_On_User { get; set; }
         public DbSet<tbl_Telegram_Users> tbl_Telgram_Users { get; set; }
-      
+        public DbSet<tbl_WorkflowEntity> tbl_Workflow_Entity { get; set; }
+        public DbSet<tbl_WorkflowTransaction> tbl_Workflow_Transaction { get; set; }
 
 
         public IQueryable<tbl_Menus> GetMenuByRole(int userId = 0)

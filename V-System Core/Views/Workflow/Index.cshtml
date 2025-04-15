@@ -1,0 +1,83 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Iframe.cshtml";
+}
+<script src="~/js/setupworkflow.js"></script>
+
+<div class="container-fluid p-0 ">
+    <div class="row">
+        <section class="section">
+            <div class="row ">
+                <div class="col-lg-12">
+                    <div class="card">
+                        <div class="card-header  d-flex justify-content-between gap-1 ">
+                            <div class="col-3 d-flex gap-2 ">
+                                 
+                                <select class="select2 " style="width:100%" hidden  >
+                                </select>
+                            </div>
+                            <div class="col-2  ">
+                                <button class="float-end btn btn-outline-success btn-sm " onclick="OpenModalWorkflow()" data-button-type="add">+ Create Workflow</button>
+                            </div>
+                        </div>
+
+                        <div class="card-body">
+                            <table class="table" id="tblWorkflow" style="width:100%">
+                                <thead>
+                                    <tr>
+                                        <th> No </th>
+                                        <th>WorkflowName</th>
+                                        <th>Remark</th>
+                                        <th>ModuleName </th>
+                                        <th>Action </th> 
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>   <!-- Modal Module -->
+<div class="modal fade" id="ModalWorkflow" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header  fw-bolder text-light" style="background-color:#1b3351">
+                <h5 class="modal-title" id="ModalModuleLabel">Setup Workflow</h5>
+                <button type="button" class="btn-close btn-close-white" onclick="CloseModalWorkflow()"></button>
+            </div>
+            <div class="modal-body">
+                <form id="frmWorkflow">
+                    <!-- Module -->
+                    <div class="mb-3">
+                        <label for="slsModule" class="form-label">Module <strong class="text-danger">(*)</strong> </label>
+                        <select class="select2" style="width:100%" id="slsModule">
+                            <!-- Options here -->
+                        </select>
+                    </div> 
+                    <!-- WorkflowName -->
+                    <div class="mb-3">
+                        <label for="txtWorkflowq" class="form-label">Workflow Name  <strong class="text-danger">(*)</strong> </label>
+                        <input type="text" class="form-control" id="txtWorkflow" required>
+                    </div> 
+                    <!-- Remark Input -->
+                    <div class="mb-3">
+                        <label for="remark" class="form-label">Remark</label>
+                        <input type="text" class="form-control" value="#" id="txtRemark">
+                    </div> 
+                </form>
+            </div>
+            <div class="modal-footer">
+                <!-- Close Button -->
+                <button type="button" class="btn btn-secondary bg-danger" onclick="CloseModalWorkflow()">Close</button>
+                <!-- Save Button -->
+                <button type="submit" class="btn btn-primary bg-aceleda" onclick="SaveWorkflowName();">Save</button>
+            </div>
+        </div>
+    </div>
+</div>
+ 

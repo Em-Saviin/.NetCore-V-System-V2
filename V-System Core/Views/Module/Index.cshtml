@@ -9,8 +9,7 @@
   @model V_System_Core.Models.tbl_Modules
  
     <div class="container-fluid p-0 ">
-        <div class="row">
-        <button class="btn btn-sm btn-outline-primary" onclick="showLoading()">Show Loading</button>
+        <div class="row"> 
             <section class="section">
                 <div class="row ">
                     <div class="col-lg-12">
@@ -126,15 +125,7 @@
    
 <script>
     LoadSelect2();
-    makeDraggable($('#ModalModule .modal-header'));  
-
-    function showLoading() {
-        $('#loadingModal').modal('show');
-    }
-
-    function hideLoading() {
-        $('#loadingModal').modal('hide');
-    }
+    makeDraggable($('#ModalModule .modal-header'));   
 </script>
 
 <style>
