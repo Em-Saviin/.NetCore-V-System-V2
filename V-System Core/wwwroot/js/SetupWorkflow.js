@@ -12,7 +12,6 @@ function OpenModalWorkflow() {
 function CloseModalWorkflow() {
     $("#ModalWorkflow").modal('hide');
 }
-
  
 function LoadSelect2() {
     $.ajax({
@@ -28,9 +27,15 @@ function LoadSelect2() {
                 dropdownParent: $("#ModalWorkflow"),
                 width: '100%' 
             })
+            $("#DtslsModule").empty().select2({
+                data: optionModule,
+                dropdownParent: $("#ModalWorkflowDetail"),
+                width: '100%'
+            })
         }
     })
 }
+ 
 function SaveWorkflowName() {
     const module = $("#slsModule").val();
     const workflowName = $("#txtWorkflow").val();
@@ -83,7 +88,7 @@ function InitializeTblWorkflow() {
                 render: function (data) {
                     return `
                         <div class="d-flex gap-1">
-                            <i onclick="onViewWorkflow(${data.ID},${data.module_id})" class="cursor-pointer text-info bi bi-pencil view-workflow-icon"></i>
+                            <i onclick="onViewWorkflowDetail(${data.ID},${data.module_id})" class="cursor-pointer text-info bi bi-pencil view-workflow-icon"></i> ||  <i onclick="onDeleteWorkflow(${data.ID})" class="cursor-pointer text-danger bi-dash-circle-fill"></i>
                         </div>`;
                 }
             }
@@ -93,4 +98,72 @@ function InitializeTblWorkflow() {
             "emptyTable": "No data available"
         }
     });
+} 
+
+function onDeleteWorkflow(workflowId) {
+    var _workflowID = workflowId
+    Swal.fire({
+        title: "Confirm Deletion",
+        html: "Are you sure you want to delete this workflow?",
+        icon: 'question',
+        showCancelButton: true,
+        confirmButtonText: 'Yes',
+        cancelButtonText: 'Cancel'
+    }).then((result) => {
+        if (result.value === true) {
+            $.ajax({
+                url: '/Workflow/DeleteWorkflow',
+                type: "POST",
+                data: { ID: _workflowID },
+                success: function (rs) {
+                    if (rs.code == 0) {
+                        AlertMessage.success(rs.message);
+                        _tblWorkFlow.ajax.reload();
+                    } else {
+                        AlertMessage.error(rs.message);
+                    }
+                },
+                error: function (xhr, status, error) {
+                    AlertMessage.error("An error occurred: " + error);
+                }
+            });
+        } else {
+            console.log('User canceled the deletion.');
+        }
+    });
+
+}
+
+//Block Detail
+function onViewWorkflowDetail(workflowId, moduleId) {
+    LoadAllStatusSelect2();
+    LoadSelect2();
+    $("#ModalWorkflowDetail").modal('show');
+}
+function OpenModalWorkflowDetail() { 
+    $("#ModalWorkflowDetail").modal('show');
+}
+function CloseModalWorkflowDetail() {
+    $("#ModalWorkflowDetail").modal('hide');
+}
+function SaveWorkflowNameDetail() {
+
+} 
+function LoadAllStatusSelect2() {
+    $.ajax({
+        url: _Url + '/GetAllStatus',
+        type: 'GET',
+        success: function (rs) {
+            console.log(rs)
+            const resultModule = rs.dataAllStatus;
+            var optionModule = resultModule.map(function (item) {
+                return { id: item.id, text: item.text };
+            })
+            $("#DtslsFirstStatus").empty().select2({
+                data: optionModule,
+                dropdownParent: $("#ModalWorkflowDetail #blockLeft"),
+                width: '100%'
+            })
+        }
+    })
 }

@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Data.SqlClient;
 using V_System_Core.Component;
 using V_System_Core.Data;
-using V_System_Core.Models;
+ 
 
 namespace V_System_Core.Controllers
 {
@@ -27,17 +27,29 @@ namespace V_System_Core.Controllers
         }
         public JsonResult GetModule()
         {
+                try
+                {
+                    var module = MyHelperSql.GetSelect2Item(db, "MODULE", 0); 
+                return Json(new { dataModule = module });
+                }
+                catch (Exception ex)
+                {
+                    return Json(ex);
+                }
+        }
+        public JsonResult GetAllStatus()
+        {
             try
             {
-                var module = MyHelperSql.GetSelect2Item(db, "MODULE", 0);
-                return Json(new { dataModule = module });
+                var allStatus = MyHelperSql.GetSelect2Item(db, "ALL STATUS", 0);
+                return Json(new { dataAllStatus = allStatus });
             }
             catch (Exception ex)
             {
                 return Json(ex);
             }
         }
-        public JsonResult SaveWorkflowName(int _ModuleId ,string _WorkflowName , string _Remark)
+        public JsonResult SaveWorkflowName(int _ModuleId, string _WorkflowName, string _Remark = "")
         {
             try
             {
@@ -48,7 +60,7 @@ namespace V_System_Core.Controllers
                 {
                     new SqlParameter("@workflow_name", _WorkflowName),
                     new SqlParameter("@remark", _Remark),
-                    new SqlParameter("@module_id", _ModuleId),  
+                    new SqlParameter("@module_id", _ModuleId),
                     new SqlParameter("@create_by", _ManagerUserID._UserId),
                     new SqlParameter("@create_date", DateTime.Now)
                 };
@@ -57,12 +69,12 @@ namespace V_System_Core.Controllers
 
                 if (result.code == 0)
                 {
-                    return Json(new { code = 0, message = _WorkflowName + "Saved Successfully!" });
+                    return Json(new { code = 0, message = _WorkflowName + " Saved Successfully!" });
                 }
                 else
                 {
-                    return Json(new { code = 12,  message = result.message }); 
-                } 
+                    return Json(new { code = 12, message = result.message });
+                }
             }
             catch (Exception ex)
             {
@@ -75,10 +87,38 @@ namespace V_System_Core.Controllers
             {
                 var workflowList = MyHelperSql.ExecSpReturnObj_NoParam(db, "SP_GET_WORKFLOW_LIST");
                 return Json(new { data = workflowList });
-            }catch(Exception ex)
+            } catch (Exception ex)
             {
                 return Json(ex.Message);
             }
         }
-    }
+        public JsonResult DeleteWorkflow(int ID)
+        {
+            try
+            {
+                string sql = "DELETE FROM tbl_Workflow_Entity WHERE ID = @workflowID";
+                var parameters = new[]
+                {
+                    new SqlParameter("@workflowID", ID),
+                };
+
+                var result = MyHelperSql.ExecuteDelete(db, sql, parameters);
+
+                if (result.code == 0)
+                {
+                    return Json(new { code = 0, message = "Delete Successfully!" });
+                }
+                else
+                {
+                    return Json(new { code = 12, message = result.message });
+                }
+            }
+            catch (Exception e)
+            {
+                return Json(new { code = 500, message = e.Message });
+            }
+        }
+
+
+    } 
 }

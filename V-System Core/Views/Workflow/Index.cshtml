@@ -3,7 +3,7 @@
     ViewData["Title"] = "Index";
     Layout = "~/Views/Shared/_Iframe.cshtml";
 }
-<script src="~/js/setupworkflow.js"></script>
+<script src="~/js/SetupWorkflow.js"></script>
 
 <div class="container-fluid p-0 ">
     <div class="row">
@@ -13,15 +13,14 @@
                     <div class="card">
                         <div class="card-header  d-flex justify-content-between gap-1 ">
                             <div class="col-3 d-flex gap-2 ">
-                                 
-                                <select class="select2 " style="width:100%" hidden  >
+
+                                <select class="select2 " style="width:100%" hidden>
                                 </select>
                             </div>
                             <div class="col-2  ">
                                 <button class="float-end btn btn-outline-success btn-sm " onclick="OpenModalWorkflow()" data-button-type="add">+ Create Workflow</button>
                             </div>
-                        </div>
-
+                        </div> 
                         <div class="card-body">
                             <table class="table" id="tblWorkflow" style="width:100%">
                                 <thead>
@@ -30,7 +29,7 @@
                                         <th>WorkflowName</th>
                                         <th>Remark</th>
                                         <th>ModuleName </th>
-                                        <th>Action </th> 
+                                        <th>Action </th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -42,7 +41,8 @@
             </div>
         </section>
     </div>
-</div>   <!-- Modal Module -->
+</div>  
+<!-- Modal Workflow -->
 <div class="modal fade" id="ModalWorkflow" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
@@ -58,17 +58,17 @@
                         <select class="select2" style="width:100%" id="slsModule">
                             <!-- Options here -->
                         </select>
-                    </div> 
+                    </div>
                     <!-- WorkflowName -->
                     <div class="mb-3">
                         <label for="txtWorkflowq" class="form-label">Workflow Name  <strong class="text-danger">(*)</strong> </label>
                         <input type="text" class="form-control" id="txtWorkflow" required>
-                    </div> 
+                    </div>
                     <!-- Remark Input -->
                     <div class="mb-3">
                         <label for="remark" class="form-label">Remark</label>
                         <input type="text" class="form-control" value="#" id="txtRemark">
-                    </div> 
+                    </div>
                 </form>
             </div>
             <div class="modal-footer">
@@ -80,4 +80,77 @@
         </div>
     </div>
 </div>
- 
+
+<!-- Modal Detail -->
+<div class="modal fade" id="ModalWorkflowDetail" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal modal-xl">
+        <div class="modal-content">
+            <div class="modal-header  fw-bolder text-light" style="background-color:#1b3351">
+                <h5 class="modal-title" >Setup Workflow</h5>
+                <button type="button" class="btn-close btn-close-white" onclick="CloseModalWorkflowDetail()"></button>
+            </div>
+            <div class="modal-body"> 
+                <div class="row"> 
+                        <div class="col-3" id="blockLeft">
+                            <!-- Module -->
+                            <div class="mb-3 col-12 col-md-12">
+                                <label for="DtslsModule" class="form-label">Module <strong class="text-danger">(*)</strong> </label>
+                                <select class="select2" style="width:100%" id="DtslsModule">
+                                    <!-- Options here -->
+                                </select>
+                            </div>
+                            <!-- WorkflowName -->
+                            <div class="mb-3 col-12 col-md-12">
+                                <label for="DttxtWorkflow" class="form-label">Workflow Name  <strong class="text-danger">(*)</strong> </label>
+                                <input type="text" class="form-control" id="DttxtWorkflow" required>
+                            </div>
+                            <!-- FirstStatus -->
+                            <div class="mb-3 col-12 col-md-12">
+                            <label for="DtslsFirstStatus" class="form-label">First Status <strong class="text-danger">(*)</strong> </label>
+                                <select class="select2" style="width:100%" id="DtslsFirstStatus">
+                                    <!-- Options here -->
+                                </select>
+                            </div> 
+                            <!-- Remark Input -->
+                            <div class="mb-3 col-12 col-md-12">
+                                <label for="remark" class="form-label">Remark</label>
+                                <input type="text" class="form-control" value="#" id="DttxtRemark">
+                            </div>
+                        </div>
+                    <div class="col-8">
+                                <div class="table-responsive">
+                                                <table class="table table-bordered table-hover align-middle" id="tblWorkflowDetail" style="width:100%">
+                                                            <thead class="text-white" style="background-color: #1b3351;">
+                                                                <tr>
+                                                                    <th style="width: 50px;">#</th>
+                                                                    <th>Role Name</th>
+                                                                    <th>Status From</th>
+                                                                    <th>Status To</th>
+                                                                    <th>Clone</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <!-- Rows go here -->
+                                                            </tbody>
+                                                </table>
+                                </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="modal-footer">
+                <!-- Close Button -->
+                <button type="button" class="btn btn-secondary bg-danger" onclick="CloseModalWorkflowDetail()">Close</button>
+                <!-- Save Button -->
+                <button type="submit" class="btn btn-primary bg-aceleda" onclick="SaveWorkflowNameDetail();">Save</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .select2-container {
+        z-index: 9999 !important;
+        }
+
+</style>

@@ -7,6 +7,6 @@ namespace V_System_Core.Controllers
         public IActionResult Index()
         {
             return View();
-        }
-    }
+        }  
+}
 }

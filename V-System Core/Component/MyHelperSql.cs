@@ -163,7 +163,46 @@ namespace V_System_Core.Component
                 return (12, $"Error: {ex.Message}"); // 12 for failure and include error message
             }
         }
+        public static (int code, string message) ExecuteDelete(DbContext dbContext, string sqlQuery, params SqlParameter[] parameters)
+        {
+            try
+            {
+                using (var command = dbContext.Database.GetDbConnection().CreateCommand())
+                {
+                    command.CommandText = sqlQuery;
+                    command.CommandType = System.Data.CommandType.Text;
 
+                    if (parameters != null && parameters.Length > 0)
+                    {
+                        foreach (var param in parameters)
+                        {
+                            param.Direction = System.Data.ParameterDirection.Input;
+                            command.Parameters.Add(param);
+                        }
+                    }
+
+                    if (command.Connection.State != System.Data.ConnectionState.Open)
+                    {
+                        command.Connection.Open();
+                    }
+
+                    int rowsAffected = command.ExecuteNonQuery();
+                    if (rowsAffected > 0)
+                    {
+                        return (0, "Delete successful"); // 0 for success
+                    }
+                    else
+                    {
+                        return (12, "No rows affected."); // 12 for insert failure
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                // Log the exception and return the error code and message
+                return (12, $"Error: {ex.Message}"); // 12 for failure and include error message
+            }
+        }
         public static string ExexSpReturnMessageFromStore(DbContext dbContext, string storedProcedureName, params SqlParameter[] parameters)
         {
             string outputMessage = "";
