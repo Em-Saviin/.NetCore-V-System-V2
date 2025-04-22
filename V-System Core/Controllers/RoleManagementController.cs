@@ -30,12 +30,45 @@ namespace V_System_Core.Controllers
             ViewData["TelegramUsers"] = dataTelegramUser;
             return View();
         }
-         
-         
+
+
+        /*  [HttpPost]
+          public async Task<IActionResult> SentMessageTelegram(int userId, string message)
+          {
+              var apiUrl = "http://localhost:3000/send-message";  
+
+              var jsonData = new
+              {
+                  userId = userId,
+                  message = message
+              };
+
+              var content = new StringContent(System.Text.Json.JsonSerializer.Serialize(jsonData), Encoding.UTF8, "application/json");
+
+              try
+              {
+                  var response = await _httpClient.PostAsync(apiUrl, content);
+                  var responseText = await response.Content.ReadAsStringAsync();
+
+                  if (response.IsSuccessStatusCode)
+                  {
+                      return Json(new { code = 0, message = "Sent successfully", response = responseText });
+                  }
+                  else
+                  {
+                      return Json(new { code = 1, message = "Failed to send", error = responseText });
+                  }
+              }
+              catch (HttpRequestException ex)
+              {
+                  return Json(new { code = 2, message = "Error", error = ex.Message });
+              }
+          }
+  */
         [HttpPost]
         public async Task<IActionResult> SentMessageTelegram(int userId, string message)
         {
-            var apiUrl = "http://localhost:3000/send-message";  
+            var apiUrl = "http://localhost:3000/send-message";
 
             var jsonData = new
             {
@@ -43,25 +76,38 @@ namespace V_System_Core.Controllers
                 message = message
             };
 
-            var content = new StringContent(System.Text.Json.JsonSerializer.Serialize(jsonData), Encoding.UTF8, "application/json");
+            var content = new StringContent(
+                System.Text.Json.JsonSerializer.Serialize(jsonData),
+                Encoding.UTF8,
+                "application/json"
+            );
 
             try
             {
                 var response = await _httpClient.PostAsync(apiUrl, content);
                 var responseText = await response.Content.ReadAsStringAsync();
 
-                if (response.IsSuccessStatusCode)
+                // 🧠 Parse JSON to extract 'code' and 'message' from the Node.js API
+                var json = System.Text.Json.JsonDocument.Parse(responseText);
+                var code = json.RootElement.GetProperty("code").GetInt32();
+                var apiMessage = json.RootElement.GetProperty("message").GetString();
+
+                if (response.IsSuccessStatusCode && code == 0)
                 {
-                    return Json(new { code = 0, message = "Sent successfully", response = responseText });
+                    return Json(new { code = 0, message = apiMessage });
                 }
                 else
                 {
-                    return Json(new { code = 1, message = "Failed to send", error = responseText });
+                    return Json(new { code = 1, message = apiMessage });
                 }
             }
             catch (HttpRequestException ex)
             {
-                return Json(new { code = 2, message = "Error", error = ex.Message });
+                return Json(new { code = 2, message = "Connection error", error = ex.Message });
+            }
+            catch (Exception ex)
+            {
+                return Json(new { code = 3, message = "Unexpected error", error = ex.Message });
             }
         }
 
